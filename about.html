@@ -70,6 +70,13 @@
         clear:all;
         }
     </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+    jQuery(function($){
+        $('#sidebar').load('sidebar.html #myheader');
+        $('#myfooter').load('sidebar.html #myfooter');
+    });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -108,8 +115,7 @@
             <em>Student in-charge</em> of Anti-Ragging committee of boys hostel, 2011. <br />
             </p> 
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      <footer id="myfooter">
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>

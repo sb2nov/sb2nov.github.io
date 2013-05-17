@@ -70,6 +70,13 @@
         clear:all;
         }
     </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+    jQuery(function($){
+        $('#sidebar').load('sidebar.html #myheader');
+        $('#myfooter').load('sidebar.html #myfooter');
+    });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -111,8 +118,7 @@
         <p>Teaching assistant for Computer programming-1 and Engineering graphics courses. Undergraduate researcher in the electrical and electronics department, worked on image and video processing algorithms.</p>
         <hr/>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      <footer id="myfooter">
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
