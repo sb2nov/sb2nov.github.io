@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Sourabh Bajaj</title>
+ <link href="http://sb2nov.github.io/" rel="self"/>
+ <link href="http://sb2nov.github.io"/>
+ <updated>2013-07-24T01:10:51-04:00</updated>
+ <id>http://sb2nov.github.io</id>
+ <author>
+   <name>Sourabh Bajaj</name>
+   <email>sourabhbajaj@gatech.edu</email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello World!</title>
+   <link href="http://sb2nov.github.io/tutorials/2013/07/24/hello-world"/>
+   <updated>2013-07-24T00:00:00-04:00</updated>
+   <id>http://sb2nov.github.io/tutorials/2013/07/24/hello-world</id>
+   <content type="html">&lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href='http://pages.github.com/'&gt;Github pages&lt;/a&gt; for quiet sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
+
+&lt;p&gt;So now that I just created this website and don&amp;#8217;t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at &lt;a href='https://github.com/sb2nov/sb2nov.github.io'&gt;https://github.com/sb2nov/sb2nov.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Step 1 : Create a new github repository &lt;code&gt;username.github.io&lt;/code&gt; in your account.&lt;/p&gt;
+
+&lt;p&gt;Step 2 : Install Jekyll using the command &lt;code&gt;gem install jekyll&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Step 3 : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
+    cd portfolio
+    git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+    git push origin master&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Step 4 : Change to the &lt;a href='https://github.com/sdb/jb-theme-ghminimal'&gt;ghminimal theme&lt;/a&gt; using the command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    rake theme:install git=&amp;quot;git://github.com/sdb/jb-theme-ghminimal&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Step 5 : Create the pages you want using &lt;code&gt;rake page name=&amp;quot;pages/about.html&amp;quot;&lt;/code&gt;, similarly create the other pages as well.&lt;/p&gt;
+
+&lt;p&gt;Step 6 : Create your first post using &lt;code&gt;rake post title=&amp;quot;Hello World&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Step 7 : Remove the default example posts &lt;code&gt;rm -rf _posts/core-examples&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 8 : Edit the &lt;code&gt;index.md&lt;/code&gt; as per requirements.&lt;/p&gt;
+
+&lt;p&gt;Step 9 : Change the default template as need be, it is located in &lt;code&gt;_include/themes/ghminimal/defaults.html&lt;/code&gt;. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the step &lt;code&gt;5&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Step 10 : Just push the source code to the github repository and Github will automatically render it, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Step 11 : It you find anything wrong in the guide. Please let me know about it..&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
