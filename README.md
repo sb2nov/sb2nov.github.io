@@ -1,4 +1,4 @@
-#sb2nov.github.io
+## sb2nov.github.io
 Portfolio Website for Sourabh Bajaj. All the data is personal.
 
 ##Link
