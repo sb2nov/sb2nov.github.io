@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <title>Hello World!</title>
+    <title>Guide to make a website like this</title>
 
     <meta name="description" content="How to start this blog">
     <meta name="author" content="Sourabh Bajaj">
@@ -62,7 +62,7 @@
         
 <article class="post">
 	<header>
-		<h1>Hello World!</h1>
+		<h1>Guide to make a website like this</h1>
 		<p>Published on <time datetime="2013-07-24T00:00:00-04:00" pubdate>
 			July 24, 2013
 		</time></p>
@@ -72,34 +72,34 @@
 
 <p>So now that I just created this website and don&#8217;t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at <a href='https://github.com/sb2nov/sb2nov.github.io'>https://github.com/sb2nov/sb2nov.github.io</a>.</p>
 
-<p>Step 1 : Create a new github repository <code>username.github.io</code> in your account.</p>
+<p><strong>Step 1</strong> : Create a new github repository <code>username.github.io</code> in your account.</p>
 
-<p>Step 2 : Install Jekyll using the command <code>gem install jekyll</code>.</p>
+<p><strong>Step 2</strong> : Install Jekyll using the command <code>gem install jekyll</code>.</p>
 
-<p>Step 3 : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.</p>
+<p><strong>Step 3</strong> : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.</p>
 
 <pre><code>    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
     cd portfolio
     git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
     git push origin master</code></pre>
 
-<p>Step 4 : Change to the <a href='https://github.com/sdb/jb-theme-ghminimal'>ghminimal theme</a> using the command.</p>
+<p><strong>Step 4</strong> : Change to the <a href='https://github.com/sdb/jb-theme-ghminimal'>ghminimal theme</a> using the command.</p>
 
 <pre><code>    rake theme:install git=&quot;git://github.com/sdb/jb-theme-ghminimal&quot;</code></pre>
 
-<p>Step 5 : Create the pages you want using <code>rake page name=&quot;pages/about.html&quot;</code>, similarly create the other pages as well.</p>
+<p><strong>Step 5</strong> : Create the pages you want using <code>rake page name=&quot;pages/about.html&quot;</code>, similarly create the other pages as well.</p>
 
-<p>Step 6 : Create your first post using <code>rake post title=&quot;Hello World&quot;</code>.</p>
+<p><strong>Step 6</strong> : Create your first post using <code>rake post title=&quot;Hello World&quot;</code>.</p>
 
-<p>Step 7 : Remove the default example posts <code>rm -rf _posts/core-examples</code></p>
+<p><strong>Step 7</strong> : Remove the default example posts <code>rm -rf _posts/core-examples</code></p>
 
-<p>Step 8 : Edit the <code>index.md</code> as per requirements.</p>
+<p><strong>Step 8</strong> : Edit the <code>index.md</code> as per requirements.</p>
 
-<p>Step 9 : Change the default template as need be, it is located in <code>_include/themes/ghminimal/defaults.html</code>. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the step <code>5</code>.</p>
+<p><strong>Step 9</strong> : Change the default template as need be, it is located in <code>_include/themes/ghminimal/defaults.html</code>. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the step <code>5</code>.</p>
 
-<p>Step 10 : Just push the source code to the github repository and Github will automatically render it, <code>git push</code>.</p>
+<p><strong>Step 10</strong> : Just push the source code to the github repository and Github will automatically render it, <code>git push</code>.</p>
 
-<p>Step 11 : It you find anything wrong in the guide. Please let me know about it..</p>
+<p><strong>Step 11</strong> : It you find anything wrong in this guide. Please let me know about it..</p>
 
 	<footer>
     <section>

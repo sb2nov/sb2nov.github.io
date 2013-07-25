@@ -11,4 +11,4 @@ http://sb2nov.github.io/rss.xml
 http://sb2nov.github.io/sitemap.txt
 http://sb2nov.github.io/tags.html
 
-http://sb2nov.github.io/tutorials/2013/07/24/hello-world
+http://sb2nov.github.io/tutorials/2013/07/24/Guide-to-make-a-website-like-this
