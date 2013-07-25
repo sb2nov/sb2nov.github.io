@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 
-tagline: Supporting tagline
+tagline: Software Developer
 ---
 {% include JB/setup %}
 
