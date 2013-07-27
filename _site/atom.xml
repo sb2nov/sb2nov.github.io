@@ -4,13 +4,57 @@
  <title>Sourabh Bajaj</title>
  <link href="http://sb2nov.github.io/" rel="self"/>
  <link href="http://sb2nov.github.io"/>
- <updated>2013-07-25T09:35:50-04:00</updated>
+ <updated>2013-07-27T02:37:34-04:00</updated>
  <id>http://sb2nov.github.io</id>
  <author>
    <name>Sourabh Bajaj</name>
    <email>sourabhbajaj@gatech.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Setup Guide for a Mac</title>
+   <link href="http://sb2nov.github.io/tutorials/2013/07/27/Setup-guide-for-a-mac"/>
+   <updated>2013-07-27T00:00:00-04:00</updated>
+   <id>http://sb2nov.github.io/tutorials/2013/07/27/Setup-guide-for-a-mac</id>
+   <content type="html">&lt;p&gt;I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found &lt;a href='http://sb2nov.github.com/mac-setup'&gt;here&lt;/a&gt;. I got inspired to do this from a similar work by &lt;a href='https://github.com/nicolashery/mac-dev-setup'&gt;Nicolashery&lt;/a&gt;. So I stared the &lt;a href='http://sb2nov.github.com/mac-setup'&gt;Mac-Setup&lt;/a&gt; repository which was built on top of the work by Nicolas.&lt;/p&gt;
+
+&lt;p&gt;I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full Instructions can be found at &lt;a href='http://sb2nov.github.com/mac-setup'&gt;Mac-Setup&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;
+&lt;a class='anchor' href='http://sb2nov.github.com/mac-setup#table-of-contents' name='table-of-contents'&gt;&lt;span class='octicon octicon-link' /&gt;&lt;/a&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#system-update'&gt;System update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#system-preferences'&gt;System preferences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#xcode'&gt;XCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#google-chrome'&gt;Google Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#iterm2'&gt;iTerm2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#homebrew'&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#consolas'&gt;Consolas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#beautiful-terminal'&gt;Beautiful terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#git'&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#sublime-text'&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#vim'&gt;Vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#python'&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#virtualenv'&gt;Virtualenv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#ipython'&gt;IPython&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#numpy-and-scipy'&gt;Numpy and Scipy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#mysql'&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#cplusplus'&gt;CPlusPlus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#nodejs'&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#ruby-and-rvm'&gt;Ruby and RVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#heroku'&gt;Heroku&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#mongodb'&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#redis'&gt;Redis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#latex'&gt;Latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#projects-folder'&gt;Projects folder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#apps'&gt;Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#extra-apps'&gt;Extra Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#menubar-and-settings'&gt;Menubar and Setting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#credits'&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Guide to make a website like this</title>

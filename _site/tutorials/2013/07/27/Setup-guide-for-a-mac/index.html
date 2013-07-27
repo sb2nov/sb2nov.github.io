@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <title>Guide to make a website like this</title>
+    <title>Setup Guide for a Mac</title>
 
-    <meta name="description" content="How to start this blog">
+    <meta name="description" content="Guide to setting up a development environment on Mac OS X">
     <meta name="author" content="Sourabh Bajaj">
     
     <link rel="stylesheet" href="/assets/themes/ghminimal/css/styles.css">
@@ -62,44 +62,49 @@
         
 <article class="post">
 	<header>
-		<h1>Guide to make a website like this</h1>
-		<p>Published on <time datetime="2013-07-24T00:00:00-04:00" pubdate>
-			July 24, 2013
+		<h1>Setup Guide for a Mac</h1>
+		<p>Published on <time datetime="2013-07-27T00:00:00-04:00" pubdate>
+			July 27, 2013
 		</time></p>
 	</header><hr>
 
-	<p>This is my first blog post since I redesigned my website to be hosted using <a href='http://jekyllrb.com/'>Jekyll</a>. I have been using <a href='http://pages.github.com/'>Github pages</a> for quiet sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.</p>
+	<p>I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found <a href='http://sb2nov.github.com/mac-setup'>here</a>. I got inspired to do this from a similar work by <a href='https://github.com/nicolashery/mac-dev-setup'>Nicolashery</a>. So I stared the <a href='http://sb2nov.github.com/mac-setup'>Mac-Setup</a> repository which was built on top of the work by Nicolas.</p>
 
-<p>So now that I just created this website and don&#8217;t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at <a href='https://github.com/sb2nov/sb2nov.github.io'>https://github.com/sb2nov/sb2nov.github.io</a>.</p>
+<p>I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide.</p>
 
-<p><strong>Step 1</strong> : Create a new github repository <code>username.github.io</code> in your account.</p>
-
-<p><strong>Step 2</strong> : Install Jekyll using the command <code>gem install jekyll</code>.</p>
-
-<p><strong>Step 3</strong> : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.</p>
-
-<pre><code>    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
-    cd portfolio
-    git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
-    git push origin master</code></pre>
-
-<p><strong>Step 4</strong> : Change to the <a href='https://github.com/sdb/jb-theme-ghminimal'>ghminimal theme</a> using the command.</p>
-
-<pre><code>    rake theme:install git=&quot;git://github.com/sdb/jb-theme-ghminimal&quot;</code></pre>
-
-<p><strong>Step 5</strong> : Create the pages you want using <code>rake page name=&quot;pages/about.html&quot;</code>, similarly create the other pages as well.</p>
-
-<p><strong>Step 6</strong> : Create your first post using <code>rake post title=&quot;Hello World&quot;</code>.</p>
-
-<p><strong>Step 7</strong> : Remove the default example posts <code>rm -rf _posts/core-examples</code></p>
-
-<p><strong>Step 8</strong> : Edit the <code>index.md</code> as per requirements.</p>
-
-<p><strong>Step 9</strong> : Change the default template as need be, it is located in <code>_include/themes/ghminimal/defaults.html</code>. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the step <code>5</code>.</p>
-
-<p><strong>Step 10</strong> : Just push the source code to the github repository and Github will automatically render it, <code>git push</code>.</p>
-
-<p><strong>Step 11</strong> : It you find anything wrong in this guide. Please let me know about it..</p>
+<p><em>Full Instructions can be found at <a href='http://sb2nov.github.com/mac-setup'>Mac-Setup</a></em></p>
+<h3>
+<a class='anchor' href='http://sb2nov.github.com/mac-setup#table-of-contents' name='table-of-contents'><span class='octicon octicon-link' /></a>Table of Contents</h3><ul>
+<li><a href='http://sb2nov.github.com/mac-setup#system-update'>System update</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#system-preferences'>System preferences</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#xcode'>XCode</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#google-chrome'>Google Chrome</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#iterm2'>iTerm2</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#homebrew'>Homebrew</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#consolas'>Consolas</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#beautiful-terminal'>Beautiful terminal</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#git'>Git</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#sublime-text'>Sublime Text</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#vim'>Vim</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#python'>Python</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#virtualenv'>Virtualenv</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#ipython'>IPython</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#numpy-and-scipy'>Numpy and Scipy</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#mysql'>MySQL</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#cplusplus'>CPlusPlus</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#nodejs'>Node.js</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#ruby-and-rvm'>Ruby and RVM</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#heroku'>Heroku</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#mongodb'>MongoDB</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#redis'>Redis</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#latex'>Latex</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#projects-folder'>Projects folder</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#apps'>Apps</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#extra-apps'>Extra Apps</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#menubar-and-settings'>Menubar and Setting</a></li>
+<li><a href='http://sb2nov.github.com/mac-setup#credits'>Credits</a></li>
+</ul>
+<p>Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake.</p>
 
 	<footer>
     <section>
@@ -112,11 +117,11 @@
 
   
      
+    	<li><a href="/tags.html#Mac OS-ref">Mac OS <span>1</span></a></li>
+     
     	<li><a href="/tags.html#Lessons-ref">Lessons <span>2</span></a></li>
      
-    	<li><a href="/tags.html#Jekyll-ref">Jekyll <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#Blog-ref">Blog <span>1</span></a></li>
+    	<li><a href="/tags.html#Installation-ref">Installation <span>1</span></a></li>
     
   
 
