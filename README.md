@@ -2,7 +2,7 @@
 Portfolio Website for Sourabh Bajaj. All the data is personal.
 
 ##Link
-http://sb2nov.github.io/
+[http://sourabhbajaj.com](http://sourabhbajaj.com)
 
 ## Contributing
 Please help with any suggestions or changes you think would improve the website.
