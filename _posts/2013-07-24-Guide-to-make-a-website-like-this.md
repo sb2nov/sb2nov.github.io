@@ -34,7 +34,7 @@ So now that I just created this website and don't know what to write about. I mi
 
 **Step 8** : Edit the `index.md` as per requirements.
 
-**Step 9** : Change the default template as need be, it is located in `_include/themes/ghminimal/defaults.html`. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the step `5`.
+**Step 9** : Change the default template as need be, it is located in `_include/themes/ghminimal/defaults.html`. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the `step 5`.
 
 **Step 10** : Just push the source code to the github repository and Github will automatically render it, `git push`.
 

@@ -5,8 +5,8 @@
         <description>Sourabh Bajaj - Sourabh Bajaj</description>
         <link>http://sb2nov.github.io</link>
         <link>http://sb2nov.github.io</link>
-        <lastBuildDate>2013-10-13T13:54:38-04:00</lastBuildDate>
-        <pubDate>2013-10-13T13:54:38-04:00</pubDate>
+        <lastBuildDate>2013-10-13T14:01:40-04:00</lastBuildDate>
+        <pubDate>2013-10-13T14:01:40-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -83,7 +83,7 @@
 
 &lt;p&gt;&lt;strong&gt;Step 8&lt;/strong&gt; : Edit the &lt;code&gt;index.md&lt;/code&gt; as per requirements.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt; : Change the default template as need be, it is located in &lt;code&gt;_include/themes/ghminimal/defaults.html&lt;/code&gt;. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the step &lt;code&gt;5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt; : Change the default template as need be, it is located in &lt;code&gt;_include/themes/ghminimal/defaults.html&lt;/code&gt;. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the &lt;code&gt;step 5&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 10&lt;/strong&gt; : Just push the source code to the github repository and Github will automatically render it, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
 
