@@ -354,7 +354,7 @@ function init(){
 
 function update(){
   
-    d3.csv('data/balancedDataFull.csv', function(d) {
+    d3.csv('http://raw.github.com/sb2nov/GithubVisualizer/master/data/balancedDataFull.csv', function(d) {
          //repo  username  type  name  timestamp additions deletions total message userURL repoURL
          return {
            repo: nameMapperObj[d.repo],
