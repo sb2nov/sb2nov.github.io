@@ -123,6 +123,8 @@ function getChoiceValue(d){
 
 function init(){
 
+    $(".infoButton").colorbox({width:"80%", height:"80%"});
+    
     // General Initializations
     parsetimestamp = d3.time.format("%Y-%m-%dT%H:%M:%SZ").parse;
     parsedatestamp = d3.time.format("%Y-%m-%d").parse;

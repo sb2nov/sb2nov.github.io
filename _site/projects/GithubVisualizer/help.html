@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Github Visualization</title>
+
+  <link rel="stylesheet" href="css/colorbrewer.css" />
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+  <link rel="stylesheet" href="css/bootswatch.min.css"/>
+  <link rel="stylesheet" href="css/gitvis.css" />
+</head>
+<body>
+  <div class="container">
+  <div class="row"><div class="span8 offset2" style='align:center'>
+    <h3>Help</h3>
+    <dl class='dl-horizontal'>
+      <dt>About</dt>
+      <dd>Github Visualizer was built as part of the Georgia Tech CS 7450 class. This is a visualization of an organizations repositories and users simultaniously. For this example we have used data from <a href="http://www.balancedpayments.com/" target='_blank'>Balanced</a>.</dd>
+
+      <dt>Source Code</dt>
+      <dd>The source code can be downloaded from <a href="http://github.com/sb2nov/GithubVisualizer" target='_blank'>http://github.com/sb2nov/GithubVisualizer</a>. All the code for the project is under an MIT license. The data was created using the Github API.</dd>
+
+      <dt>Dependencies</dt>
+      <dd><ul>
+        <li><a href="d3js.org">D3.js</a></li>
+        <li><a href="jquery.com">Jquery</a></li>
+        <li><a href="getbootstrap.com/">Bootstrap</a></li>
+        <li><a href="colorbrewer2.org">Colorbrewer.js</a></li>
+        <li><a href="momentjs.com">Moment.js</a></li>
+        <li><a href="http://www.jacklmoore.com/colorbox/">Colorbox</a></li>
+      </ul></dd>
+
+      <dt>Usage</dt>
+      <dd>
+        <p>At the start of the app you will see all the data for the project loaded. The bar chart is set to the complete time scale. The Y-Axis is set to use the number of commits as the scale. This can be changed using the Main Variable dropdown in the top right corner. We can select a particular time frame by selecting a region the red graph below the timeline.</p>
+        <p>
+          Currently the treemap and the heatmap are set to the global view of the complete organization. We can analyze a particular user or repository by clicking an appropriate tile on the tree map. </p>
+        <p>
+          When you click a repository tile, the user map is updated to present the details of that particular repository, same for the heat map. The time line would present a Lightpick overlay on top of the blue bars. This shows the percentage of contribution to this particular repository compared to the complete organization. </p>
+        <p>
+          Similarly vice-versa would happen if you click a user tile. In the navigation bar we append the selection as a button to create a link to the actual github page for the repository or the user. Clicking on the home button on the bar would refresh your selection.
+        </p>
+        <p>
+          Now suppose you clicked a user first and then clicked on a repository. So your selection is a particular repository and user. This would be reflected as a green overlay on the timeline. So your timeline would have three layers now. A link in the navigation bar can take you to the commit log of the selected user in the selected repository.
+        </p>
+      </dd>
+      <dt>Data Processing</dt>
+      <dd>The data was fetched using Github's API using a python script. It was then stored into csv files for the visualization to use it. We also aggregated the repositories under a threshold into Small Projects. And users below a certain threshold into External User.</dd>
+      <dt>Feedback</dt>
+      <dd>If you have any ideas on improving the project. Please contact <a href="http://github.com/sb2nov">Sourabh</a>.</dd>
+
+    </dl></div></div>
+  </div>
+</body>
+</html>
