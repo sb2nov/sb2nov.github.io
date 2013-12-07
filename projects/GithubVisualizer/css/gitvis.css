@@ -1,0 +1,216 @@
+body {
+  padding-top: 8px;
+  font-family: 'Century Gothic',Arial,Helvetica,sans-serif;
+  font-size: 13px;
+}
+
+#logo-div a {
+  font-size: 14px;
+  color: #882E3C;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom:0;
+}
+
+#credit-div {
+  margin-top: 8px;
+}
+
+.subtitle {
+  line-height: 130%;
+}
+.subtitle, #credit-div {
+  color: #999;
+  margin-bottom: 12px;
+}
+.subtitle a, #credit-div a {
+  color: #3b7c9e;
+}
+.subtitle a:hover {
+}
+
+#legend-div {
+  margin-top:8px;
+  padding-top:8px;
+  margin-bottom:4px;
+  padding-bottom:4px;
+  cursor: default;
+}
+
+.my-button-form, .my-button-form td{
+  margin-bottom:4px;
+  font-size: 12px;
+  background: #eee;
+}
+
+.my-button-form label{
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+} 
+
+
+#wrap {
+  position: relative;
+  width: 1050px; 
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.node {
+  border: solid 1px #666;
+  font: 13px sans-serif;
+  color: white;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.75;
+  text-indent: 2px;
+  word-wrap:break-word;
+  cursor: pointer;
+}
+
+.node a {
+  color: white;
+  text-decoration: none;
+}
+
+.node a:hover {
+  text-decoration:underline;
+}
+
+.node:hover {
+  text-decoration:underline;
+  z-index: 5;
+  opacity: 1.0;
+}
+
+div.Mytooltip {
+   position: absolute;
+   text-align: center;           
+   padding: 3px;
+   background: #eee;
+   border: 0px;      
+   border-radius: 5px;
+   pointer-events: none !important;
+   opacity: 0;
+   font-size: 8px;
+   min-width: 100px;
+   max-width: 220px;
+   z-index: 1000;
+}
+
+div.Mytooltip td{
+   text-align: left;
+   font-size: 10px;
+}
+
+div.Mytooltip table{
+  width:100%;
+}
+
+.Mytooltip.Mytooltitle{
+    font-size: 11px;
+    text-align: center;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+path {
+  fill: steelblue;
+}
+
+.svg-text, .svg-text2 {
+  fill: black;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+
+.timeSvgClass{
+  z-index: 0;
+}
+
+.timeAllBar {
+  fill: SteelBlue;
+  fill-opacity: 0.8;
+  z-index: 10;
+}
+
+.timeAllBar:hover {
+  fill: #483D8B;
+  fill-opacity: 0.8;
+  z-index: 10;
+}
+
+.timeFirstBar{
+  fill: Lightpink;
+  fill-opacity: 0.8;
+  z-index: 20;
+}
+
+.timeFirstBar:hover {
+  fill: Red;
+  fill-opacity: 0.6;
+  z-index: 20;
+}
+
+.timeSecondBar{
+  fill: #7FFFD4;
+  fill-opacity: 0.8;
+  z-index: 30;
+}
+
+.timeSecondBar:hover {
+  fill: #228B22;
+  fill-opacity: 0.8;
+  z-index: 30;
+}
+
+.timeBrushAllBar {
+  fill: red;
+  fill-opacity: 0.6;
+}
+
+.tick{
+  z-index:10;
+}
+
+#treemap-div table{
+  align: center;
+  width: 100%;
+}
+
+.heatMapCell{
+  fill-opacity: 0.7;
+  stroke: #ffffd9;
+  stroke-width:2px;
+}
+
+.heatMapCell:hover{
+  fill-opacity: 1.0;
+}
+
+.top-buffer { margin-top:20px; }
+.top-buffer-2 { margin-top:50px; }
+
+.x_label{
+  font-size: 120%;  
+}
