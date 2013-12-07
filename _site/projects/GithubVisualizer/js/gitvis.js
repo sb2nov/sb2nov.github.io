@@ -192,6 +192,9 @@ function init(){
     timeSvgXaxis = timeSvg.append('svg:g')
         .attr('transform', 'translate('+ (0) +','+ height_single+')')
         .attr('class', 'axis')
+    
+    timeLineLegendSvg = d3.select('#time-line-legend').append('svg')
+        .attr('height', 60 + "px")
 
     // ----------------------------- //
     // ----------------------------- //
@@ -294,19 +297,25 @@ function init(){
     heatMapDiv = d3.select("#heatmap-div")
         .style("position", "relative")
         .style("width", w2 + margin_map.left + margin_map.right + "px")
-        // .style("height", (height/2) + margin.top + margin.bottom + "px")
+        .style("height", (height/2) + margin.top + margin.bottom + "px")
         .style("top", margin_map.top + "px")
         // .style("left", margin_map.left + "px");
     
     heatMapSvg = heatMapDiv.append('svg')
         .attr('width', w2 + margin_map.left + margin_map.right)
-        // .attr("height", (height/2) + margin.top + margin.bottom)
+        .attr("height", (height/2) + margin.top + margin.bottom)
         .attr('class', 'heatSvgClass')
         // .attr('transform', 'translate(' + margin_map.left + ',' + margin_map.top + ')');
-        
+
+    xScaleHeatMap = d3.scale.ordinal();        
     yScaleHeatMap = d3.scale.ordinal();
     zscaleHeatMap = d3.scale.quantile()
         .range(colorbrewer.YlGnBu[9]);
+
+    xAxisHeatMap = d3.svg.axis()
+        .tickSize(3,1)
+        .tickPadding(3)
+        .orient('bottom');
 
     yAxisHeatMap = d3.svg.axis()
         .orient('left')
@@ -316,6 +325,14 @@ function init(){
     heatSvgYaxis = heatMapSvg.append('svg:g')
         .attr("class", "axis")
         .attr('transform', 'translate('+ heatMapPadding +','+ (0) +')')
+
+    heatSvgXaxis = heatMapSvg.append('svg:g')
+        .attr('id', 'heatSvgXAxisID')
+        .attr("class", "axis");
+        
+    heatSvgLegend = heatMapSvg.append('svg:g')
+        .attr('class', 'heatLegendSvgClass')
+        .attr('id', 'heatLegendSvgID');
 
     // ----------------------------- //
     // ----------------------------- //
@@ -355,6 +372,7 @@ function init(){
 function update(){
   
     d3.csv('http://sourabhbajaj.com/projects/GithubVisualizer/data/balancedDataFull.csv', function(d) {
+    // d3.csv('data/balancedDataFull.csv', function(d) {
          //repo  username  type  name  timestamp additions deletions total message userURL repoURL
          return {
            repo: nameMapperObj[d.repo],
@@ -407,6 +425,7 @@ function filterData(extentVals){
     heatMapDataNest = null;
     secondChartTimeLineNest = null;
     thirdChartTimeLineNest = null;
+    timeLineLegendData = [{key:'Balanced', colorfill:'SteelBlue'}];
 
     if(!firstClick){
         repoMapDataNest = d3.nest()
@@ -453,6 +472,8 @@ function filterData(extentVals){
            .sortKeys(compareDates)
            .rollup(rollLeaves)
            .entries(filterFirstClickData);
+        
+        timeLineLegendData.push({key:repoSelected, colorfill:'Lightpink'});
 
     }
     
@@ -482,6 +503,8 @@ function filterData(extentVals){
            .sortKeys(compareDates)
            .rollup(rollLeaves)
            .entries(filterFirstClickData);
+           
+        timeLineLegendData.push({key:userSelected, colorfill:'Lightpink'});
     }
 
     if(secondClick){
@@ -492,6 +515,10 @@ function filterData(extentVals){
             .sortKeys(compareDates)
             .rollup(rollLeaves)
             .entries(filterSecondClickData);
+        
+        var selectEle = secondClick=='user' ? userSelected : repoSelected;
+        
+        timeLineLegendData.push({key: selectEle, colorfill:'#7FFFD4'});
     }
 
     repoMapDataNest = {values: repoMapDataNest, key:'repoMap'};
@@ -502,6 +529,7 @@ function filterData(extentVals){
     objData['all_timeline_data'] = allChartTimeLineNest;
     objData['first_timeline_data'] = secondChartTimeLineNest;
     objData['second_timeline_data'] = thirdChartTimeLineNest;
+    objData['time_legend_data'] = timeLineLegendData;
 
     // Treemap Data Filters
     objData['repo_map_data'] = repoMapDataNest;
@@ -594,6 +622,38 @@ function renderTimeLine(dataobj){
 
     timeSvgYaxis.transition().call(yAxisTimeLine);
     timeSvgXaxis.transition().call(xAxisTimeLine);
+
+    var legendWidth = 10;
+
+    timeLegendRect = timeLineLegendSvg.selectAll('.TimeLineLegendRect').data(dataobj.time_legend_data);
+
+    timeLegendRect.exit().remove();
+    timeLegendRect
+        .enter()
+        .append('rect')
+        .attr('class', 'TimeLineLegendRect');
+    timeLegendRect.transition();
+
+    timeLegendText = timeLineLegendSvg.selectAll('.TimeLineLegendText').data(dataobj.time_legend_data);
+
+    timeLegendText.exit().remove();
+    timeLegendText
+        .enter()
+        .append('text')
+        .attr('class', 'TimeLineLegendText');
+    timeLegendText.transition();
+
+    timeLegendRect
+        .attr("y", function(d, i) { return 2 * legendWidth * i; })
+        .attr("x", 0)
+        .attr("width", legendWidth)
+        .attr("height", legendWidth)
+        .style("fill", function(d) { return d.colorfill; })
+    
+    timeLegendText
+        .text(function(d) { return d.key; })
+        .attr("y", function(d, i) { return 9 + 2*legendWidth * i; })
+        .attr("x", 5 + legendWidth);
 
 }
 
@@ -919,7 +979,7 @@ function renderHeatMap(dataobj) {
     if (!data) { return; }
 
     yAxisData = data.map(function(d) {return d.key;});
-
+    xAxisData = new Array();
     // console.log(yAxisData)
     // var totalSteps = moment(extentOfDays[1]).diff(extentOfDays[0],'months');
     // var cellSize = computeCellSize(totalSteps, data.length, heatMapPadding);
@@ -931,6 +991,13 @@ function renderHeatMap(dataobj) {
 
     var heatMapWidth = heatMapData[0].length * cellSize;
     var heatMapHeight = data.length * cellSize;
+
+    // console.log(xAxisData);
+
+    // X-Axis Scale
+    xScaleHeatMap
+        .domain(xAxisData)
+        .rangePoints([0, heatMapWidth]);
 
     // Y-Axis Scale
     yScaleHeatMap
@@ -945,6 +1012,22 @@ function renderHeatMap(dataobj) {
     // YAxis Update
     yAxisHeatMap.scale(yScaleHeatMap)    
     heatSvgYaxis.transition().call(yAxisHeatMap);
+
+    heatMapXAxis = heatSvgXaxis.selectAll('.heatXAxis').data(xAxisData);
+
+    heatMapXAxis.exit().remove();
+    heatMapXAxis
+        .enter()
+            .append('text')
+            .attr('class', 'heatXAxis');
+    
+    heatMapXAxis
+        .transition()
+        .attr("x", function(d, i) { return (4*i*cellSize); })
+        .attr("y", heatMapHeight)
+        .attr("transform", "translate(" + heatMapPadding + ", 12)")
+        .attr('text-anchor', "start")
+        .text(function(d) {return d;});
 
     // Row Stuff
     heatMapRow = heatMapSvg.selectAll(".heatMapRow").data(heatMapData);
@@ -987,6 +1070,52 @@ function renderHeatMap(dataobj) {
                 .duration(200)
                 .style("opacity", 0);
         });
+
+
+    var legendWidth = 2 * cellSize;
+
+    heatMapLegend = heatSvgLegend.selectAll('.heatLegendElement').data([0].concat(zscaleHeatMap.quantiles()), function(d) { return d; });
+    
+    heatMapLegend.exit().remove();
+
+    heatMapLegend
+        .enter()
+            .append('g')
+        .attr('class', 'heatLegendElement')
+        .each(function(d){
+            d3.select(this)
+                .append('rect')
+                    .attr('class', 'heatLegendRect');
+        })
+        .each(function(d){
+            d3.select(this)
+                .append('text')
+                    .attr('class', 'heatLegendText');
+        });
+    
+    heatMapLegend.transition();
+    
+    heatMapLegendRect = heatSvgLegend.selectAll('.heatLegendRect').data([0].concat(zscaleHeatMap.quantiles()), function(d) { return d; });
+    
+    heatMapLegendText = heatSvgLegend.selectAll('.heatLegendText').data([0].concat(zscaleHeatMap.quantiles()), function(d) { return d; });
+    
+    heatMapLegendRect.exit().remove();
+    heatMapLegendText.exit().remove();
+    heatMapLegendRect.transition();
+    heatMapLegendText.transition();
+    
+    heatMapLegendRect
+        .attr("x", function(d, i) { return heatMapPadding + legendWidth * i; })
+        .attr("y", heatMapHeight + 2.5*cellSize)
+        .attr("width", legendWidth)
+        .attr("height", cellSize)
+        .style("fill", function(d){ return zscaleHeatMap(d); });
+
+    heatMapLegendText
+        .text(function(d) { return "≥ " + Math.round(d); })
+        .attr("x", function(d, i) { return heatMapPadding + legendWidth * i; })
+        .attr("y", heatMapHeight + 4*cellSize);
+
 }
 
 
@@ -1132,7 +1261,7 @@ function fillMissingData(data, padding, cellSize) {
 }
 
 function fillDaysWeeks(inputData, padding, cellSize, daily) {
-    
+
     var startDate = null;
     var totalSteps;
     if(daily) {
@@ -1201,6 +1330,13 @@ function fillDaysWeeks(inputData, padding, cellSize, daily) {
                     y: ypos,
                 });
             }
+            if(daily && i==0 && j % 4 == 0) {
+                xAxisData.push(moment(currDate).format('DD-MMM'));
+            }
+
+            else if(!daily && i==0 && j % 4 == 0) {
+                xAxisData.push("Week " + moment(currDate).weeks());
+            }
             currDate = d3.time.day.offset(new Date(currDate), size).toISOString().substring(0,10);
             xpos += stepX;
         }
@@ -1215,7 +1351,7 @@ function fillDaysWeeks(inputData, padding, cellSize, daily) {
 
 function fillMonths(inputData, padding, cellSize) {
     //console.log(inputData);
-    
+
     var totalSteps = moment(extentOfDays[1].substring(0,7)).diff(extentOfDays[0].substring(0,7),'months') + 1;
     
     var svgHeight = inputData.length*cellSize + padding*2;
@@ -1270,6 +1406,9 @@ function fillMonths(inputData, padding, cellSize) {
                     x: xpos,
                     y: ypos,
                 });
+            }
+            if(i==0 && j % 4 == 0) {
+                xAxisData.push(moment(currDate).format("MMM-YY"));//.substring(0,7));
             }
             currDate = moment(currDate).add('months',1).toISOString().substring(0,10);
             xpos += stepX;
