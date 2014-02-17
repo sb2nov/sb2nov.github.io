@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Guide to make a website like this</title>
+    <meta name="description" content="How to start this blog">
+    <meta name="author" content="Sourabh Bajaj">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/assets/themes/bootstrap/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="/assets/themes/bootstrap/css/basic.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/css/timeline.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/css/panels.css" rel="stylesheet">
+  
+    <!--[if lt IE 9]>
+      <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+    <![endif]-->
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="brand"><a href="/" alt="Home">Sourabh Bajaj</a></div>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Sourabh Bajaj</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <!-- <li><a href="/" alt="Home">Home</a></li> -->
+            <li><a href="/about" alt="About">About</a></li>
+            <li><a href="/experience" alt="Experience">Experience</a></li>
+            <li><a href="/portfolio" alt="Portfolio">Portfolio</a></li>
+            <li><a href="/articles" alt="Articles">Blog</a></li>
+            <!-- 
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/extra/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/extra/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/extra/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/extra/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+ -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="box">
+         
+<div class="page-header">
+  <h1>Guide to make a website like this </h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-md-12">
+<!--     <div class="date">
+      <span class="glyphicon glyphicon-time"> 09 February 2014</span>
+    </div> -->
+    <div class="content blog-content">
+      <p>This is my first blog post since I redesigned my website to be hosted using <a href="http://jekyllrb.com/">Jekyll</a>. I have been using <a href="http://pages.github.com/">Github pages</a> for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.</p>
+
+<p>So now that I just created this website and don’t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at <a href="https://github.com/sb2nov/sb2nov.github.io">https://github.com/sb2nov/sb2nov.github.io</a>.</p>
+
+<p><strong>Step 1</strong> : Create a new github repository <code>username.github.io</code> in your account.</p>
+
+<p><strong>Step 2</strong> : Install Jekyll using the command <code>gem install jekyll</code>.</p>
+
+<p><strong>Step 3</strong> : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.</p>
+
+<pre><code>    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
+    cd portfolio
+    git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+    git push origin master</code></pre>
+
+<p><strong>Step 4</strong> : Change and modify your theme using <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.</p>
+
+<p><strong>Step 5</strong> : Create the pages you want using <code>rake page name=&quot;pages/about.html&quot;</code>, similarly create the other pages as well.</p>
+
+<p><strong>Step 6</strong> : Create your first post using <code>rake post title=&quot;Hello World&quot;</code>.</p>
+
+<p><strong>Step 7</strong> : Remove the default example posts <code>rm -rf _posts/core-examples</code></p>
+
+<p><strong>Step 8</strong> : Edit the <code>index.md</code> as per requirements.</p>
+
+<p><strong>Step 9</strong> : Change the default template as need be, it is located in <code>_include/themes/bootstrap/defaults.html</code>. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the <code>step 5</code>.</p>
+
+<p><strong>Step 10</strong> : Just push the source code to the github repository and Github will automatically render it, <code>git push</code>.</p>
+
+<p><strong>Step 11</strong> : It you find anything wrong in this guide. Please let me know about it.</p>
+    </div>
+
+    <hr>
+
+    <div class='col-md-6'>
+      
+        <a href="" class="btn btn-primary disabled" role="button">&larr; Previous</a>
+      
+    </div>
+    <div class='col-md-6' style='float:right;'>
+      
+        <a href="/tutorials/2014/02/16/Setup-guide-for-a-mac" class="btn btn-primary pull-right" role="button">Setup Guide for a Mac &rarr;</a>
+      
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="address-bar"><a href="http://www.linkedin.com/in/sbajaj9/" alt="LinkedIn">LinkedIn</a> | <a href="http://github.com/sb2nov/" alt="Github">Github</a> | <a href="http://twitter.com/sb2nov/" alt="Twitter">Twitter</a> | <a href="mailto:sourabhbajaj@gatech.edu" alt="email">Email</a> <br/><small>Copyright &copy; Sourabh Bajaj 2014.<br /> Powered by <a href="http://github.com/mojombo/jekyll" alt="jekyll">Jekyll</a>, <a href="http://pages.github.com/" alt="Github pages">Github pages</a> and <a href="http://glyphicons.com/" alt="Glyphicons">Glyphicons</a></small></div>
+<!--             <p>Copyright &copy; Company 2013</p> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/assets/themes/bootstrap/resources/jquery/jquery.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/themes/bootstrap/js/basic.js"></script>
+  </body>
+</html>
+

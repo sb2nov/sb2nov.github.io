@@ -1,0 +1,296 @@
+body {
+  background: url(../img/bg3.jpg) no-repeat center center fixed; 
+  /*#424242  url(../img/bg10.jpg)*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-header{
+  text-align: center;
+}
+
+.page-header>h1>small{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.6;
+  color: #000;
+}
+
+hr {
+  border-color: #999999;
+  /*max-width: 400px;*/
+}
+
+.brand {
+  display: none;
+}
+
+
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.img-full {
+  min-width: 100%;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.tagline-divider {
+  margin: 15px auto 3px;
+  border-color: #999999;
+  max-width: 250px;
+}
+
+.box {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 30px 15px;
+}
+
+.intro-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.img-border {
+  float: none;
+  margin: 0 auto 0;
+  border: #999999 solid 1px;
+}
+
+.img-left {
+  float: none;
+  margin: 0 auto 0;
+}
+
+footer {
+  background: #fff;
+  /*background: rgba(255,255,255,0.92);*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer p {
+  margin: 0;
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+
+.brand {
+  display: inherit;
+  font-weight: 700;
+  font-size: 5em;
+  line-height: normal;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.brand>a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-divider {
+  margin-top: 0;
+}
+
+.img-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.address-bar {
+  display: inherit;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #777;
+  /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
+}
+
+.address-bar>small{
+  font-size:8px;
+  letter-spacing: 1px;
+}
+
+.address-bar>small>a{
+  text-decoration: none;
+}
+
+.address-bar>a{
+  color: #777;
+  text-decoration: none;
+}
+.address-bar>a:hover{
+  color: #383838;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-header {
+  display: none;
+}
+
+.navbar-header {
+  display: none;
+}
+
+.navbar {
+  min-height: 0;
+}
+
+.navbar-default {
+  background: #fff;
+  border: none;
+}
+
+.nav>li>a {
+  padding: 35px;
+}
+
+.navbar-nav>li>a {
+  line-height: normal;
+}
+
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  font-size: 1.25em;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .form-group{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .post-full{
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+.post-full{
+  padding: 10px;
+}
+
+@media (min-width:1900px){
+  .container{width:80%}
+}
+
+.articleList{
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postTitle > a{
+  /*color: #777;*/
+  text-decoration: none;
+}
+
+.postTitle > a:hover{
+  color: #000;
+}
+.postDate {
+  text-align: right;
+  vertical-align:bottom;
+}
+
+@media only screen and (max-width: 500px) {
+    .postDate {
+        display: none;
+    }
+}
+
+.date{
+  font-size: 15px;
+  color: #777;
+}
+
+.blog-content > p{
+  font-size: 15px;
+}
+
+.blog-content > ul > li{
+  font-size: 15px;
+}
+
+.blog-content > ul > li > p{
+  font-size: 15px;
+}
+.blog-content > h1, .blog-content>h2, .blog-content>h3,
+.blog-content>h4, .blog-content>h5, .blog-content>h6{
+  text-transform: capitalize;
+}
+
+.about-table{
+  font-size: 1.25em;
+  color: #000;
+  border-top: none;
+  /*border-bottom: 1px solid #ddd;*/
+  margin-bottom: 0px;
+}
+
+.edu-table>tbody>tr>td {
+  padding-bottom: 2px;
+  /*border-top: none;*/
+}
+
+.post-table>tbody>tr:first-child>td, .about-table>tbody>tr:first-child>td {
+  border-top: none;
+}
+
+/*CRAP BELOW */

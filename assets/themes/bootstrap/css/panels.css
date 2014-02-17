@@ -1,0 +1,56 @@
+.panel{
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 4px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  width: calc(100% - 20px);
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.panel-image img.panel-image-preview {
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.panel-heading ~ .panel-image img.panel-image-preview {
+    border-radius: 0px;
+}
+
+.panel-image ~ .panel-body, .panel-image.hide-panel-body ~ .panel-body {
+    overflow: hidden;
+}
+.panel-image ~ .panel-footer a {
+    padding: 0px 10px;
+    font-size: 1.3em;
+    color: rgb(100, 100, 100);
+}
+
+.panel-image.hide-panel-body ~ .panel-body {
+    height: 0px;
+    padding: 0px;
+}
+
+
+.panel-body{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.panel-title{
+    color: #428bca;
+}
+
+.panel-title > a{
+    text-decoration: none;
+}
+
+.panel-title >a:hover{
+  color: #000;
+}
+
+.panel-default>.panel-heading{
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.2);
+}

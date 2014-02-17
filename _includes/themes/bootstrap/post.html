@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<br /><small>{{ page.date | date_to_long_string }}</small>{% endif %}</h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-md-12">
+<!--     <div class="date">
+      <span class="glyphicon glyphicon-time"> {{ page.date | date_to_long_string }}</span>
+    </div> -->
+    <div class="content blog-content">
+      {{ content }}
+    </div>
+
+    <hr>
+
+    <div class='col-md-6'>
+      {% if page.previous %}
+        <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn btn-primary" role="button">&larr; {{ page.previous.title }}</a>
+      {% else %}
+        <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn btn-primary disabled" role="button">&larr; Previous</a>
+      {% endif %}
+    </div>
+    <div class='col-md-6' style='float:right;'>
+      {% if page.next %}
+        <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn btn-primary pull-right" role="button">{{ page.next.title }} &rarr;</a>
+      {% else %}
+        <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn btn-primary disabled pull-right" role="button">Next &rarr;</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

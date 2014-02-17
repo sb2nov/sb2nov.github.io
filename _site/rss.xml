@@ -3,20 +3,20 @@
 <channel>
         <title>Sourabh Bajaj</title>
         <description>Sourabh Bajaj - Sourabh Bajaj</description>
-        <link>http://sb2nov.github.io</link>
-        <link>http://sb2nov.github.io</link>
-        <lastBuildDate>2013-12-07T15:31:03-05:00</lastBuildDate>
-        <pubDate>2013-12-07T15:31:03-05:00</pubDate>
+        <link>http://sourabhbajaj.com</link>
+        <link>http://sourabhbajaj.com</link>
+        <lastBuildDate>2014-02-16T19:13:20-08:00</lastBuildDate>
+        <pubDate>2014-02-16T19:13:20-08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Setup Guide for a Mac</title>
-                <description>&lt;p&gt;I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found &lt;a href='http://sb2nov.github.com/mac-setup'&gt;here&lt;/a&gt;. I got inspired to do this from a similar work by &lt;a href='https://github.com/nicolashery/mac-dev-setup'&gt;Nicolashery&lt;/a&gt;. So I stared the &lt;a href='http://sb2nov.github.com/mac-setup'&gt;Mac-Setup&lt;/a&gt; repository which was built on top of the work by Nicolas.&lt;/p&gt;
+                <description>&lt;p&gt;I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;here&lt;/a&gt;. I got inspired to do this from a similar work by &lt;a href=&quot;https://github.com/nicolashery/mac-dev-setup&quot;&gt;Nicolashery&lt;/a&gt;. So I started the &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt; repository which was built on top of the work by Nicolas.&lt;/p&gt;
 
 &lt;p&gt;I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Full Instructions can be found at &lt;a href='http://sb2nov.github.com/mac-setup'&gt;Mac-Setup&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full Instructions can be found at &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;
 &lt;a class='anchor' href='http://sb2nov.github.com/mac-setup#table-of-contents' name='table-of-contents'&gt;&lt;span class='octicon octicon-link' /&gt;&lt;/a&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#system-update'&gt;System update&lt;/a&gt;&lt;/li&gt;
@@ -49,16 +49,16 @@
 &lt;li&gt;&lt;a href='http://sb2nov.github.com/mac-setup#credits'&gt;Credits&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake.&lt;/p&gt;</description>
-                <link>http://sb2nov.github.io/tutorials/2013/07/27/Setup-guide-for-a-mac</link>
-                <guid>http://sb2nov.github.io/tutorials/2013/07/27/Setup-guide-for-a-mac</guid>
-                <pubDate>2013-07-27T00:00:00-04:00</pubDate>
+                <link>http://sourabhbajaj.com/tutorials/2014/02/16/Setup-guide-for-a-mac</link>
+                <guid>http://sourabhbajaj.com/tutorials/2014/02/16/Setup-guide-for-a-mac</guid>
+                <pubDate>2014-02-16T00:00:00-08:00</pubDate>
         </item>
 
         <item>
                 <title>Guide to make a website like this</title>
-                <description>&lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href='http://pages.github.com/'&gt;Github pages&lt;/a&gt; for quiet sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
+                <description>&lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
 
-&lt;p&gt;So now that I just created this website and don&amp;#8217;t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at &lt;a href='https://github.com/sb2nov/sb2nov.github.io'&gt;https://github.com/sb2nov/sb2nov.github.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So now that I just created this website and don’t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at &lt;a href=&quot;https://github.com/sb2nov/sb2nov.github.io&quot;&gt;https://github.com/sb2nov/sb2nov.github.io&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; : Create a new github repository &lt;code&gt;username.github.io&lt;/code&gt; in your account.&lt;/p&gt;
 
@@ -71,9 +71,7 @@
     git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
     git push origin master&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt; : Change to the &lt;a href='https://github.com/sdb/jb-theme-ghminimal'&gt;ghminimal theme&lt;/a&gt; using the command.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    rake theme:install git=&amp;quot;git://github.com/sdb/jb-theme-ghminimal&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt; : Change and modify your theme using &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt; : Create the pages you want using &lt;code&gt;rake page name=&amp;quot;pages/about.html&amp;quot;&lt;/code&gt;, similarly create the other pages as well.&lt;/p&gt;
 
@@ -83,14 +81,14 @@
 
 &lt;p&gt;&lt;strong&gt;Step 8&lt;/strong&gt; : Edit the &lt;code&gt;index.md&lt;/code&gt; as per requirements.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt; : Change the default template as need be, it is located in &lt;code&gt;_include/themes/ghminimal/defaults.html&lt;/code&gt;. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the &lt;code&gt;step 5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt; : Change the default template as need be, it is located in &lt;code&gt;_include/themes/bootstrap/defaults.html&lt;/code&gt;. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the &lt;code&gt;step 5&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 10&lt;/strong&gt; : Just push the source code to the github repository and Github will automatically render it, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 11&lt;/strong&gt; : It you find anything wrong in this guide. Please let me know about it..&lt;/p&gt;</description>
-                <link>http://sb2nov.github.io/tutorials/2013/07/24/Guide-to-make-a-website-like-this</link>
-                <guid>http://sb2nov.github.io/tutorials/2013/07/24/Guide-to-make-a-website-like-this</guid>
-                <pubDate>2013-07-24T00:00:00-04:00</pubDate>
+&lt;p&gt;&lt;strong&gt;Step 11&lt;/strong&gt; : It you find anything wrong in this guide. Please let me know about it.&lt;/p&gt;</description>
+                <link>http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this</link>
+                <guid>http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this</guid>
+                <pubDate>2014-02-09T00:00:00-08:00</pubDate>
         </item>
 
 

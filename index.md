@@ -1,10 +1,11 @@
 ---
-layout: page
-title: 
-tagline: Software Developer
+layout: default
+title: Sourabh Bajaj
+tagline: Supporting tagline
 ---
 {% include JB/setup %}
-
-I'm Sourabh Bajaj. A masters student at [Georgia Tech](http://www.gatech.edu) and the teaching assistant for the [Computational Investing](http://www.coursera.org/course/compinvesting1) class on [Coursera](http://coursera.org).
-
-![Eat Sleep Code](/assets/images/eat-sleep-code-zoom.jpg "Eat Sleep Code")
+<div class='row'><div class='col-xs-12'>
+<div class='container form-group'>
+    <p style="font-size:1.25em; margin-bottom: 30px;" class='text-center'>Hi, I'm Sourabh. I'm a software engineer in Mountain View, California. </p>
+    <img src="/assets/images/eat-sleep-code-zoom.jpg" alt="Eat Sleep Code" class="img-responsive center-block"/>
+</div></div></div>

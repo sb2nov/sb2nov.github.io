@@ -1,0 +1,17 @@
+
+http://sourabhbajaj.com/404.html
+http://sourabhbajaj.com/about/index.html
+http://sourabhbajaj.com/articles/index.html
+http://sourabhbajaj.com/atom.xml
+http://sourabhbajaj.com/experience/index.html
+http://sourabhbajaj.com/extra/archive.html
+http://sourabhbajaj.com/extra/categories.html
+http://sourabhbajaj.com/extra/pages.html
+http://sourabhbajaj.com/extra/sitemap.txt
+http://sourabhbajaj.com/extra/tags.html
+http://sourabhbajaj.com/index.html
+http://sourabhbajaj.com/portfolio/index.html
+http://sourabhbajaj.com/rss.xml
+
+http://sourabhbajaj.com/tutorials/2014/02/16/Setup-guide-for-a-mac
+http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this
