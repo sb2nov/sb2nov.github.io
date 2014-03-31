@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Categories</title>
-    
+    <title>Fix Value Error: unknown locale: UTF 8</title>
+    <meta name="description" content="Fix for the unknown local problem in Macs">
     <meta name="author" content="Sourabh Bajaj">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -82,7 +82,7 @@
     
       
       	
-      	<li class="active"><a href="/extra/categories.html" class="active">Categories</a></li>
+      	<li><a href="/extra/categories.html">Categories</a></li>
       	
       
     
@@ -132,85 +132,58 @@
         <div class="box">
          
 <div class="page-header">
-  <h1>Categories <br /></h1>
+  <h1>Fix Value Error: unknown locale: UTF 8 </h1>
 </div>
 
-<div class="row">
-  <div class="col-xs-12">
-      
+<div class="row post-full">
+  <div class="col-md-12">
+<!--     <div class="date">
+      <span class="glyphicon glyphicon-time"> 31 March 2014</span>
+    </div> -->
+    <div class="content blog-content">
+      <p>Today I was trying to install AWS cli and got this error when running the help command.</p>
 
-<ul class="tag_box inline">
-  
-  
+<pre><code>raise ValueError, &#39;unknown locale: %s&#39; % localename
+ValueError: unknown locale: UTF-8</code></pre>
 
+<p>The solution was to add some environment variables to my zsh environment. So I added this to my <code>env-config</code> files.</p>
 
-  
-     
-    	<li><a href="/categories.html#tutorials-ref">
-    		tutorials <span>2</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#python-ref">
-    		python <span>1</span>
-    	</a></li>
-    
-  
+<pre><code>export LANG=&quot;en_US.UTF-8&quot;
+export LC_COLLATE=&quot;en_US.UTF-8&quot;
+export LC_CTYPE=&quot;en_US.UTF-8&quot;
+export LC_MESSAGES=&quot;en_US.UTF-8&quot;
+export LC_MONETARY=&quot;en_US.UTF-8&quot;
+export LC_NUMERIC=&quot;en_US.UTF-8&quot;
+export LC_TIME=&quot;en_US.UTF-8&quot;
+export LC_ALL=</code></pre>
 
+<p>To test the code run:</p>
 
+<pre><code>python -c &#39;import locale; print(locale.getdefaultlocale());&#39;</code></pre>
+
+<p>And you should see <code>(&#39;en_US&#39;, &#39;UTF-8&#39;)</code> as the output.</p>
+
+<p>References for the post</p>
+
+<ul>
+<li><a href="http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/">Patrick Armino’s Blogpost</a></li>
+
+<li><a href="http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8">Stackoverflow</a></li>
 </ul>
+    </div>
 
+    <hr>
 
- 
-  <h2 id="tutorials-ref">tutorials</h2>
-  <ul>
+    <div class='col-md-6'>
       
-    
-
-
-  
-    
+        <a href="/tutorials/2014/02/16/Setup-guide-for-a-mac" class="btn btn-primary" role="button">&larr; Setup Guide for a Mac</a>
       
-      	
-      	<li><a href="/tutorials/2014/02/16/Setup-guide-for-a-mac">Setup Guide for a Mac</a></li>
-      	
+    </div>
+    <div class='col-md-6' style='float:right;'>
       
-    
-  
-    
+        <a href="" class="btn btn-primary disabled pull-right" role="button">Next &rarr;</a>
       
-      	
-      	<li><a href="/tutorials/2014/02/09/Guide-to-make-a-website-like-this">Guide to make a website like this</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="python-ref">python</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/python/2014/03/31/fix-valueerror-unknown-locale-utf-8">Fix Value Error: unknown locale: UTF 8</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
-
-
-
+    </div>
   </div>
 </div>
 

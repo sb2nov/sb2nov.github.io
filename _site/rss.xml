@@ -5,10 +5,46 @@
         <description>Sourabh Bajaj - Sourabh Bajaj</description>
         <link>http://sourabhbajaj.com</link>
         <link>http://sourabhbajaj.com</link>
-        <lastBuildDate>2014-03-31T00:13:44-07:00</lastBuildDate>
-        <pubDate>2014-03-31T00:13:44-07:00</pubDate>
+        <lastBuildDate>2014-03-31T00:58:43-07:00</lastBuildDate>
+        <pubDate>2014-03-31T00:58:43-07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Fix Value Error: unknown locale: UTF 8</title>
+                <description>&lt;p&gt;Today I was trying to install AWS cli and got this error when running the help command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;raise ValueError, &amp;#39;unknown locale: %s&amp;#39; % localename
+ValueError: unknown locale: UTF-8&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The solution was to add some environment variables to my zsh environment. So I added this to my &lt;code&gt;env-config&lt;/code&gt; files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export LANG=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_COLLATE=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_CTYPE=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_MESSAGES=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_MONETARY=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_NUMERIC=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_TIME=&amp;quot;en_US.UTF-8&amp;quot;
+export LC_ALL=&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To test the code run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python -c &amp;#39;import locale; print(locale.getdefaultlocale());&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And you should see &lt;code&gt;(&amp;#39;en_US&amp;#39;, &amp;#39;UTF-8&amp;#39;)&lt;/code&gt; as the output.&lt;/p&gt;
+
+&lt;p&gt;References for the post&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/&quot;&gt;Patrick Armino’s Blogpost&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8</link>
+                <guid>http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8</guid>
+                <pubDate>2014-03-31T00:00:00-07:00</pubDate>
+        </item>
 
         <item>
                 <title>Setup Guide for a Mac</title>
