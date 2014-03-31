@@ -19,7 +19,7 @@ So now that I just created this website and don't know what to write about. I mi
 
         git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
         cd portfolio
-        git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+        git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
         git push origin master
 
 **Step 4** : Change and modify your theme using [Twitter Bootstrap](http://getbootstrap.com/).

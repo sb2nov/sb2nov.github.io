@@ -5,8 +5,8 @@
         <description>Sourabh Bajaj - Sourabh Bajaj</description>
         <link>http://sourabhbajaj.com</link>
         <link>http://sourabhbajaj.com</link>
-        <lastBuildDate>2014-03-06T03:02:43-08:00</lastBuildDate>
-        <pubDate>2014-03-06T03:02:43-08:00</pubDate>
+        <lastBuildDate>2014-03-31T00:13:44-07:00</lastBuildDate>
+        <pubDate>2014-03-31T00:13:44-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -68,7 +68,7 @@
 
 &lt;pre&gt;&lt;code&gt;    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
     cd portfolio
-    git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+    git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
     git push origin master&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt; : Change and modify your theme using &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt;.&lt;/p&gt;
