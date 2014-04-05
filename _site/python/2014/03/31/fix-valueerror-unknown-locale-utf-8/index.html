@@ -141,35 +141,39 @@
       <span class="glyphicon glyphicon-time"> 31 March 2014</span>
     </div> -->
     <div class="content blog-content">
-      <p>Today I was trying to install AWS cli and got this error when running the help command.</p>
+      
+<p>Today I was trying to install AWS cli and got this error when running the help command.</p>
 
-<pre><code>raise ValueError, &#39;unknown locale: %s&#39; % localename
-ValueError: unknown locale: UTF-8</code></pre>
+<pre><code>raise ValueError, 'unknown locale: %s' % localename
+ValueError: unknown locale: UTF-8
+</code></pre>
 
 <p>The solution was to add some environment variables to my zsh environment. So I added this to my <code>env-config</code> files.</p>
 
-<pre><code>export LANG=&quot;en_US.UTF-8&quot;
-export LC_COLLATE=&quot;en_US.UTF-8&quot;
-export LC_CTYPE=&quot;en_US.UTF-8&quot;
-export LC_MESSAGES=&quot;en_US.UTF-8&quot;
-export LC_MONETARY=&quot;en_US.UTF-8&quot;
-export LC_NUMERIC=&quot;en_US.UTF-8&quot;
-export LC_TIME=&quot;en_US.UTF-8&quot;
-export LC_ALL=</code></pre>
+<pre><code>export LANG="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL=
+</code></pre>
 
 <p>To test the code run:</p>
 
-<pre><code>python -c &#39;import locale; print(locale.getdefaultlocale());&#39;</code></pre>
+<pre><code>python -c 'import locale; print(locale.getdefaultlocale());'
+</code></pre>
 
-<p>And you should see <code>(&#39;en_US&#39;, &#39;UTF-8&#39;)</code> as the output.</p>
+<p>And you should see <code>('en_US', 'UTF-8')</code> as the output.</p>
 
 <p>References for the post</p>
 
 <ul>
-<li><a href="http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/">Patrick Armino’s Blogpost</a></li>
-
-<li><a href="http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8">Stackoverflow</a></li>
+  <li><a href="http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/">Patrick Armino’s Blogpost</a></li>
+  <li><a href="http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8">Stackoverflow</a></li>
 </ul>
+
     </div>
 
     <hr>

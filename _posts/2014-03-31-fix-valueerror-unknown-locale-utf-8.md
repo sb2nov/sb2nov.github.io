@@ -34,5 +34,6 @@ To test the code run:
 And you should see `('en_US', 'UTF-8')` as the output.
 
 References for the post
+
 - [Patrick Armino's Blogpost](http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/)
 - [Stackoverflow](http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8)

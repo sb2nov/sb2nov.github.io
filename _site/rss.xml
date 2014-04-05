@@ -5,42 +5,46 @@
         <description>Sourabh Bajaj - Sourabh Bajaj</description>
         <link>http://sourabhbajaj.com</link>
         <link>http://sourabhbajaj.com</link>
-        <lastBuildDate>2014-03-31T00:58:43-07:00</lastBuildDate>
-        <pubDate>2014-03-31T00:58:43-07:00</pubDate>
+        <lastBuildDate>2014-04-05T10:49:28-07:00</lastBuildDate>
+        <pubDate>2014-04-05T10:49:28-07:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Fix Value Error: unknown locale: UTF 8</title>
-                <description>&lt;p&gt;Today I was trying to install AWS cli and got this error when running the help command.&lt;/p&gt;
+                <description>
+&lt;p&gt;Today I was trying to install AWS cli and got this error when running the help command.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;raise ValueError, &amp;#39;unknown locale: %s&amp;#39; % localename
-ValueError: unknown locale: UTF-8&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;raise ValueError, &#39;unknown locale: %s&#39; % localename
+ValueError: unknown locale: UTF-8
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The solution was to add some environment variables to my zsh environment. So I added this to my &lt;code&gt;env-config&lt;/code&gt; files.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;export LANG=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_COLLATE=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_CTYPE=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_MESSAGES=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_MONETARY=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_NUMERIC=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_TIME=&amp;quot;en_US.UTF-8&amp;quot;
-export LC_ALL=&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;export LANG=&quot;en_US.UTF-8&quot;
+export LC_COLLATE=&quot;en_US.UTF-8&quot;
+export LC_CTYPE=&quot;en_US.UTF-8&quot;
+export LC_MESSAGES=&quot;en_US.UTF-8&quot;
+export LC_MONETARY=&quot;en_US.UTF-8&quot;
+export LC_NUMERIC=&quot;en_US.UTF-8&quot;
+export LC_TIME=&quot;en_US.UTF-8&quot;
+export LC_ALL=
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;To test the code run:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;python -c &amp;#39;import locale; print(locale.getdefaultlocale());&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;python -c &#39;import locale; print(locale.getdefaultlocale());&#39;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;And you should see &lt;code&gt;(&amp;#39;en_US&amp;#39;, &amp;#39;UTF-8&amp;#39;)&lt;/code&gt; as the output.&lt;/p&gt;
+&lt;p&gt;And you should see &lt;code&gt;(&#39;en_US&#39;, &#39;UTF-8&#39;)&lt;/code&gt; as the output.&lt;/p&gt;
 
 &lt;p&gt;References for the post&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/&quot;&gt;Patrick Armino’s Blogpost&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+  &lt;li&gt;&lt;a href=&quot;http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/&quot;&gt;Patrick Armino’s Blogpost&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
                 <link>http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8</link>
                 <guid>http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8</guid>
                 <pubDate>2014-03-31T00:00:00-07:00</pubDate>
@@ -48,43 +52,49 @@ export LC_ALL=&lt;/code&gt;&lt;/pre&gt;
 
         <item>
                 <title>Setup Guide for a Mac</title>
-                <description>&lt;p&gt;I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;here&lt;/a&gt;. I got inspired to do this from a similar work by &lt;a href=&quot;https://github.com/nicolashery/mac-dev-setup&quot;&gt;Nicolashery&lt;/a&gt;. So I started the &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt; repository which was built on top of the work by Nicolas.&lt;/p&gt;
+                <description>
+&lt;p&gt;I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;here&lt;/a&gt;. I got inspired to do this from a similar work by &lt;a href=&quot;https://github.com/nicolashery/mac-dev-setup&quot;&gt;Nicolashery&lt;/a&gt;. So I started the &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt; repository which was built on top of the work by Nicolas. &lt;/p&gt;
 
-&lt;p&gt;I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide.&lt;/p&gt;
+&lt;p&gt;I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide. &lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Full Instructions can be found at &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
 &lt;h3&gt;
-&lt;a class=&#39;anchor&#39; href=&#39;http://sb2nov.github.com/mac-setup#table-of-contents&#39; name=&#39;table-of-contents&#39;&gt;&lt;span class=&#39;octicon octicon-link&#39; /&gt;&lt;/a&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#system-update&#39;&gt;System update&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#system-preferences&#39;&gt;System preferences&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#xcode&#39;&gt;XCode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#google-chrome&#39;&gt;Google Chrome&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#iterm2&#39;&gt;iTerm2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#homebrew&#39;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#consolas&#39;&gt;Consolas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#beautiful-terminal&#39;&gt;Beautiful terminal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#git&#39;&gt;Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#sublime-text&#39;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#vim&#39;&gt;Vim&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#python&#39;&gt;Python&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#virtualenv&#39;&gt;Virtualenv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#ipython&#39;&gt;IPython&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#numpy-and-scipy&#39;&gt;Numpy and Scipy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#mysql&#39;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#cplusplus&#39;&gt;CPlusPlus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#nodejs&#39;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#ruby-and-rvm&#39;&gt;Ruby and RVM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#heroku&#39;&gt;Heroku&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#mongodb&#39;&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#redis&#39;&gt;Redis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#latex&#39;&gt;Latex&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#projects-folder&#39;&gt;Projects folder&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#apps&#39;&gt;Apps&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#extra-apps&#39;&gt;Extra Apps&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#menubar-and-settings&#39;&gt;Menubar and Setting&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;http://sb2nov.github.com/mac-setup#credits&#39;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;a name=&quot;table-of-contents&quot; class=&quot;anchor&quot; href=&quot;http://sb2nov.github.com/mac-setup#table-of-contents&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Table of Contents&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#system-update&quot;&gt;System update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#system-preferences&quot;&gt;System preferences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#xcode&quot;&gt;XCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#google-chrome&quot;&gt;Google Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#iterm2&quot;&gt;iTerm2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#homebrew&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#consolas&quot;&gt;Consolas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#beautiful-terminal&quot;&gt;Beautiful terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#sublime-text&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#vim&quot;&gt;Vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#virtualenv&quot;&gt;Virtualenv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#ipython&quot;&gt;IPython&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#numpy-and-scipy&quot;&gt;Numpy and Scipy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#cplusplus&quot;&gt;CPlusPlus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#nodejs&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#ruby-and-rvm&quot;&gt;Ruby and RVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#heroku&quot;&gt;Heroku&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#mongodb&quot;&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#redis&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#latex&quot;&gt;Latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#projects-folder&quot;&gt;Projects folder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#apps&quot;&gt;Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#extra-apps&quot;&gt;Extra Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#menubar-and-settings&quot;&gt;Menubar and Setting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake.&lt;/p&gt;</description>
+
+&lt;p&gt;Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake. &lt;/p&gt;
+</description>
                 <link>http://sourabhbajaj.com/tutorials/2014/02/16/Setup-guide-for-a-mac</link>
                 <guid>http://sourabhbajaj.com/tutorials/2014/02/16/Setup-guide-for-a-mac</guid>
                 <pubDate>2014-02-16T00:00:00-08:00</pubDate>
@@ -92,26 +102,28 @@ export LC_ALL=&lt;/code&gt;&lt;/pre&gt;
 
         <item>
                 <title>Guide to make a website like this</title>
-                <description>&lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
+                <description>
+&lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
 
 &lt;p&gt;So now that I just created this website and don’t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at &lt;a href=&quot;https://github.com/sb2nov/sb2nov.github.io&quot;&gt;https://github.com/sb2nov/sb2nov.github.io&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; : Create a new github repository &lt;code&gt;username.github.io&lt;/code&gt; in your account.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; : Create a new github repository &lt;code&gt;username.github.io&lt;/code&gt; in your account. &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt; : Install Jekyll using the command &lt;code&gt;gem install jekyll&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt; : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt; : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created. &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
     cd portfolio
     git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
-    git push origin master&lt;/code&gt;&lt;/pre&gt;
+    git push origin master
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt; : Change and modify your theme using &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt; : Create the pages you want using &lt;code&gt;rake page name=&amp;quot;pages/about.html&amp;quot;&lt;/code&gt;, similarly create the other pages as well.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt; : Create the pages you want using &lt;code&gt;rake page name=&quot;pages/about.html&quot;&lt;/code&gt;, similarly create the other pages as well. &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt; : Create your first post using &lt;code&gt;rake post title=&amp;quot;Hello World&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt; : Create your first post using &lt;code&gt;rake post title=&quot;Hello World&quot;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 7&lt;/strong&gt; : Remove the default example posts &lt;code&gt;rm -rf _posts/core-examples&lt;/code&gt;&lt;/p&gt;
 
@@ -121,7 +133,8 @@ export LC_ALL=&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 10&lt;/strong&gt; : Just push the source code to the github repository and Github will automatically render it, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 11&lt;/strong&gt; : It you find anything wrong in this guide. Please let me know about it.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Step 11&lt;/strong&gt; : It you find anything wrong in this guide. Please let me know about it.&lt;/p&gt;
+</description>
                 <link>http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this</link>
                 <guid>http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this</guid>
                 <pubDate>2014-02-09T00:00:00-08:00</pubDate>
