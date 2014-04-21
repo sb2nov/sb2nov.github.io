@@ -7,7 +7,7 @@ tags: [Mac OS, Lessons, Installation]
 ---
 {% include JB/setup %}
 
-I recently updated the Mac OS X setup guide I maintain to an interactive [Gitbook](http://www.gitbook.io/). You can reference it at - [Mac OS X Setup Guide here](/mac-setup).
+I recently updated the Mac OS X setup guide I maintain to an interactive [Gitbook](http://www.gitbook.io/). You can reference it [here (Mac OS X Setup Guide)](/mac-setup).
 
 <img src="/assets/images/mac-gitbook.png" alt="Screenshot" style="width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;"/>
 

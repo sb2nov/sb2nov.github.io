@@ -13,6 +13,7 @@ http://sourabhbajaj.com/index.html
 http://sourabhbajaj.com/portfolio/index.html
 http://sourabhbajaj.com/rss.xml
 
+http://sourabhbajaj.com/python/2014/04/20/pycon-2014---montreal
 http://sourabhbajaj.com/installation/2014/04/20/mac-os-x-setup-guide
 http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8
 http://sourabhbajaj.com/installation/2014/02/16/Setup-guide-for-a-mac
