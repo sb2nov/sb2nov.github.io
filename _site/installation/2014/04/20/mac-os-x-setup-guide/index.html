@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Setup Guide for a Mac</title>
-    <meta name="description" content="Guide to setting up a development environment on Mac OS X">
+    <title>Mac OS X Setup Guide</title>
+    <meta name="description" content="Installing Development environment on Mac OS X">
     <meta name="author" content="Sourabh Bajaj">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -132,57 +132,27 @@
         <div class="box">
          
 <div class="page-header">
-  <h1>Setup Guide for a Mac </h1>
+  <h1>Mac OS X Setup Guide </h1>
 </div>
 
 <div class="row post-full">
   <div class="col-md-12">
 <!--     <div class="date">
-      <span class="glyphicon glyphicon-time"> 16 February 2014</span>
+      <span class="glyphicon glyphicon-time"> 20 April 2014</span>
     </div> -->
     <div class="content blog-content">
       
-<p>I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found <a href="http://sb2nov.github.com/mac-setup">here</a>. I got inspired to do this from a similar work by <a href="https://github.com/nicolashery/mac-dev-setup">Nicolashery</a>. So I started the <a href="http://sb2nov.github.com/mac-setup">Mac-Setup</a> repository which was built on top of the work by Nicolas. </p>
+<p>I recently updated the Mac OS X setup guide I maintain to an interactive <a href="http://www.gitbook.io/">Gitbook</a>. You can reference it at - <a href="/mac-setup">Mac OS X Setup Guide here</a>.</p>
 
-<p>I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide. </p>
+<p><img src="/assets/images/mac-gitbook.png" alt="Screenshot" style="width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;" /></p>
 
-<p><em>Full Instructions can be found at <a href="http://sb2nov.github.com/mac-setup">Mac-Setup</a></em></p>
+<p>This book covers the basics of setting up development environment on a new MacBook for most major languages. All instructions covered have been tried on Mountain Lion and Mavericks but they might be more inclined towards Mavericks. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some language/library.</p>
 
-<h3>
-<a name="table-of-contents" class="anchor" href="http://sb2nov.github.com/mac-setup#table-of-contents"><span class="octicon octicon-link"></span></a>Table of Contents</h3>
+<p>We will set up Node (JavaScript), Python, CPlusPlus, and Ruby environments. Even if you don’t program in all three, it is good to have them as many command-line tools use one of them. We also install a few daily use application and Latex. As you read and follow these steps, feel free to send me any feedback or comments you may have.</p>
 
-<ul>
-<li><a href="http://sb2nov.github.com/mac-setup#system-update">System update</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#system-preferences">System preferences</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#xcode">XCode</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#google-chrome">Google Chrome</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#iterm2">iTerm2</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#homebrew">Homebrew</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#consolas">Consolas</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#beautiful-terminal">Beautiful terminal</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#git">Git</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#sublime-text">Sublime Text</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#vim">Vim</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#python">Python</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#virtualenv">Virtualenv</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#ipython">IPython</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#numpy-and-scipy">Numpy and Scipy</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#mysql">MySQL</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#cplusplus">CPlusPlus</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#nodejs">Node.js</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#ruby-and-rvm">Ruby and RVM</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#heroku">Heroku</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#mongodb">MongoDB</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#redis">Redis</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#latex">Latex</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#projects-folder">Projects folder</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#apps">Apps</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#extra-apps">Extra Apps</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#menubar-and-settings">Menubar and Setting</a></li>
-<li><a href="http://sb2nov.github.com/mac-setup#credits">Credits</a></li>
-</ul>
+<p>All contributions to the book are welcome. Please help add support for other libraries and languages.</p>
 
-<p>Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake. </p>
+<p><strong>PS:</strong> I had written about the guide previously in the post <a href="/installation/2014/02/16/Setup-guide-for-a-mac/">setup-guide-for-a-mac</a> which is now deprecated.</p>
 
     </div>
 
@@ -190,12 +160,12 @@
 
     <div class='col-md-6'>
       
-        <a href="/tutorials/2014/02/09/Guide-to-make-a-website-like-this" class="btn btn-primary" role="button">&larr; Guide to make a website like this</a>
+        <a href="/python/2014/03/31/fix-valueerror-unknown-locale-utf-8" class="btn btn-primary" role="button">&larr; Fix Value Error: unknown locale: UTF 8</a>
       
     </div>
     <div class='col-md-6' style='float:right;'>
       
-        <a href="/python/2014/03/31/fix-valueerror-unknown-locale-utf-8" class="btn btn-primary pull-right" role="button">Fix Value Error: unknown locale: UTF 8 &rarr;</a>
+        <a href="" class="btn btn-primary disabled pull-right" role="button">Next &rarr;</a>
       
     </div>
   </div>

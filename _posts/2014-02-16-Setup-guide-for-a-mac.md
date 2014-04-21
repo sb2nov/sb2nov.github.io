@@ -2,10 +2,15 @@
 layout: post
 title: "Setup Guide for a Mac"
 description: "Guide to setting up a development environment on Mac OS X"
-category: Tutorials
+category: Installation
 tags: [Mac OS, Lessons, Installation]
 ---
 {% include JB/setup %}
+
+## Update
+**This guide has been updated and is explained in the post [here](/installation/2014/04/20/mac-os-x-setup-guide/).**
+
+- - -
 
 I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found [here](http://sb2nov.github.com/mac-setup). I got inspired to do this from a similar work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). So I started the [Mac-Setup](http://sb2nov.github.com/mac-setup) repository which was built on top of the work by Nicolas. 
 
