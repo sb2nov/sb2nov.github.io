@@ -7,6 +7,8 @@
   * Designed the UI for articles page
 
 ### Minor Enahncements
+  * Added Coursera to experience
+  * Added mac-setup to portfolio
 
 ### Bug Fixes
 

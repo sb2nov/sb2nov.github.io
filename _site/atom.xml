@@ -4,7 +4,7 @@
  <title>Sourabh Bajaj</title>
  <link href="http://sourabhbajaj.com/" rel="self"/>
  <link href="http://sourabhbajaj.com"/>
- <updated>2014-04-30T21:28:58-07:00</updated>
+ <updated>2014-07-24T18:53:44+05:30</updated>
  <id>http://sourabhbajaj.com</id>
  <author>
    <name>Sourabh Bajaj</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Pycon 2014 - Montreal</title>
    <link href="http://sourabhbajaj.com/python/2014/04/20/pycon-2014---montreal"/>
-   <updated>2014-04-20T00:00:00-07:00</updated>
+   <updated>2014-04-20T00:00:00+05:30</updated>
    <id>http://sourabhbajaj.com/python/2014/04/20/pycon-2014---montreal</id>
    <content type="html">
 &lt;p&gt;I’ve always loved developing in Python, specially after working on QSTK and at Lucena and Coursera. This year I was finally able to make it to PyCon in Montreal, Canada with the help of Python Software Foundation and Coursera.&lt;/p&gt;
@@ -37,7 +37,7 @@
  <entry>
    <title>Mac OS X Setup Guide</title>
    <link href="http://sourabhbajaj.com/installation/2014/04/20/mac-os-x-setup-guide"/>
-   <updated>2014-04-20T00:00:00-07:00</updated>
+   <updated>2014-04-20T00:00:00+05:30</updated>
    <id>http://sourabhbajaj.com/installation/2014/04/20/mac-os-x-setup-guide</id>
    <content type="html">
 &lt;p&gt;I recently updated the Mac OS X setup guide I maintain to an interactive &lt;a href=&quot;http://www.gitbook.io/&quot;&gt;Gitbook&lt;/a&gt;. You can reference it &lt;a href=&quot;/mac-setup&quot;&gt;here (Mac OS X Setup Guide)&lt;/a&gt;.&lt;/p&gt;
@@ -57,7 +57,7 @@
  <entry>
    <title>Fix Value Error: unknown locale: UTF 8</title>
    <link href="http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8"/>
-   <updated>2014-03-31T00:00:00-07:00</updated>
+   <updated>2014-03-31T00:00:00+05:30</updated>
    <id>http://sourabhbajaj.com/python/2014/03/31/fix-valueerror-unknown-locale-utf-8</id>
    <content type="html">
 &lt;p&gt;Today I was trying to install AWS cli and got this error when running the help command.&lt;/p&gt;
@@ -97,7 +97,7 @@ export LC_ALL=
  <entry>
    <title>Setup Guide for a Mac</title>
    <link href="http://sourabhbajaj.com/installation/2014/02/16/Setup-guide-for-a-mac"/>
-   <updated>2014-02-16T00:00:00-08:00</updated>
+   <updated>2014-02-16T00:00:00+05:30</updated>
    <id>http://sourabhbajaj.com/installation/2014/02/16/Setup-guide-for-a-mac</id>
    <content type="html">
 &lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
@@ -152,7 +152,7 @@ export LC_ALL=
  <entry>
    <title>Guide to make a website like this</title>
    <link href="http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this"/>
-   <updated>2014-02-09T00:00:00-08:00</updated>
+   <updated>2014-02-09T00:00:00+05:30</updated>
    <id>http://sourabhbajaj.com/tutorials/2014/02/09/Guide-to-make-a-website-like-this</id>
    <content type="html">
 &lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
