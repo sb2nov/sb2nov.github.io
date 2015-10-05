@@ -1,20 +1,17 @@
 ---
 layout: post
-title: "Setup Guide for a Mac"
-description: "Guide to setting up a development environment on Mac OS X"
-category: Installation
-tags: [Mac OS, Lessons, Installation]
+title: Setup Guide for a Mac
+date: 2014-02-16 15:27:31
 ---
-{% include JB/setup %}
 
 ## Update
 **This guide has been updated and is explained in the post [here](/installation/2014/04/20/mac-os-x-setup-guide/).**
 
 - - -
 
-I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found [here](http://sb2nov.github.com/mac-setup). I got inspired to do this from a similar work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). So I started the [Mac-Setup](http://sb2nov.github.com/mac-setup) repository which was built on top of the work by Nicolas. 
+I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found [here](http://sb2nov.github.com/mac-setup). I got inspired to do this from a similar work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). So I started the [Mac-Setup](http://sb2nov.github.com/mac-setup) repository which was built on top of the work by Nicolas.
 
-I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide. 
+I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide.
 
 *Full Instructions can be found at [Mac-Setup](http://sb2nov.github.com/mac-setup)*
 
@@ -52,4 +49,4 @@ I keep instructions for everything I need to install on my machine for my day to
 <li><a href="http://sb2nov.github.com/mac-setup#credits">Credits</a></li>
 </ul>
 
-Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake. 
+Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake.

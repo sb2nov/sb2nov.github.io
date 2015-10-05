@@ -1,21 +1,18 @@
 ---
 layout: post
-title: "Guide to make a website like this"
-description: "How to start this blog"
-category: Tutorials
-tags: [Lessons, Jekyll, Blog]
+title: Guide to make a website like this
+date: 2014-02-09 15:27:31
 ---
-{% include JB/setup %}
 
 This is my first blog post since I redesigned my website to be hosted using [Jekyll](http://jekyllrb.com/). I have been using [Github pages](http://pages.github.com/) for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.
 
 So now that I just created this website and don't know what to write about. I might just as well document how I created this thing. You can get the source code for the website at [https://github.com/sb2nov/sb2nov.github.io](https://github.com/sb2nov/sb2nov.github.io).
 
-**Step 1** : Create a new github repository `username.github.io` in your account. 
+**Step 1** : Create a new github repository `username.github.io` in your account.
 
 **Step 2** : Install Jekyll using the command `gem install jekyll`.
 
-**Step 3** : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created. 
+**Step 3** : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.
 
         git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
         cd portfolio
@@ -24,7 +21,7 @@ So now that I just created this website and don't know what to write about. I mi
 
 **Step 4** : Change and modify your theme using [Twitter Bootstrap](http://getbootstrap.com/).
 
-**Step 5** : Create the pages you want using `rake page name="pages/about.html"`, similarly create the other pages as well. 
+**Step 5** : Create the pages you want using `rake page name="pages/about.html"`, similarly create the other pages as well.
 
 **Step 6** : Create your first post using `rake post title="Hello World"`.
 

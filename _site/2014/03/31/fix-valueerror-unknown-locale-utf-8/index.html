@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <meta content='Fix Value Error: unknown locale: UTF 8 - Sourabh Bajaj' property='og:title' />
+    <title>Fix Value Error: unknown locale: UTF 8 - Sourabh Bajaj</title>
+    <link href='/images/fav.png' rel='shortcut icon'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
+<link href='/stylesheets/syntax.css' rel='stylesheet' type='text/css' />
+<link href='/stylesheets/responsive.css' rel='stylesheet' type='text/css' />
+<!-- - -->
+<script src='/javascripts/jquery.js' type='text/javascript'></script>
+<script src='/javascripts/pd.js' type='text/javascript'></script>
+<script src='/javascripts/basics.js' type='text/javascript'></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<!-- - -->
+<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+<meta content="http://muan.co/images/og.png" property="og:image" />
+<meta content="" property="fb:app_id" />
+
+  <meta content='http://sourabhbajaj.com/2014/03/31/fix-valueerror-unknown-locale-utf-8/' property='og:url' />
+  <meta content="Today I was trying to install AWS cli and got this error when running the help command.~~~shraise ValueError, 'unknow..." property='og:description' />
+  <meta content="article" property="og:type" />
+
+<!-- - -->
+<script type='text/javascript'>
+  //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40495390-2']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=604714799556697";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  </head>
+  <body>
+    <header>
+<p>Sourabh Bajaj</p>
+</header>
+
+    <div id='container'>
+      <div class="block">
+  
+    <a target="_top" class="main" href="/">About</a>
+  
+    <a target="_top" class="main" href="/blog">Blog</a>
+  
+    <a target="_blank" class="main" href="http://github.com/sb2nov">GitHub</a>
+  
+</div>
+      <section class="paging">
+  
+    <div class="left">
+      <a href="/2014/02/16/Setup-guide-for-a-mac/">
+        ‹
+      </a>
+    </div>
+  
+  
+    <div class="right">
+      <a href="/2014/04/20/mac-os-x-setup-guide/">
+        ›
+      </a>
+    </div>
+  
+</section>
+      <div class="content">
+        <section class='post'>
+          <h1 class="upcase">
+            <div class='date'>31 Mar 2014</div>
+            Fix Value Error: unknown locale: UTF 8
+          </h1>
+          <p>Today I was trying to install AWS cli and got this error when running the help command.</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">raise ValueError, <span class="s1">&#39;unknown locale: %s&#39;</span> % localename
+ValueError: unknown locale: UTF-8
+</code></pre></div>
+<p>The solution was to add some environment variables to my zsh environment. So I added this to my <code>env-config</code> files.</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_COLLATE</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_CTYPE</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_MESSAGES</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_MONETARY</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_NUMERIC</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_TIME</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>
+</code></pre></div>
+<p>To test the code run:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -c <span class="s1">&#39;import locale; print(locale.getdefaultlocale());&#39;</span>
+</code></pre></div>
+<p>And you should see <code>(&#39;en_US&#39;, &#39;UTF-8&#39;)</code> as the output.</p>
+
+<p>References for the post:</p>
+
+<ul>
+<li><a href="http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/">Patrick Armino&rsquo;s Blogpost</a></li>
+<li><a href="http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8">Stackoverflow</a></li>
+</ul>
+
+        </section>
+      </div>
+      
+      <div class="block">
+  
+    <a target="_top" class="main" href="/">About</a>
+  
+    <a target="_top" class="main" href="/blog">Blog</a>
+  
+    <a target="_blank" class="main" href="http://github.com/sb2nov">GitHub</a>
+  
+</div>
+    </div>
+    <footer>
+  <small>
+    <a href="http://www.linkedin.com/in/sbajaj9/" alt="LinkedIn">LinkedIn</a>
+    |
+    <a href="http://github.com/sb2nov/" alt="Github">Github</a>
+    |
+    <a href="http://twitter.com/sb2nov/" alt="Twitter">Twitter</a>
+    |
+    <a href="mailto:sourabh@sourabhbajaj.com" alt="email">Email</a>
+    <br/>
+    Built with Jekyll using Scribble theme
+  </small>
+</footer>
+
+  </body>
+</html>

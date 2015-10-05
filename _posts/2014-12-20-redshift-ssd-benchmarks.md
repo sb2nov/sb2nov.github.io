@@ -1,11 +1,8 @@
 ---
 layout: post
 title: "Redshift SSD Benchmarks"
-description: "Benchmarking Redshift performance for different nodes"
-category: Redshift, Data Science, Data Warehousing
-tags: [Coursera, Analytics]
+date: 2014-12-20 16:28:31
 ---
-{% include JB/setup %}
 
 Our warehouse runs completely on Redshift, and query performance is extremely important to us. Earlier this year, the AWS team announced the release of SSD instances for Amazon Redshift. Is the extra CPU truly worth it? We do a lot of processing with Redshift, so this question is big for us. To answer this, we decided to benchmark SSD performance and compare it to our original HDD performance.
 
