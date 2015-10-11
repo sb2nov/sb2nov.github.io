@@ -1,11 +1,8 @@
 ---
 layout: post
 title: "Pycon 2014 - Montreal"
-description: ""
-category: Python
-tags: [Python, Pycon]
+date: 2014-04-20 16:28:31
 ---
-{% include JB/setup %}
 
 I've always loved developing in Python, specially after working on QSTK and at Lucena and Coursera. This year I was finally able to make it to PyCon in Montreal, Canada with the help of Python Software Foundation and Coursera.
 
