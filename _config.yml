@@ -2,8 +2,6 @@ title:            Sourabh Bajaj
 description:      Portfolio website for Sourabh Bajaj
 url:              http://sourabhbajaj.com
 signoff:          Sourabh Bajaj
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
-facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: 'UA-40495390-2'
 
 author:
@@ -20,9 +18,13 @@ links:
   - name:         GitHub
     url:          http://github.com/sb2nov
     external:     true
-  # - name:         Resume
-  #   url:          https://drive.google.com/file/d/0B9B_86OCw6hqQ2dqWkh4cElPMWs/view?usp=sharing
-  #   external:     true
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-mentions
+
 highlighter:      pygments
 permalink:        pretty
 markdown:         redcarpet

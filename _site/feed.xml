@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<generator uri="http://jekyllrb.com" version="2.4.0">Jekyll</generator>
+<link href="http://sourabhbajaj.com/feed.xml" rel="self" type="application/atom+xml" />
+<link href="http://sourabhbajaj.com/" rel="alternate" type="text/html" />
+<updated>2015-10-13T00:36:34-07:00</updated>
+<id>http://sourabhbajaj.com/</id>
+<subtitle>Portfolio website for Sourabh Bajaj</subtitle>
+<author>
+<name>{&quot;linkedin&quot;=&gt;&quot;sbajaj9&quot;, &quot;twitter&quot;=&gt;&quot;sb2nov&quot;, &quot;github&quot;=&gt;&quot;sb2nov&quot;, &quot;email&quot;=&gt;&quot;sourabh@sourabhbajaj.com&quot;}</name>
+<email>sourabh@sourabhbajaj.com</email>
+</author>
+<entry>
+<title>Redshift SSD Benchmarks</title>
+<link href="http://sourabhbajaj.com/2014/12/20/redshift-ssd-benchmarks/" rel="alternate" type="text/html" title="Redshift SSD Benchmarks" />
+<published>2014-12-20T08:28:31-08:00</published>
+<updated>2014-12-20T08:28:31-08:00</updated>
+<id>http://sourabhbajaj.com/2014/12/20/redshift-ssd-benchmarks</id>
+<content type="html" xml:base="http://sourabhbajaj.com/2014/12/20/redshift-ssd-benchmarks/">&lt;p&gt;Our warehouse runs completely on Redshift, and query performance is extremely important to us. Earlier this year, the AWS team announced the release of SSD instances for Amazon Redshift. Is the extra CPU truly worth it? We do a lot of processing with Redshift, so this question is big for us. To answer this, we decided to benchmark SSD performance and compare it to our original HDD performance.&lt;/p&gt;
+
+&lt;p&gt;Redshift is easy to use because its PostgreSQL JDBC drivers allow us to use a range of familiar SQL clients. Its speedy performance is achieved through columnar storage and data compression.&lt;/p&gt;
+
+&lt;h2&gt;Experiment Setup&lt;/h2&gt;
+
+&lt;p&gt;The Redshift instance specs are based off on-demand pricing, but the reserved instances can be 75% more affordable. The results from the benchmark are the mean run times after running each query 3 times.&lt;/p&gt;
+
+&lt;table class=&quot;table table-bordered table-striped table-hover&quot;&gt;
+  &lt;colgroup&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 20%;&quot; /&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 20%;&quot; /&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 20%;&quot; /&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 20%;&quot; /&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 20%;&quot; /&gt;
+  &lt;/colgroup&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;b&gt;HDD Setup 1&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;b&gt;HDD Setup 2&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;b&gt;SSD Setup 1&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;b&gt;SSD Setup 2&lt;/b&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;Nodes&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;4 dw1.xlarge&lt;/td&gt;
+      &lt;td&gt;8 dw1.xlarge&lt;/td&gt;
+      &lt;td&gt;32 dw2.large&lt;/td&gt;
+      &lt;td&gt;4 dw2.8xlarge&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;Storage&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;8 TB&lt;/td&gt;
+      &lt;td&gt;16 TB&lt;/td&gt;
+      &lt;td&gt;5.12 TB&lt;/td&gt;
+      &lt;td&gt;10.24 TB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;Memory&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;60 GB&lt;/td&gt;
+      &lt;td&gt;120 GB&lt;/td&gt;
+      &lt;td&gt;480 GB&lt;/td&gt;
+      &lt;td&gt;976 GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;vCPU&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;64&lt;/td&gt;
+      &lt;td&gt;128&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;Price&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;$3.4 / hr&lt;/td&gt;
+      &lt;td&gt;$6.8 / hr&lt;/td&gt;
+      &lt;td&gt;$8 / hr&lt;/td&gt;
+      &lt;td&gt;$19.2 / hr&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Query 1.&lt;/h3&gt;
+
+&lt;p&gt;First, we ran a simple join query between a table with 1 billion rows and a table with 50 million rows. The total amount of data processed was around 46GB. The results fell in favour of SSD’s.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dnsta5v53r71w.cloudfront.net/images/redshift-ssd-benchmark/1a.png&quot; alt=&quot;Screenshot&quot; style=&quot;width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;&quot;/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Query 2.&lt;/h3&gt;
+
+&lt;p&gt;This complex query features REGEX matching and aggregate functions across 1 million rows from 4 joins. The total amount of data processed was around 100GB. The results fell even more in favour of SSD’s from 5x - 15x the performance improvement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dnsta5v53r71w.cloudfront.net/images/redshift-ssd-benchmark/2.png&quot; alt=&quot;Screenshot&quot; style=&quot;width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;&quot;/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Query 3.&lt;/h3&gt;
+
+&lt;p&gt;A query that runs window functions on a table of 1 billion rows showed surprising results. The total amount of data in this table is about 400GB. Although the SSD’s performed better, the smaller SSD’s out-performed the bigger SSD’s despite having double the memory and CPU power.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dnsta5v53r71w.cloudfront.net/images/redshift-ssd-benchmark/3.png&quot; alt=&quot;Screenshot&quot; style=&quot;width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;&quot;/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Query 4.&lt;/h3&gt;
+
+&lt;p&gt;This last query has 4 join statements with a subquery that also includes 2 joins. The amount of data processed is around 107GB. Since this query is very compute-heavy, it is not surprising that SSD’s perform 10x better. What is shocking is that the smaller SSD’s are once again more performant than the bigger SSD’s.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dnsta5v53r71w.cloudfront.net/images/redshift-ssd-benchmark/4a.png&quot; alt=&quot;Screenshot&quot; style=&quot;width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;&quot;/&gt;&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We also ran some other queries and the performance improvement from HDD to SSD was consistent at about 5 - 10 times. From these experiments, the DW2 machines are clearly promising in terms of computation time. For the same price, SSD’s provide 3.4 times more CPU power and memory. However, the disk storage is about 25% of that of the HDD’s.&lt;/p&gt;
+
+&lt;p&gt;A limitation to the dw2.large SSD instances is that a Redshift cluster can support at most 32 of them. That means dw2.large’s can provide at most 5.12 TB of disk storage. The only other option is to upgrade to dw2.8xlarge’s but this experiment shows little performance benefits from dw2.large’s to dw2.8xlarge’s despite doubling the memory and CPU.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;&lt;small&gt;PS: This was originally written by Jason Shao on the &lt;a href=&quot;https://tech.coursera.org/blog/2014/12/19/redshift-benchmark/&quot;&gt;Coursera blog&lt;/a&gt;.&lt;/small&gt;&lt;/i&gt;&lt;/p&gt;
+</content>
+<summary>Our warehouse runs completely on Redshift, and query performance is extremely important to us. Earlier this year, the AWS team announced the release of SSD instances for Amazon Redshift. Is the extra CPU truly worth it? We do a lot of processing with Redshift, so this question is big for us. To answer this, we decided to benchmark SSD performance and compare it to our original HDD performance.</summary>
+</entry>
+<entry>
+<title>Pycon 2014 - Montreal</title>
+<link href="http://sourabhbajaj.com/2014/04/20/pycon-2014---montreal/" rel="alternate" type="text/html" title="Pycon 2014 - Montreal" />
+<published>2014-04-20T09:28:31-07:00</published>
+<updated>2014-04-20T09:28:31-07:00</updated>
+<id>http://sourabhbajaj.com/2014/04/20/pycon-2014---montreal</id>
+<content type="html" xml:base="http://sourabhbajaj.com/2014/04/20/pycon-2014---montreal/">&lt;p&gt;I&amp;rsquo;ve always loved developing in Python, specially after working on QSTK and at Lucena and Coursera. This year I was finally able to make it to PyCon in Montreal, Canada with the help of Python Software Foundation and Coursera.&lt;/p&gt;
+
+&lt;p&gt;It was great talking to some many other people who share the same love for the language that I do. It was a great learning experience and a gentle reminder that I still have a long way to go. Talking to Guido was the highlight of the conference for me.&lt;/p&gt;
+
+&lt;p&gt;I was with a few co-workers from Coursera as company sponsors. We use a fair amount of python (Django, Fabric, IPython, and the scientific python stack) at work. We were excited to show off our Python courses and let others know about the challenging engineering work we get to do out here in Mountain View, California.&lt;/p&gt;
+
+&lt;p&gt;As an engineer working here in the Bay Area I don’t often get to see the true global impact of my work, so hearing stories from students from all different backgrounds was rewarding. We were extremely humbled by how many people were seeking out education on the Coursera platform and pushing themselves to succeed.&lt;/p&gt;
+
+&lt;p&gt;In between my time at the Coursera booth, I would try and attend as many of the great talks at the conference. A few of the talks that I was able to attend were Graham Dumpleton&amp;rsquo;s talk on &lt;a href=&quot;http://pyvideo.org/video/2617/advanced-methods-for-creat&quot;&gt;Advanced methods of creating decorators&lt;/a&gt;, Tres Seaver&amp;rsquo;s talk - &lt;a href=&quot;http://pyvideo.org/video/2626/by-your-bootstraps-porting-your-application-to-p&quot;&gt;By Your Bootstraps: Porting Your Application to Python3&lt;/a&gt;, and &lt;a href=&quot;http://pyvideo.org/video/2659/its-dangerous-to-go-alone-battling-the-invisibl&quot;&gt;It’s Dangerous to Go Alone: Battling the Invisible Monsters of Tech&lt;/a&gt; by Julie Pagano.&lt;/p&gt;
+
+&lt;p&gt;The shoutout from Jessica McKellar during the &lt;a href=&quot;http://pyvideo.org/video/2684/keynote-jessica-mckellar&quot;&gt;keynote&lt;/a&gt; was really the cherry-on-top, solidifying the work that I do here at Coursera and the things we can give back as a company to the Python community at large.&lt;/p&gt;
+
+&lt;p&gt;See you all at PyCon 2015!&lt;/p&gt;
+</content>
+<summary>I&amp;rsquo;ve always loved developing in Python, specially after working on QSTK and at Lucena and Coursera. This year I was finally able to make it to PyCon in Montreal, Canada with the help of Python Software Foundation and Coursera.</summary>
+</entry>
+<entry>
+<title>Mac OSX Setup Guide</title>
+<link href="http://sourabhbajaj.com/2014/04/20/mac-os-x-setup-guide/" rel="alternate" type="text/html" title="Mac OSX Setup Guide" />
+<published>2014-04-20T08:27:31-07:00</published>
+<updated>2014-04-20T08:27:31-07:00</updated>
+<id>http://sourabhbajaj.com/2014/04/20/mac-os-x-setup-guide</id>
+<content type="html" xml:base="http://sourabhbajaj.com/2014/04/20/mac-os-x-setup-guide/">&lt;p&gt;I recently updated the Mac OS X setup guide I maintain to an interactive &lt;a href=&quot;http://www.gitbook.io/&quot;&gt;Gitbook&lt;/a&gt;. You can reference it &lt;a href=&quot;/mac-setup&quot;&gt;here (Mac OS X Setup Guide)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mac-gitbook.png&quot; alt=&quot;Screenshot&quot; style=&quot;width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;This book covers the basics of setting up development environment on a new MacBook for most major languages. All instructions covered have been tried on Mountain Lion and Mavericks but they might be more inclined towards Mavericks. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some language/library.&lt;/p&gt;
+
+&lt;p&gt;We will set up Node (JavaScript), Python, CPlusPlus, and Ruby environments. Even if you don&amp;rsquo;t program in all three, it is good to have them as many command-line tools use one of them. We also install a few daily use application and Latex. As you read and follow these steps, feel free to send me any feedback or comments you may have.&lt;/p&gt;
+
+&lt;p&gt;All contributions to the book are welcome. Please help add support for other libraries and languages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PS:&lt;/strong&gt; I had written about the guide previously in the post &lt;a href=&quot;/installation/2014/02/16/Setup-guide-for-a-mac/&quot;&gt;setup-guide-for-a-mac&lt;/a&gt; which is now deprecated.&lt;/p&gt;
+</content>
+<summary>I recently updated the Mac OS X setup guide I maintain to an interactive Gitbook. You can reference it here (Mac OS X Setup Guide).</summary>
+</entry>
+<entry>
+<title>Fix Value Error: unknown locale: UTF 8</title>
+<link href="http://sourabhbajaj.com/2014/03/31/fix-valueerror-unknown-locale-utf-8/" rel="alternate" type="text/html" title="Fix Value Error: unknown locale: UTF 8" />
+<published>2014-03-31T08:27:31-07:00</published>
+<updated>2014-03-31T08:27:31-07:00</updated>
+<id>http://sourabhbajaj.com/2014/03/31/fix-valueerror-unknown-locale-utf-8</id>
+<content type="html" xml:base="http://sourabhbajaj.com/2014/03/31/fix-valueerror-unknown-locale-utf-8/">&lt;p&gt;Today I was trying to install AWS cli and got this error when running the help command.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;raise ValueError, &lt;span class=&quot;s1&quot;&gt;&amp;#39;unknown locale: %s&amp;#39;&lt;/span&gt; % localename
+ValueError: unknown locale: UTF-8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The solution was to add some environment variables to my zsh environment. So I added this to my &lt;code&gt;env-config&lt;/code&gt; files.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_COLLATE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_CTYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_MESSAGES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_MONETARY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_NUMERIC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_TIME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To test the code run:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;python -c &lt;span class=&quot;s1&quot;&gt;&amp;#39;import locale; print(locale.getdefaultlocale());&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And you should see &lt;code&gt;(&amp;#39;en_US&amp;#39;, &amp;#39;UTF-8&amp;#39;)&lt;/code&gt; as the output.&lt;/p&gt;
+
+&lt;p&gt;References for the post:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/&quot;&gt;Patrick Armino&amp;rsquo;s Blogpost&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+<summary>Today I was trying to install AWS cli and got this error when running the help command.</summary>
+</entry>
+<entry>
+<title>Setup Guide for a Mac</title>
+<link href="http://sourabhbajaj.com/2014/02/16/Setup-guide-for-a-mac/" rel="alternate" type="text/html" title="Setup Guide for a Mac" />
+<published>2014-02-16T07:27:31-08:00</published>
+<updated>2014-02-16T07:27:31-08:00</updated>
+<id>http://sourabhbajaj.com/2014/02/16/Setup-guide-for-a-mac</id>
+<content type="html" xml:base="http://sourabhbajaj.com/2014/02/16/Setup-guide-for-a-mac/">&lt;h2&gt;Update&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;This guide has been updated and is explained in the post &lt;a href=&quot;/installation/2014/04/20/mac-os-x-setup-guide/&quot;&gt;here&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I have recently been maintaining documentation on setting up my development environment on Mac OS which can be found &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;here&lt;/a&gt;. I got inspired to do this from a similar work by &lt;a href=&quot;https://github.com/nicolashery/mac-dev-setup&quot;&gt;Nicolashery&lt;/a&gt;. So I started the &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt; repository which was built on top of the work by Nicolas.&lt;/p&gt;
+
+&lt;p&gt;I keep instructions for everything I need to install on my machine for my day to day workflow. Ranging from the libraries, application and scripts. Below is a table of contents for the setup guide.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full Instructions can be found at &lt;a href=&quot;http://sb2nov.github.com/mac-setup&quot;&gt;Mac-Setup&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name=&quot;table-of-contents&quot; class=&quot;anchor&quot; href=&quot;http://sb2nov.github.com/mac-setup#table-of-contents&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Table of Contents&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#system-update&quot;&gt;System update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#system-preferences&quot;&gt;System preferences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#xcode&quot;&gt;XCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#google-chrome&quot;&gt;Google Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#iterm2&quot;&gt;iTerm2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#homebrew&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#consolas&quot;&gt;Consolas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#beautiful-terminal&quot;&gt;Beautiful terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#sublime-text&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#vim&quot;&gt;Vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#virtualenv&quot;&gt;Virtualenv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#ipython&quot;&gt;IPython&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#numpy-and-scipy&quot;&gt;Numpy and Scipy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#cplusplus&quot;&gt;CPlusPlus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#nodejs&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#ruby-and-rvm&quot;&gt;Ruby and RVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#heroku&quot;&gt;Heroku&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#mongodb&quot;&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#redis&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#latex&quot;&gt;Latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#projects-folder&quot;&gt;Projects folder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#apps&quot;&gt;Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#extra-apps&quot;&gt;Extra Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#menubar-and-settings&quot;&gt;Menubar and Setting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sb2nov.github.com/mac-setup#credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hope the guide was helpful in setting up your environment. Please let me know if you find anything wrong or just make a pull request for the mistake.&lt;/p&gt;
+</content>
+<summary>UpdateThis guide has been updated and is explained in the post here.</summary>
+</entry>
+<entry>
+<title>Guide to make a website like this</title>
+<link href="http://sourabhbajaj.com/2014/02/09/Guide-to-make-a-website-like-this/" rel="alternate" type="text/html" title="Guide to make a website like this" />
+<published>2014-02-09T07:27:31-08:00</published>
+<updated>2014-02-09T07:27:31-08:00</updated>
+<id>http://sourabhbajaj.com/2014/02/09/Guide-to-make-a-website-like-this</id>
+<content type="html" xml:base="http://sourabhbajaj.com/2014/02/09/Guide-to-make-a-website-like-this/">&lt;p&gt;This is my first blog post since I redesigned my website to be hosted using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. I have been using &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.&lt;/p&gt;
+
+&lt;p&gt;So now that I just created this website and don&amp;rsquo;t know what to write about. I might just as well document how I created this thing. You can get the source code for the website at &lt;a href=&quot;https://github.com/sb2nov/sb2nov.github.io&quot;&gt;https://github.com/sb2nov/sb2nov.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; : Create a new github repository &lt;code&gt;username.github.io&lt;/code&gt; in your account.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt; : Install Jekyll using the command &lt;code&gt;gem install jekyll&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt; : Create the clone of Jekyll bootstrap and set the remote to track the repository you just created.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    git clone https://github.com/plusjade/jekyll-bootstrap.git portfolio
+    cd portfolio
+    git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
+    git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt; : Change and modify your theme using &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt; : Create the pages you want using &lt;code&gt;rake page name=&amp;quot;pages/about.html&amp;quot;&lt;/code&gt;, similarly create the other pages as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt; : Create your first post using &lt;code&gt;rake post title=&amp;quot;Hello World&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 7&lt;/strong&gt; : Remove the default example posts &lt;code&gt;rm -rf _posts/core-examples&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 8&lt;/strong&gt; : Edit the &lt;code&gt;index.md&lt;/code&gt; as per requirements.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt; : Change the default template as need be, it is located in &lt;code&gt;_include/themes/bootstrap/defaults.html&lt;/code&gt;. I made some style change and removed the buttons and navbar at the side to set my current layout. And I added the links to the pages I had created in the &lt;code&gt;step 5&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 10&lt;/strong&gt; : Just push the source code to the github repository and Github will automatically render it, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 11&lt;/strong&gt; : It you find anything wrong in this guide. Please let me know about it.&lt;/p&gt;
+</content>
+<summary>This is my first blog post since I redesigned my website to be hosted using Jekyll. I have been using Github pages for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.</summary>
+</entry>
+</feed>
