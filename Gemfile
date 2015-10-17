@@ -1,7 +1,10 @@
 source 'http://rubygems.org'
 
 gem 'github-pages'
-gem 'jekyll-feed'
-gem 'jekyll-mentions'
-gem 'jekyll-sitemap'
-gem 'jekyll-redirect-from'
+
+group :jekyll_plugins do
+  gem 'jekyll-feed'
+  gem 'jekyll-mentions'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-sitemap'
+end
