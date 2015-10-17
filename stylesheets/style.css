@@ -313,6 +313,14 @@ section.post, section > p {
   section.post li p, section > p li p {
     margin-bottom: 5px; }
 
+table {
+  width: 100%;
+}
+
+td, th {
+  font-size: 14px;
+}
+
 .highlight {
   margin: 0;
   padding: 0; }
@@ -364,3 +372,4 @@ img {
 .paging .right {
   left: 55%;
   margin-left: 320px; }
+

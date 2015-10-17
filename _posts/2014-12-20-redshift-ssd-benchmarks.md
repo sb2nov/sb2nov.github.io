@@ -12,61 +12,13 @@ Redshift is easy to use because its PostgreSQL JDBC drivers allow us to use a ra
 ## Experiment Setup
 The Redshift instance specs are based off on-demand pricing, but the reserved instances can be 75% more affordable. The results from the benchmark are the mean run times after running each query 3 times.
 
-<table class="table table-bordered table-striped table-hover">
-  <colgroup>
-    <col span="1" style="width: 20%;" />
-    <col span="1" style="width: 20%;" />
-    <col span="1" style="width: 20%;" />
-    <col span="1" style="width: 20%;" />
-    <col span="1" style="width: 20%;" />
-  </colgroup>
-  <thead>
-    <tr>
-      <td> </td>
-      <td><b>HDD Setup 1</b></td>
-      <td><b>HDD Setup 2</b></td>
-      <td><b>SSD Setup 1</b></td>
-      <td><b>SSD Setup 2</b></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Nodes</b></td>
-      <td>4 dw1.xlarge</td>
-      <td>8 dw1.xlarge</td>
-      <td>32 dw2.large</td>
-      <td>4 dw2.8xlarge</td>
-    </tr>
-    <tr>
-      <td><b>Storage</b></td>
-      <td>8 TB</td>
-      <td>16 TB</td>
-      <td>5.12 TB</td>
-      <td>10.24 TB</td>
-    </tr>
-    <tr>
-      <td><b>Memory</b></td>
-      <td>60 GB</td>
-      <td>120 GB</td>
-      <td>480 GB</td>
-      <td>976 GB</td>
-    </tr>
-    <tr>
-      <td><b>vCPU</b></td>
-      <td>8</td>
-      <td>16</td>
-      <td>64</td>
-      <td>128</td>
-    </tr>
-    <tr>
-      <td><b>Price</b></td>
-      <td>$3.4 / hr</td>
-      <td>$6.8 / hr</td>
-      <td>$8 / hr</td>
-      <td>$19.2 / hr</td>
-    </tr>
-  </tbody>
-</table>
+|              | HDD Setup 1  | HDD Setup 2  | HDD Setup 3  | HDD Setup 4   |
+| ------------ |:-------------|:-------------|:-------------|:--------------|
+| Nodes        | 4 dw1.xlarge | 8 dw1.xlarge | 32 dw2.large | 4 dw2.8xlarge |
+| Storage      | 8 TB         | 16 TB        | 5.12 TB      | 10.24 TB      |
+| Memory       | 60 GB        | 120 GB       | 480 GB       | 976 GB        |
+| vCPU         | 8            | 16           | 64           | 128           |
+| Price ($/hr) | 3.4          | 6.8          | 8.0          | 19.2          |
 
 ### Query 1.
 First, we ran a simple join query between a table with 1 billion rows and a table with 50 million rows. The total amount of data processed was around 46GB. The results fell in favour of SSD’s.
