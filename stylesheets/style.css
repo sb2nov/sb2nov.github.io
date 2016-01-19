@@ -221,6 +221,9 @@ hr {
   border-bottom: 1px dotted #CCC;
   margin: 25px 0; }
 
+.indexSection ul li {
+margin-bottom: 3px; }
+
 ul.posts, ul.posts li {
   margin: 0;
   padding: 0;
@@ -372,4 +375,3 @@ img {
 .paging .right {
   left: 55%;
   margin-left: 320px; }
-
