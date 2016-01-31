@@ -11,7 +11,7 @@ Tweet at [@sb2nov](http://twitter.com/sb2nov) and read my code on [GitHub](http:
 - [Nostos](): Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving the data. Used for serving offline processed data with really low latency.
 - [Notifications](): Infrastructure for delivery time optimization, content A/B testing and mass mailing for marketing as well as transactional emails.
 - [Dataduct](https://github.com/coursera/dataduct): Open source framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity. Used for ETL, search indexing and recommendations.
-- [Data Warehousing](): Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.
+- [Data Warehousing](): Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for ETL into Redshift.
 - [Course Dashboards](https://tech.coursera.org/blog/2014/11/19/bringing-data-to-teaching): Backend for Instructor analytics dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.
 - [QuantSoftware Toolkit](http://quantsoftware.gatech.edu/Main_Page): Open source python library for financial data analysis and machine learning for finance.
 - [Portfolio Management](): Created models for portfolio hedging, portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.
