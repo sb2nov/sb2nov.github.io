@@ -19,3 +19,7 @@ Tweet at [@sb2nov](http://twitter.com/sb2nov) and read my code on [GitHub](http:
 
 ### Talks
 - [AWS Reinvent 2015](https://www.youtube.com/watch?v=NLCLoJnhDOM): Large-Scale ETL Data Flows w/AWS Data Pipeline & Dataduct
+
+### Randomness
+- [Travel Visualization](http://sourabhbajaj.com/travel): Fun visualization of all the countries I have visited.
+- [Github Visualization](http://sourabhbajaj.com/GithubVisualizer): Fun visualization of commits in a Github organization.
