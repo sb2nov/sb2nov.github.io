@@ -1,5 +1,5 @@
 title:            Sourabh Bajaj
-description:      Portfolio website for Sourabh Bajaj
+description:      Portfolio website of Sourabh Bajaj
 url:              http://sourabhbajaj.com
 signoff:          Sourabh Bajaj
 google_analytics: 'UA-40495390-2'
@@ -20,15 +20,13 @@ links:
     external:     true
 
 gems:
+  - kramdown
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-mentions
+  - rouge
 
-highlighter:      pygments
+highlighter:      rouge
 permalink:        pretty
-markdown:         redcarpet
-redcarpet:
-  extensions:
-    - smart
-    - tables
+markdown:         kramdown
