@@ -7,10 +7,11 @@ This is [Sourabh](http://sourabhbajaj.com), a software engineer on the Analytics
 Tweet at [@sb2nov](http://twitter.com/sb2nov) and read my code on [GitHub](http://github.com/sb2nov). Some of the projects that I have been recently been part of are highlighted below, for others check my [Resume](https://drive.google.com/file/d/0B9B_86OCw6hqQ2dqWkh4cElPMWs/view?usp=sharing) or [LinkedIn](http://www.linkedin.com/in/sbajaj9/).
 
 ### Projects
+- [Discovery](): Service for content displayed in the onboarding and discovery flow. Worked on the logged out and logged in homepages. To drive conversions using recommendation models and predictions.
 - [Recommendations](): Service for recommending courses and other entities to personalize learning experience and onboarding for users across the platform.
 - [Nostos](): Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving the data. Used for serving offline processed data with really low latency.
 - [Notifications](): Infrastructure for delivery time optimization, content A/B testing and mass mailing for marketing as well as transactional communication. Supported emails and push notifications.
-- [Dataduct](https://github.com/coursera/dataduct): Open source framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity. Used for ETL, search indexing and recommendations.
+- [ETL](https://github.com/coursera/dataduct): Dataduct is an open source framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity. Used for ETL, search indexing and recommendations.
 - [Data Warehousing](): Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for ETL into Redshift.
 - [Course Dashboards](https://tech.coursera.org/blog/2014/11/19/bringing-data-to-teaching): Backend for Instructor analytics dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.
 - [QuantSoftware Toolkit](http://quantsoftware.gatech.edu/Main_Page): Open source python library for financial data analysis and machine learning for finance.
@@ -20,6 +21,6 @@ Tweet at [@sb2nov](http://twitter.com/sb2nov) and read my code on [GitHub](http:
 ### Talks
 - [AWS Reinvent 2015](https://www.youtube.com/watch?v=NLCLoJnhDOM): Large-Scale ETL Data Flows w/AWS Data Pipeline & Dataduct
 
-### Randomness
-- [Travel Visualization](http://sourabhbajaj.com/travel): Fun visualization of all the countries I have visited.
-- [Github Visualization](http://sourabhbajaj.com/GithubVisualizer): Fun visualization of commits in a Github organization.
+### Random
+- [Travel Viz](http://sourabhbajaj.com/travel): Fun visualization of all the countries I have visited.
+- [Github Viz](http://sourabhbajaj.com/GithubVisualizer): Fun visualization of commits in a Github organization.
