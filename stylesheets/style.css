@@ -224,6 +224,10 @@ hr {
 .indexSection ul li {
 margin-bottom: 3px; }
 
+section.post ul {
+  margin-left: 40px;
+}
+
 ul.posts, ul.posts li {
   margin: 0;
   padding: 0;
