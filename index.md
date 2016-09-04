@@ -26,7 +26,7 @@ Tweet at [@sb2nov](http://twitter.com/sb2nov){:target="_blank"} and read my code
 - [QuantSoftware Toolkit](http://quantsoftware.gatech.edu/Main_Page): Open source python library for financial data analysis and machine learning for finance.
 - <span class="as-link">Portfolio Management</span>: Created models for portfolio hedging, portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.
 - [Mac-Setup](http://sourabhbajaj.com/mac-setup): Open source book that gives step by step instructions on setting up developer environment on Mac OS.
-- <span class="as-link">3D Interaction Controller</span>:: Prototyped a motion capture system for controlling a 3D image in realtime.
+- <span class="as-link">3D Interaction Controller</span>: Prototyped a motion capture system for controlling a 3D image in realtime.
 
 #### Random
 - [Travel Viz](http://sourabhbajaj.com/travel): Fun visualization of all the countries I have visited.
