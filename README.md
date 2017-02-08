@@ -6,9 +6,9 @@ This is the official repo for my [portfolio](http://sourabhbajaj.com). It is whe
 
 ## Usage
 
-- Install the dependecies using `bundle install`
-- Update the dependecies using `bundle update`
-- Run it using `bundle exec jekyll serve -w`
+```
+./run_with_docker.sh
+```
 
 ---
 
