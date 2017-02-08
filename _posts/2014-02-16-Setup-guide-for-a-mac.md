@@ -5,7 +5,7 @@ date: 2014-02-16 15:27:31
 ---
 
 ## Update
-**This guide has been updated and is explained in the post [here](/installation/2014/04/20/mac-os-x-setup-guide/).**
+**This guide has been updated and is explained in the post [here](/2014/04/20/mac-os-x-setup-guide/).**
 
 - - -
 
