@@ -1,17 +1,15 @@
-desc "compile and run the site"
-task :default do
-  pids = [
-    spawn("bundle exec jekyll server -w"),
-    spawn("scss --watch _assets:stylesheets"),
-    spawn("coffee -b -w -o javascripts -c _assets/*.coffee")
-  ]
+require 'fileutils'
+require 'html-proofer'
 
-  trap "INT" do
-    Process.kill "INT", *pids
-    exit 1
-  end
-
-  loop do
-    sleep 1
-  end
+task :test do
+  FileUtils.rm_rf('./_site')
+  sh "bundle exec jekyll build --config _config.yml"
+  HTMLProofer.check_directory("./_site", {
+    :allow_hash_href => true,
+    :check_html => true,
+    :file_ignore => [],
+    :url_ignore => [
+      "/mac-setup",
+      "http://www.linkedin.com/in/sbajaj9/"]
+    }).run
 end

@@ -2,21 +2,13 @@
 
 This is the official repo for my [portfolio](http://sourabhbajaj.com). It is where I write blogposts on random things that I find interesting. Feel free to use this as a reference if you want.
 
----
+### Usage
 
-## Usage
-
-```
-./run_with_docker.sh
-```
-
----
+For building the site, use the command `./run_with_docker.sh server`.
 
 ### License
 
 The scribble theme was created by [Muan](https://github.com/muan) and is open source under MIT license. All the data on the website is owned by me.
-
----
 
 ### The end
 
