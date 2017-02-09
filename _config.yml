@@ -11,6 +11,17 @@ author:
   speaker: sb2nov
   email: sourabh@sourabhbajaj.com
 
+# Things to ignore in the build
+exclude: [
+  'README.md',
+  'Gemfile.lock',
+  'Gemfile',
+  'Rakefile',
+  'vendor/',
+  'LICENSE',
+  'run_with_docker.sh',
+  'CNAME']
+
 links:
   - name:         About
     url:          /
