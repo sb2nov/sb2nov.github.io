@@ -14,4 +14,4 @@ We will set up Node (JavaScript), Python, CPlusPlus, and Ruby environments. Even
 
 All contributions to the book are welcome. Please help add support for other libraries and languages.
 
-**PS:** I had written about the guide previously in the post [setup-guide-for-a-mac](/installation/2014/02/16/Setup-guide-for-a-mac/) which is now deprecated.
+**PS:** I had written about the guide previously in the post [setup-guide-for-a-mac](/2014/02/16/Setup-guide-for-a-mac/) which is now deprecated.
