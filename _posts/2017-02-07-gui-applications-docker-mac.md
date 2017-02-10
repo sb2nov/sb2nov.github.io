@@ -35,5 +35,5 @@ docker run -d --name firefox -e DISPLAY=$IP:0 -v /tmp/.X11-unix:/tmp/.X11-unix j
 
 or run octave using:
 ```
-docker run -d --name firefox -e DISPLAY=$IP:0 -v /tmp/.X11-unix:/tmp/.X11-unix openmicroscopy/octave
+docker run -d --name octave -e DISPLAY=$IP:0 -v /tmp/.X11-unix:/tmp/.X11-unix openmicroscopy/octave
 ```
