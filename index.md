@@ -16,7 +16,7 @@ Tweet at [@sb2nov](http://twitter.com/sb2nov){:target="_blank"} and read my code
 <hr />
 
 ## Google
-- [Apache Beam](http://beam.incubator.apache.org/){:target="_blank"}: A unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and Runners for executing them on distributed processing backends like Apache Spark, Apache Flink, and Google Cloud Dataflow.
+- [Apache Beam](http://beam.apache.org/){:target="_blank"}: A unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and Runners for executing them on distributed processing backends like Apache Spark, Apache Flink, and Google Cloud Dataflow.
 
 <hr />
 
