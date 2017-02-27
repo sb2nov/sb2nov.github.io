@@ -33,4 +33,4 @@ So now that I just created this website and don't know what to write about. I mi
 
 **Step 10** : Just push the source code to the github repository and Github will automatically render it, `git push`.
 
-**Step 11** : It you find anything wrong in this guide. Please let me know about it.
+**Step 11** : If you find anything wrong in this guide. Please let me know about it.
