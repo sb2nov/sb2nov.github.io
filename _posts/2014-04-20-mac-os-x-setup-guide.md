@@ -13,5 +13,3 @@ This book covers the basics of setting up development environment on a new MacBo
 We will set up Node (JavaScript), Python, CPlusPlus, and Ruby environments. Even if you don't program in all three, it is good to have them as many command-line tools use one of them. We also install a few daily use application and Latex. As you read and follow these steps, feel free to send me any feedback or comments you may have.
 
 All contributions to the book are welcome. Please help add support for other libraries and languages.
-
-**PS:** I had written about the guide previously in the post [setup-guide-for-a-mac](/2014/02/16/Setup-guide-for-a-mac/) which is now deprecated.
