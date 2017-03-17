@@ -1,6 +1,10 @@
 h1, h2, h3, h4, h5, strong, b {
   font-weight: 600; }
 
+h2 {
+  margin-top: 40px;
+}
+
 html, body {
   height: 100%; }
 

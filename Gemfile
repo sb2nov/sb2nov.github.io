@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem 'jekyll-sass-converter'
   gem 'html-proofer'
   gem 'jekyll_github_sample'
+  gem 'jekyll-compose'
 end
 
 gem 'rake'

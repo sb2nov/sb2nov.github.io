@@ -15,13 +15,10 @@ _runner() {
     bash -c "bundle config build.nokogiri --use-system-libraries && bundle install && $@"
 }
 
-# If no argument is passed then just print the help
-if [[ $# -ne 1 ]] ; then
-  echo "Method to run was not passed, should be server/test";
-  exit 0;
-fi
-
 case "$1" in
+  post)
+    _runner "bundle exec jekyll post $2";
+    ;;
   server)
     _runner "bundle exec jekyll server --force_polling --watch -H 0.0.0.0 -P 4000 --incremental";
     ;;
