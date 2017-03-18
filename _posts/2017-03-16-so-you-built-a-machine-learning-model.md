@@ -4,14 +4,14 @@ title: So you built a Machine Learning model?
 date: 2017-03-16
 ---
 
-You've been working on a Machine Learning task. You collected data from various sources, built your model and got some results. You notice you're getting about 80% accuracy on your test set which is less than what you desire. Now what? How do you decide what will improve the model?
+You have been working on a Machine Learning project. You collected data from various sources, built your model and got some preliminary results. You notice you are getting about 80% accuracy on your test set which is less than what you desire. Now what? How do you improve the model?
 
 Should you get more data? Build a more complex model? Increase or decrease regularization? Add or remove features? Run more iterations of gradient descent? May be try all of them?
 
-Recently I got this question from a friend, who said it seemed improving models is just hit and trial. This prompted me to write this post on how to make an informed decision about what should you work on first ?
+Recently I got this question from a friend, who said it seemed that improving models is just hit and trial. This prompted me to write this post on how to make an informed decision about what should you work on first.
 
 ## Bias and Variance
-To build a more accurate model. First, we need to learn what are the different sources of error in our model.
+To build a more accurate model, we first need to learn what are the different sources of error in our model.
 
 **Bias**: The error due to bias is taken as the difference between the expected (or average) prediction of our model and the correct value which we are trying to predict.
 
@@ -40,10 +40,10 @@ $$
 
 <img src="/images/bias-variance/error.png" align="left" alt="Irreducible error" style="width: 40%; margin-left:5%; margin-right:5%; margin-top:20px; margin-bottom:20px;"/>
 
-The Irreducible error is the noise term in the true relationship that cannot fundamentally be reduced by any model. Given the true model and infinite data to calibrate it, we should be able to reduce both the bias and variance terms to 0. However, in a world with imperfect models and finite data, there is a tradeoff between minimizing the bias and minimizing the variance.
+The irreducible error is the noise term in the true relationship that cannot be fundamentally reduced by any model. Given the true model and infinite data to calibrate it, we should be able to reduce both the bias and variance terms to 0. However, in a world with imperfect models and finite data, there is a tradeoff between minimizing the bias and minimizing the variance.
 
 ## What are Learning Curves?
-Now we know about Bias and Variance and the tradeoff between the two, but the problem of what do with our model still remains. What is our model suffering from high bias or high variance? To answer this we need to plot Learning curves for the model.
+Now we know about Bias and Variance and the tradeoff between the two, but the problem of how to improve our our model still remains. What is our model suffering from - high bias or high variance? To answer this we need to plot Learning curves for the model.
 
 #### High Bias
 - Low training set size: $$J_{train}(\Theta)$$ will be low and $$J_{CV}(\Theta)$$ will be high
@@ -57,7 +57,7 @@ Now we know about Bias and Variance and the tradeoff between the two, but the pr
 <img src="/images/bias-variance/high_variance.png" align="right" alt="High variance learning curve" style="width: 48%; margin-top:20px; margin-bottom:50px;"/>
 
 ## What to do next?
-We've figured out if we have a bias problem or a variance one. We can make an informed choice about what to work on next.
+We have figured out if we have a bias problem or a variance one. We can make an informed choice about what to work on next.
 
 #### High Bias
 - Try more complex features, polynomial terms or adding more nodes
