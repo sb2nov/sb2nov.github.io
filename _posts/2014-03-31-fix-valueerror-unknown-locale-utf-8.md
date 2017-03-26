@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Fix Value Error: unknown locale: UTF 8"
-date: 2014-03-31 15:27:31
+category: Developer Environment
+excerpt: Fixing unknown locale error in Python.
+redirect_from: /2014/03/31/fix-valueerror-unknown-locale-utf-8/
 ---
 
-Today I was trying to install AWS cli and got this error when running the help command.
+Today I was trying to install AWS CLI and got this error when running the help command.
 
 ~~~sh
 raise ValueError, 'unknown locale: %s' % localename

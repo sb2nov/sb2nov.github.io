@@ -1,44 +1,19 @@
-title:            Sourabh Bajaj
-description:      Sourabh's blog about Computer Science.
-url:              http://sourabhbajaj.com
-google_analytics: 'UA-40495390-2'
-
-author:
-  name: Sourabh Bajaj
-  linkedin: sbajaj9
-  twitter : sb2nov
-  github : sb2nov
-  speaker: sb2nov
-  email: sourabh@sourabhbajaj.com
-
-# Things to ignore in the build
-exclude: [
-  'README.md',
-  'Gemfile.lock',
-  'Gemfile',
-  'Rakefile',
-  'vendor/',
-  'LICENSE',
-  'run_with_docker.sh',
-  'CNAME']
-
-links:
-  - name:         About
-    url:          /
-  - name:         Blog
-    url:          /blog
-  - name:         GitHub
-    url:          http://github.com/sb2nov
-    external:     true
-
+highlighter: rouge
+permalink: none
+kramdown:
+  input: GFM
+  hard_wrap: false
+repository: sb2nov/sb2nov.github.io
 gems:
-  - kramdown
-  - jekyll-feed
+  - jemoji
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-mentions
-  - rouge
-
-highlighter:      rouge
-permalink:        pretty
-markdown:         kramdown
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title/
+google_analytics: 'UA-40495390-2'

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Pycon 2014 - Montreal"
-date: 2014-04-20 16:28:31
+title: Pycon 2014 - Montreal
+category: Conferences
+excerpt: Attending Pycon 2014 in Montreal was lots of fun!!
+redirect_from: /2014/04/20/pycon-2014-montreal/
 ---
 
 I've always loved developing in Python, specially after working on QSTK and at Lucena and Coursera. This year I was finally able to make it to PyCon in Montreal, Canada with the help of Python Software Foundation and Coursera.

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+	xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <Description>Search Sourabh's website</Description>
+  <SearchForm>http://sourabhbajaj.com/</SearchForm>
+  <moz:SearchForm>http://sourabhbajaj.com/</moz:SearchForm>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Language>en</Language>
+
+  <ShortName>sourabhbajaj.com</ShortName>
+  <Url rel="self" type="application/opensearchdescription+xml" href="http://sourabhbajaj.com/opensearch.xml" />
+  <Url method="get" type="text/html" 
+      template="https://www.google.com/search?q={searchTerms}&amp;sitesearch=sourabhbajaj.com" />
+  <Image width="16" height="16">http://sourabhbajaj.com/images/contents/fav.png</Image>
+</OpenSearchDescription>

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Guide to make a website like this
-date: 2014-02-09 15:27:31
+category: Developer Environment
+excerpt: Guide on hosting a Jekyll site with custom domain on Github Pages.
+redirect_from: /2014/02/09/Guide-to-make-a-website-like-this/
 ---
 
 This is my first blog post since I redesigned my website to be hosted using [Jekyll](http://jekyllrb.com/). I have been using [Github pages](http://pages.github.com/) for quite sometime now to host my portfolio but today I decide to revamp the whole thing and create a blog as well.

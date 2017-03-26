@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Mac OSX Setup Guide
-date: 2014-04-20 15:27:31
+category: Developer Environment
+excerpt: Guide on creating a productive developer environment on MacOS.
+redirect_from: /2014/04/20/mac-os-x-setup-guide/
 ---
 
 I recently updated the Mac OS X setup guide I maintain to an interactive [Gitbook](http://www.gitbook.io/). You can reference it [here (Mac OS X Setup Guide)](/mac-setup).
 
-<img src="/images/mac-gitbook.png" alt="Screenshot" style="width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;"/>
+<img src="/images/blog/2014-04/mac-gitbook.png" alt="Screenshot" style="width: 80%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;"/>
 
 This book covers the basics of setting up development environment on a new MacBook for most major languages. All instructions covered have been tried on Mountain Lion and Mavericks but they might be more inclined towards Mavericks. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some language/library.
 

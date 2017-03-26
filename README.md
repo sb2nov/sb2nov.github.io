@@ -1,6 +1,6 @@
 ## Sourabh Bajaj
 
-This is the official repo for my [portfolio](http://sourabhbajaj.com). It is where I write blogposts on random things that I find interesting. Feel free to use this as a reference if you want.
+This is the repository for my [blog](http://sourabhbajaj.com). I sometimes write about things I find interesting.
 
 ### Usage
 
@@ -8,7 +8,9 @@ For building the site, use the command `./run_with_docker.sh server`.
 
 ### License
 
-The scribble theme was created by [Muan](https://github.com/muan) and is open source under MIT license. All the data on the website is owned by me.
+- The HTML and CSS are copyrighted to [AlienWp](http://alienwp.com/) under [GPL license, version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+- The written textual contents available in the blog is licensed under Apache 2.0.
 
 ### The end
 

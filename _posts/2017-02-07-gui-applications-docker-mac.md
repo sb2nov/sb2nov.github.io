@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Running GUI applications using Docker for Mac"
-date: 2017-02-07
+title: Running GUI applications using Docker for Mac
+category: Developer Environment
+excerpt: Guide on how to run GUI applications from within Docker on Mac using XQuartz.
+redirect_from: /2017/02/07/gui-applications-docker-mac/
 ---
 
 This is a short guide explaining how to run GUI applications from within Docker on Mac. This uses XQuartz to enable to set the `DISPLAY` variable within the container.
 
 ### Install XQuartz
 
-You can install XQuartz using homebrew with `brew cask install xquartz` or directly from the website [here](https://www.xquartz.org/). At the time of writing I had `2.7.11` installed on my machine with OSX El Capitan. After installing XQuartz restart your machine.
+You can install XQuartz using homebrew with `brew cask install xquartz` or directly from the website [here](https://www.xquartz.org/). At the time of writing, I had `2.7.11` installed on my machine with OSX El Capitan. After installing XQuartz restart your machine.
 
 ### Install Docker for Mac
 
@@ -17,7 +19,7 @@ Install docker using `brew cask install docker` or directly from the website [he
 ### Run XQuartz
 Start XQuartz from command line using `open -a XQuartz`. In the XQuartz preferences, go to the “Security” tab and make sure you’ve got “Allow connections from network clients” ticked:
 
-<img src="/images/xquartz_preferences.png" alt="XQuartz Preferences" style="width: 70%; margin-left:10%; margin-right:10%; margin-top:20px; margin-bottom:20px;"/>
+<img src="/images/blog/2017-02/xquartz_preferences.png" alt="XQuartz Preferences" style="width: 50%; margin-left:10%; margin-right:10%; margin-top:10px; margin-bottom:10px;"/>
 
 ### Host Machine IP
 

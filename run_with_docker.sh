@@ -20,7 +20,7 @@ case "$1" in
     _runner "bundle exec jekyll post $2";
     ;;
   server)
-    _runner "bundle exec jekyll server --force_polling --watch -H 0.0.0.0 -P 4000 --incremental";
+    _runner "bundle exec jekyll server --force_polling --watch -H 0.0.0.0 -P 4000";
     ;;
   test)
     _runner "bundle exec rake test";

@@ -1,25 +1,28 @@
-<html>
-  <head>
-    <meta content='{{ page.title }} - {{ site.title }}' property='og:title' />
-    <title>{{ page.title }} - {{ site.title }}</title>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
-    <div id='container'>
-      {% include links.html %}
-      {% include pages.html %}
-      <div class="content">
-        <section class='post'>
-          <h1 class="upcase">
-            <div class='date'>{{ page.date | date_to_string }}</div>
-            {{ page.title }}
-          </h1>
+{% include top.html %}
+
+<div id="content">
+  <div class="hfeed">
+    <div class="hentry post">
+      <div class="post-content">
+        <div class="sticky-header">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2>{{ page.subtitle }}</h2>
+          {% endif %}
+          <div class="byline">{{ page.date | date: "%B %d, %Y" }}{% if page.author %} · by {{ page.author}}{% endif %} . in {% for category in page.categories %}<a href="/blog/categories.html#{{category}}" class="category">{{ category }}</a>{% endfor %}</div>
+        </div>
+
+        {% include toc.html %}
+
+        <div class="entry-content">
           {{ content }}
-        </section>
+        </div>
+
+        <!-- <div class="entry-meta">
+        </div> -->
       </div>
-      {% include links.html %}
     </div>
-    {% include footer.html %}
-  </body>
-</html>
+  </div>
+</div><!-- #content -->
+
+{% include bottom.html %}

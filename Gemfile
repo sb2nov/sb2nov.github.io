@@ -1,14 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'github-pages'
-
-# Jekyll plugins
-group :jekyll_plugins do
-  gem 'jekyll-redirect-from'
-  gem 'jekyll-sass-converter'
-  gem 'html-proofer'
-  gem 'jekyll_github_sample'
-  gem 'jekyll-compose'
-end
-
-gem 'rake'
+gem 'jekyll-redirect-from'
