@@ -8,12 +8,16 @@ layout: default
 
   <!-- Google -->
   <div class="hentry post project-batch-title">
-    <h2><a href="https://beam.apache.org/" target="_blank">Apache Beam</a></h2>
+    <h2>Google</h2>
   </div>
 
   <div class="hentry post">
     <div class="entry-summary">
-      <p>A unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and Runners for executing them on distributed processing backends like Apache Spark, Apache Flink, and Google Cloud Dataflow.</p>
+      <ul class="project-list">
+        <li><a href="https://beam.apache.org/" target="_blank">Apache Beam</a>: A unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and Runners for executing them on distributed processing backends like Apache Spark, Apache Flink, and Google Cloud Dataflow.</li>
+
+        <li><a href="https://cloud.google.com/dataflow/" target="_blank">Cloud Dataflow</a>: Dataflow is a managed service for developing and executing a wide range of data processing patterns including ETL, batch computation, and streaming computation</li>
+      </ul>
     </div>
   </div>
 
