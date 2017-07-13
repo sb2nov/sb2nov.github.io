@@ -684,7 +684,7 @@ body.blog             div.menu li.blog            a {
 
 .entry-summary p a {
   /*text-decoration: none;*/
-  color: #333;
+  /*color: #333;*/
   font-weight: bold;
 }
 
@@ -904,7 +904,7 @@ body.learning h4.resource {
 
 .project-list li a {
   /*text-decoration: none;*/
-  color: #333;
+  /*color: #333;*/
   font-weight: bold;
 }
 
