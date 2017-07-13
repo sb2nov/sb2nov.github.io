@@ -682,6 +682,12 @@ body.blog             div.menu li.blog            a {
 -------------------------------------------------------------- */
 .entry-summary p { margin: 0 0 1em 0; }
 
+.entry-summary p a {
+  /*text-decoration: none;*/
+  color: #333;
+  font-weight: bold;
+}
+
 /* Post metadata
 -------------------------------------------------------------- */
 .entry-meta {
