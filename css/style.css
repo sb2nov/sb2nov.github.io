@@ -624,8 +624,8 @@ body.blog             div.menu li.blog            a {
 .hentry .featured-thumbnail { margin-bottom: 25px; }
 .hentry .archive-thumbnail {
   float: left;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   margin: 3px 25px 20px 0;
 }
 .hentry .home-thumbnail {
@@ -683,9 +683,12 @@ body.blog             div.menu li.blog            a {
 .entry-summary p { margin: 0 0 1em 0; }
 
 .entry-summary p a {
-  /*text-decoration: none;*/
-  /*color: #333;*/
-  font-weight: bold;
+  text-decoration: none;
+  color: #381ebc;
+}
+
+.talk-title {
+  font-weight: 600;
 }
 
 /* Post metadata
@@ -903,9 +906,9 @@ body.learning h4.resource {
 }
 
 .project-list li a {
-  /*text-decoration: none;*/
-  /*color: #333;*/
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 600;
+  color: #381ebc;
 }
 
 /* Talks */

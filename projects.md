@@ -76,16 +76,25 @@ layout: default
 
         <li><a href="http://lucenaresearch.com/" target="_blank">Portfolio Management</a>: Created models for portfolio hedging, portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.</li>
 
+        <li><a href="https://www.scientific.net/AMR.403-408.4157" target="_blank">3D Interaction Controller</a>: Prototyped a motion capture system for controlling a 3D image in realtime using hand gestures.</li>
+
+        <li><a href="http://sourabhbajaj.com/GithubVisualizer" target="_blank">GitViz</a>: Data Visualization of commits in a Github organization.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Past Projects -->
+  <div class="hentry post project-batch-title">
+    <h2>Side Projects</h2>
+  </div>
+
+  <div class="hentry post">
+
+    <div class="entry-summary">
+      <ul class="project-list">
         <li><a href="http://sourabhbajaj.com/mac-setup" target="_blank">Mac-Setup</a>: Open source book that gives step by step instructions on setting up developer environment on Mac OS.</li>
 
-        <li><a href="https://www.scientific.net/AMR.403-408.4157" target="_blank">3D Interaction Controller</a>: Prototyped a motion capture system for controlling a 3D image in realtime.</li>
-
-        <li><strong style="color:#333;">Random Stuff</strong>
-          <ul>
-            <li><a href="http://sourabhbajaj.com/travel" target="_blank">Travelopedia</a>: Visualization of all the countries I have visited.</li>
-            <li><a href="http://sourabhbajaj.com/GithubVisualizer" target="_blank">Github-Org</a>: Visualization of commits in a Github organization.</li>
-          </ul>
-        </li>
+        <li><a href="http://sourabhbajaj.com/travel" target="_blank">Travelopedia</a>: Data Visualization of my travels across the globe.</li>
       </ul>
     </div>
   </div>
