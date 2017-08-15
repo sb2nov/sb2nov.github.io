@@ -11,11 +11,27 @@ layout: default
     <h2>2017</h2>
   </div>
 
+  <!-- PyBay, August 2017 -->
+  <div class="hentry post project-batch-title">
+    <h3>Unified Batch and Stream processing with Apache Beam</h3>
+    <div class="entry-summary">
+        <p><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2017</a>: Talk on how Apache Beam's RunnerAPI and FnAPI based architecture allows for building support for multiple languages and runners. And how it enables doing Batch and Stream processing in Python. (<a href="https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam" target="_blank">Slides</a>)</p>
+    </div>
+  </div>
+
+  <!-- Metis, August 2017 -->
+  <div class="hentry post project-batch-title">
+    <h3>Intro to Recommendation Systems</h3>
+    <div class="entry-summary">
+        <p><a class="talk-title" href="https://www.thisismetis.com/" target="_blank">Metis, Auguest 2017</a>: Guest lecture / workshop on building real world recommendation systems. Talk goes over building multiple iterations of the system in increasing complexity.</p>
+    </div>
+  </div>
+
   <!-- PyData, July 2017 -->
   <div class="hentry post project-batch-title">
     <h3>Big data processing with Apache Beam</h3>
     <div class="entry-summary">
-        <p><a class="talk-title" href="pydata.org/seattle2017/" target="_blank">PyData, July 2017</a>: Presents the Python SDK for Apache Beam - a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow. (<a href="https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-6xpDRiurmA" target="_blank">Video</a>)</p>
+        <p><a class="talk-title" href="https://pydata.org/seattle2017/" target="_blank">PyData, July 2017</a>: Presents the Python SDK for Apache Beam - a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow. (<a href="https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-6xpDRiurmA" target="_blank">Video</a>)</p>
     </div>
   </div>
 
