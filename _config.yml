@@ -4,7 +4,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 repository: sb2nov/sb2nov.github.io
-gems:
+plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-redirect-from
