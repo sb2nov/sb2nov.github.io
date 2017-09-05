@@ -15,7 +15,7 @@ layout: default
   <div class="hentry post project-batch-title">
     <h3>Unified Batch and Stream processing with Apache Beam</h3>
     <div class="entry-summary">
-        <p><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2017</a>: Talk on how Apache Beam's RunnerAPI and FnAPI based architecture allows for building support for multiple languages and runners. And how it enables doing Batch and Stream processing in Python. (<a href="https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam" target="_blank">Slides</a>)</p>
+        <p><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2017</a>: Talk on how Apache Beam's RunnerAPI and FnAPI based architecture allows for building support for multiple languages and runners. And how it enables doing Batch and Stream processing in Python. (<a href="https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=z2nEOPz30so" target="_blank">Video</a>)</p>
     </div>
   </div>
 
