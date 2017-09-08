@@ -9,7 +9,7 @@
           {% if page.subtitle %}
           <h2>{{ page.subtitle }}</h2>
           {% endif %}
-          <div class="byline">{{ page.date | date: "%B %d, %Y" }}{% if page.author %} · by {{ page.author}}{% endif %} . in {% for category in page.categories %}<a href="/blog/categories.html#{{category}}" class="category">{{ category }}</a>{% endfor %}</div>
+          <div class="byline">{{ page.date | date: "%B %d, %Y" }}{% if page.author %} · by {{ page.author}}{% endif %} . {% for category in page.categories %}{% if forloop.index0 != 0 %}, {% endif %}<a href="/blog/categories.html#{{category}}" class="category">{{ category }}</a>{% endfor %}</div>
         </div>
 
         {% include toc.html %}

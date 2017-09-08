@@ -1,7 +1,9 @@
 ---
 layout: post
 title: The Start-up of You
-category: Books
+category:
+- Books
+- Entrepreneurship
 excerpt: Nuggets from Reid Hoffman's the Start up of You.
 ---
 
