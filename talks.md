@@ -11,6 +11,14 @@ layout: default
     <h2>2017</h2>
   </div>
 
+  <!-- Cloud+Data Nextcon, September 2017 -->
+  <div class="hentry post project-batch-title">
+    <h3>Data processing with Apache Beam</h3>
+    <div class="entry-summary">
+        <p><a class="talk-title" href="http://cdsea17.xnextcon.com/" target="_blank">Cloud+Data Nextcon, September 2017</a>: Talk on how Apache Beam's RunnerAPI and FnAPI based architecture allows for building support for multiple languages and runners. (<a href="https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam" target="_blank">Slides</a>)</p>
+    </div>
+  </div>
+
   <!-- PyBay, August 2017 -->
   <div class="hentry post project-batch-title">
     <h3>Unified Batch and Stream processing with Apache Beam</h3>
