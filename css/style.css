@@ -175,19 +175,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   line-height: 1.3em;
 }
-h1 { font-size: 2.769230769230769em; }    /* 36 / 13 = 2.769230769230769 */
+h1 { font-size: 44px; }    /* 36 / 13 = 44 */
 h2 {
-  font-size: 1.846153846153846em;    /* 24 / 13 = 1.846153846153846 */
-  margin-top: 1.458333333em;       /* 35 / 24 = 1.458333333 */
+  font-size: 29px;    /* 24 / 13 = 1.846153846153846 */
+  margin-top: 23px;       /* 35 / 24 = 1.458333333 */
 }
-h3 { font-size: 1.538461538461538em; }    /* 20 / 13 = 1.538461538461538 */
-h4 { font-size: 1.384615384615385em; }    /* 18 / 13 = 1.384615384615385 */
+h3 { font-size: 24px; }    /* 20 / 13 = 1.538461538461538 */
+h4 { font-size: 22px; }    /* 18 / 13 = 1.384615384615385 */
 h5 {
-  font-size: 1.230769230769231em;    /* 16 / 13 = 1.230769230769231 */
+  font-size: 19px;    /* 16 / 13 = 1.230769230769231 */
   font-weight: bold;
 }
 h6 {
-  font-size: 1.076923076923077em;    /* 14 / 13 = 1.076923076923077 */
+  font-size: 17px;    /* 14 / 13 = 17 */
   font-weight: bold;
 }
 img {
@@ -348,7 +348,7 @@ ul li, ol li { line-height: 2.1em; }
 dl { margin: 0 0 20px 30px; }
 dl dt {
   margin: 0;
-  font-size: 1.230769230769231em;    /* 16 / 13 = 1.230769230769231 */
+  font-size: 19px;    /* 16 / 13 = 1.230769230769231 */
   line-height: 1.692307em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
@@ -637,15 +637,15 @@ body.blog             div.menu li.blog            a {
 .hentry .entry-title {
   margin: 0 0 0.25em 0;
   padding: 0;
-  font-size: 1.846153846153846em;  /* 24 / 13 = 1.846153846153846 */
-  text-transform: uppercase;
+  font-size: 22px;  /* 24 / 13 = 1.846153846153846 */
+  text-transform: capitalize;
   line-height: 1.3em;
   border: none;
   color: #333;
   word-spacing: 2px;
 }
 .singular .entry-title {
-  font-size: 1.846153846153846em;  /* 24 / 13 = 1.846153846153846 */
+  font-size: 24px;  /* 24 / 13 = 1.846153846153846 */
   margin-bottom: 0.625em;
 }
 .singular-page .entry-title { color: #ccc; }

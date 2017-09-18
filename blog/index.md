@@ -12,11 +12,7 @@ layout: blog
         <div class="byline">{{ post.date | date: "%B %d, %Y" }}{% if post.author %} · by {{ post.author}}{% endif %} . {% for category in post.categories %}{% if forloop.index0 != 0 %}, {% endif %}<a href="/blog/categories.html#{{category}}" class="category">{{ category }}</a>{% endfor %}</div>
       </div><!-- .sticky-header -->
 
-      <div class="entry-summary">
-        {{ post.excerpt }}
-      </div><!-- .entry-summary -->
 
-      <p><a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">Continue reading →</a></p>
   </div>
   {% endfor %}
 </div><!-- .hfeed -->

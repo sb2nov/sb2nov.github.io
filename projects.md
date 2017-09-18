@@ -28,7 +28,21 @@ layout: default
   </div>
 
   <div class="hentry post">
-    <h4>Data Infrastructure</h4>
+    <h6>Data Products</h6>
+
+    <div class="entry-summary">
+      <ul class="project-list">
+        <li><strong style="color:#333;">Recommendations</strong>: Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Created weekly and daily email jobs for sending recommendations to learners.</li>
+
+        <li><a href="https://blog.coursera.org/find-right-course-faster-search-skill/" target="_blank">Content Discovery</a>: Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.</li>
+
+        <li><a href="https://building.coursera.org/blog/2014/11/19/bringing-data-to-teaching/" target="_blank">Course Dashboards</a>: Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hentry post">
+    <h6>Data Infrastructure</h6>
 
     <div class="entry-summary">
       <ul class="project-list">
@@ -44,20 +58,6 @@ layout: default
         <li><strong style="color:#333;">Developer Environment</strong>: Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.</li>
 
         <li><a href="https://speakerdeck.com/sb2nov/large-scale-etl-data-flows-with-data-pipeline-and-dataduct" target="_blank">Data Warehousing</a>: Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="hentry post">
-    <h4>Data Products</h4>
-
-    <div class="entry-summary">
-      <ul class="project-list">
-        <li><strong style="color:#333;">Recommendations</strong>: Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Created weekly and daily email jobs for sending recommendations to learners.</li>
-
-        <li><a href="https://blog.coursera.org/find-right-course-faster-search-skill/" target="_blank">Content Discovery</a>: Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.</li>
-
-        <li><a href="https://building.coursera.org/blog/2014/11/19/bringing-data-to-teaching/" target="_blank">Course Dashboards</a>: Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.</li>
       </ul>
     </div>
   </div>
