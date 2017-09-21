@@ -59,3 +59,7 @@ Here most points are easy to follow in this list but something that I have found
 This was a fantastic list as it covers a lot of hidden problems in model serving. As models get larger it can get expensive to serve them or features get more expensive to compute. Useful tools could be monitoring success metrics as a time-series and seeing if we hit consistent performance. Another could be to always have a small A/B test running against the old / baseline model.
 
 The paper touches on basic problems that you run into quite often but are not talked about much in the ML community. Curious to know, how the problems around feature engineering and model complexity evolve with advent of Deep Learning models.
+
+### References
+
+- [1] Breck, E., Cai, S., Nielsen, E., Salib, M., & Sculley, D. (2016). What’s your ML Test Score? A rubric for ML production systems. Reliable Machine Learning in the Wild - NIPS 2016 Workshop, (NIPS).
