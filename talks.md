@@ -15,7 +15,7 @@ layout: default
   <div class="hentry post project-batch-title">
     <h4>Unified Batch and Stream processing with Apache Beam</h4>
     <div class="entry-summary">
-        <p><a class="talk-title" href="https://pydata.org/seattle2017/" target="_blank">PyData, July 2017</a>: Presents the Python SDK for Apache Beam - a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow. (<a href="https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-6xpDRiurmA" target="_blank">Video</a>)</p>
+        <p><a class="talk-title" href="https://pydata.org/seattle2017/" target="_blank">PyData, July 2017</a>: Apache Beam is a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow. (<a href="https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-6xpDRiurmA" target="_blank">Video</a>)</p>
         <p>Presented similar talks on Apache Beam at:<ul>
           <!-- PyBay, Aug 2017 -->
           <li><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2017</a>: (<a href="https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=z2nEOPz30so" target="_blank">Video</a>)</li>
