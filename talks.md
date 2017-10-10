@@ -11,19 +11,21 @@ layout: default
     <h2>2017</h2>
   </div>
 
-  <!-- Cloud+Data Nextcon, September 2017 -->
-  <div class="hentry post project-batch-title">
-    <h4>Data processing with Apache Beam</h4>
-    <div class="entry-summary">
-        <p><a class="talk-title" href="http://cdsea17.xnextcon.com/" target="_blank">Cloud+Data Nextcon, September 2017</a>: Talk on how Apache Beam's RunnerAPI and FnAPI based architecture allows for building support for multiple languages and runners. (<a href="https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam" target="_blank">Slides</a>)</p>
-    </div>
-  </div>
-
-  <!-- PyBay, August 2017 -->
+  <!-- PyData, July 2017 -->
   <div class="hentry post project-batch-title">
     <h4>Unified Batch and Stream processing with Apache Beam</h4>
     <div class="entry-summary">
-        <p><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2017</a>: Talk on how Apache Beam's RunnerAPI and FnAPI based architecture allows for building support for multiple languages and runners. And how it enables doing Batch and Stream processing in Python. (<a href="https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=z2nEOPz30so" target="_blank">Video</a>)</p>
+        <p><a class="talk-title" href="https://pydata.org/seattle2017/" target="_blank">PyData, July 2017</a>: Presents the Python SDK for Apache Beam - a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow. (<a href="https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-6xpDRiurmA" target="_blank">Video</a>)</p>
+        <p>Presented similar talks on Apache Beam at:<ul>
+          <!-- PyBay, Aug 2017 -->
+          <li><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2017</a>: (<a href="https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=z2nEOPz30so" target="_blank">Video</a>)</li>
+          <!-- CloudDataNextCon, Sep 2017 -->
+          <li><a class="talk-title" href="http://cdsea17.xnextcon.com/" target="_blank">Cloud+Data Nextcon, September 2017</a>: (<a href="https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam" target="_blank">Slides</a>)</li>
+          <!-- Florida Pycon, Oct 2017 -->
+          <li><a class="talk-title" href="http://flpy.org/" target="_blank">Florida Pycon, October 2017</a>: (<a href="https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam" target="_blank">Slides</a>)</li>
+          <!-- All things Python, Oct 2017 -->
+          <li><a class="talk-title" href="https://www.meetup.com/All-Things-Python/events/243725413/" target="_blank">All things Python, October 2017</a>: (<a href="https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam" target="_blank">Slides</a>)</li>
+        </ul></p>
     </div>
   </div>
 
@@ -31,15 +33,7 @@ layout: default
   <div class="hentry post project-batch-title">
     <h4>Intro to Recommendation Systems</h4>
     <div class="entry-summary">
-        <p><a class="talk-title" href="https://www.thisismetis.com/" target="_blank">Metis, Auguest 2017</a>: Guest lecture / workshop on building real world recommendation systems. Talk goes over building multiple iterations of the system in increasing complexity.</p>
-    </div>
-  </div>
-
-  <!-- PyData, July 2017 -->
-  <div class="hentry post project-batch-title">
-    <h4>Big data processing with Apache Beam</h4>
-    <div class="entry-summary">
-        <p><a class="talk-title" href="https://pydata.org/seattle2017/" target="_blank">PyData, July 2017</a>: Presents the Python SDK for Apache Beam - a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow. (<a href="https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-6xpDRiurmA" target="_blank">Video</a>)</p>
+        <p><a class="talk-title" href="https://www.thisismetis.com/" target="_blank">Metis, Auguest 2017</a>: Guest lecture on building real world recommendation systems. Talk goes over building multiple iterations of the system in increasing complexity.</p>
     </div>
   </div>
 
