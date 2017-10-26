@@ -8,25 +8,20 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
   <link rel="stylesheet" href="/js/icons/style.css">
-  <!--[if lt IE 8]><!-->
-  <link rel="stylesheet" href="/js/icons/ie7/ie7.css">
-  <!--<![endif]-->
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" id="font-bitter-css" href="http://fonts.googleapis.com/css?family=Bitter:400,700" type="text/css" media="screen" />
   <link rel="shortcut icon" type="image/x-icon" href="/images/contents/fav.png" />
   <link rel="search" type="application/opensearchdescription+xml" title="sourabhbajaj.com" href="/opensearch.xml" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40495390-2"></script>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  ga('create', 'UA-40495390-2', 'auto');
-  ga('send', 'pageview');
+    gtag('config', '{{ site.google_analytics }}');
   </script>
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   {% seo title=false %}
 </head>
 
