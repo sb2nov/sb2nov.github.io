@@ -17,3 +17,17 @@ defaults:
       layout: post
       permalink: /blog/:year/:month/:day/:title/
 google_analytics: 'UA-40495390-2'
+title: Sourabh
+description: Sourabh's portfolio and writings on machine learning, data science and distributed systems.
+url: http://sourabhbajaj.com
+author: Sourabh Bajaj
+twitter:
+  username: sb2nov
+logo: images/contents/NN.png
+social:
+  name: Sourabh
+  links:
+    - https://twitter.com/sb2nov
+    - https://www.linkedin.com/in/sbajaj9
+    - https://github.com/sb2nov
+    - https://speakerdeck.com/sb2nov/
