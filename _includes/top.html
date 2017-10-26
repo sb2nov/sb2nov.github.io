@@ -21,6 +21,16 @@
 
     gtag('config', '{{ site.google_analytics }}');
   </script>
+  <script>
+    var trackOutboundLink = function(url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function(){document.location = url;}
+      });
+    }
+  </script>
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   {% seo title=false %}
 </head>

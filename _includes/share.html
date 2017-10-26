@@ -5,27 +5,27 @@
       <p class="sharetitle"> Share this: </p>
     </li>
     <li class="reddit">
-      <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}" target="_blank">
+      <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}" target="_blank" onclick="trackOutboundLink('http://www.reddit.com/submit?url={{ page.url }}');">
         {% include social/share-icon-reddit.svg %}
       </a>
     </li>
     <li class="hn">
-      <a href="http://news.ycombinator.com/submitlink?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank">
+      <a href="http://news.ycombinator.com/submitlink?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank" onclick="trackOutboundLink('http://news.ycombinator.com/submitlink?u={{ page.url }}');">
         {% include social/share-icon-hn.svg %}
       </a>
     </li>
     <li class="twitter">
-      <a href="https://twitter.com/intent/tweet?via=sb2nov&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank">
+      <a href="https://twitter.com/intent/tweet?via=sb2nov&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank" onclick="trackOutboundLink('https://twitter.com/intent/tweet?via=sb2nov&url={{ page.url }}');">
         {% include social/share-icon-twitter.svg %}
       </a>
     </li>
 <!--     <li class="facebook">
-      <a href="http://www.facebook.com/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank">
+      <a href="http://www.facebook.com/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank" onclick="trackOutboundLink('http://www.reddit.com/submit?url={{ page.url }}');">
         {% include social/share-icon-facebook.svg %}
       </a>
     </li> -->
     <li class="linkedin">
-      <a href="http://www.linkedin.com/shareArticle?url=sb2nov&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank">
+      <a href="http://www.linkedin.com/shareArticle?url=sb2nov&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank" onclick="trackOutboundLink('http://www.linkedin.com/shareArticle?url=sb2nov&url={{ page.url }}');">
         {% include social/share-icon-linkedin.svg %}
       </a>
     </li>
