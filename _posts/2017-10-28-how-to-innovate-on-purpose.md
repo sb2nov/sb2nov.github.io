@@ -1,7 +1,9 @@
 ---
 layout: post
 title: How to Innovate on Purpose
-category: Developer Environment
+category:
+- Entrepreneurship
+- Start Ups
 excerpt:  A framework to think of ideas when trying to build something innovative. Based on a talk from Spencer Greenberg on deliberate innovation.
 ---
 

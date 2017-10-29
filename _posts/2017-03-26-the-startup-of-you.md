@@ -4,6 +4,7 @@ title: The Start-up of You
 category:
 - Books
 - Entrepreneurship
+- Start Ups
 excerpt: Nuggets from Reid Hoffman's the Start up of You.
 ---
 
