@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Innovate on Purpose
+title: How to Innovate on Purpose?
 category:
 - Entrepreneurship
 - Start Ups
