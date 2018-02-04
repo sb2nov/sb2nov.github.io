@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 11 Quotes I liked recently
+category: General
+excerpt: List of quotes I enjoyed reading over the last few months.
 ---
 
 I collect Quotes that I like while surfing the interwebs. Here are a few that I enjoyed reading over the last few months.
