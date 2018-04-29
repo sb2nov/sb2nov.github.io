@@ -6,6 +6,19 @@ layout: default
 
 <div class="hfeed">
 
+  <!-- 2018 -->
+  <div class="hentry post project-batch-title">
+    <h2>2018</h2>
+  </div>
+
+  <!-- Global Artificial Intelligence Conference, April 2018 -->
+  <div class="hentry post project-batch-title">
+    <h4>New APIs in Tensorflow</h4>
+    <div class="entry-summary">
+        <p><a class="talk-title" href="#" target="_blank">Global Artificial Intelligence Conference, April 2018</a>: Talk about the Tensorflow Eager execution and the Dataset APIs. Covers on how to change your code from using graph mode to eager execution and in the second half covered the datasets api to write performant input pipelines. (<a href="https://speakerdeck.com/sb2nov/new-apis-in-tensorflow" target="_blank">Slides</a>)</p>
+    </div>
+  </div>
+
   <!-- 2017 -->
   <div class="hentry post project-batch-title">
     <h2>2017</h2>
