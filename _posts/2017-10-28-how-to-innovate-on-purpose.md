@@ -5,7 +5,7 @@ category:
 - Entrepreneurship
 - Start Ups
 excerpt:  A framework to think of ideas when trying to build something innovative. Based on a talk from Spencer Greenberg on deliberate innovation.
-preview_image: http://sourabhbajaj.com/images/blog/2017-10/innovation.png
+preview_image: https://sourabhbajaj.com/images/blog/2017-10/innovation.png
 ---
 
 <img src="/images/blog/2017-10/innovation.png" align="center" alt="Innovation" style="margin:auto; display:block;"/>

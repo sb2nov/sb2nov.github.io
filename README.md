@@ -1,6 +1,6 @@
 ## Sourabh Bajaj
 
-This is the repository for my [blog](http://sourabhbajaj.com). I sometimes write about things I find interesting.
+This is the repository for my [blog](https://sourabhbajaj.com). I sometimes write about things I find interesting.
 
 ### Usage
 
