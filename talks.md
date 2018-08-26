@@ -11,11 +11,19 @@ layout: default
     <h2>2018</h2>
   </div>
 
+  <!-- PyBay, August 2018 -->
+  <div class="hentry post project-batch-title">
+    <h4>Museum of Machine Arts</h4>
+    <div class="entry-summary">
+        <p><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, April 2018</a>: Talk about recent developments in Deep Learning generated/assisted art. Covering recent papers about GANs, Neural Style transfer, Pix2Pixel etc. (<a href="https://speakerdeck.com/sb2nov/museum-of-machine-arts" target="_blank">Slides</a>)</p>
+    </div>
+  </div>
+
   <!-- Global Artificial Intelligence Conference, April 2018 -->
   <div class="hentry post project-batch-title">
     <h4>New APIs in Tensorflow</h4>
     <div class="entry-summary">
-        <p><a class="talk-title" href="#" target="_blank">Global Artificial Intelligence Conference, April 2018</a>: Talk about the Tensorflow Eager execution and the Dataset APIs. Covers on how to change your code from using graph mode to eager execution and in the second half covered the datasets api to write performant input pipelines. (<a href="https://speakerdeck.com/sb2nov/new-apis-in-tensorflow" target="_blank">Slides</a>)</p>
+        <p><a class="talk-title" href="http://www.globalbigdataconference.com/seattle/global-artificial-intelligence-conference/event-103.html" target="_blank">Global Artificial Intelligence Conference, April 2018</a>: Talk about the Tensorflow Eager execution and the Dataset APIs. Covers on how to change your code from using graph mode to eager execution and in the second half covered the datasets api to write performant input pipelines. (<a href="https://speakerdeck.com/sb2nov/new-apis-in-tensorflow" target="_blank">Slides</a>)</p>
     </div>
   </div>
 
