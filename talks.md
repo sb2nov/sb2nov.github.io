@@ -16,7 +16,7 @@ layout: default
     <h4>Museum of Machine Arts</h4>
     <div class="entry-summary">
         <p><a class="talk-title" href="https://pybay.com/" target="_blank">PyBay, August 2018</a>: Talk about recent developments in Deep Learning generated/assisted art. Covering recent papers about GANs, Neural Style transfer, Pix2Pixel etc. (<a href="https://speakerdeck.com/sb2nov/museum-of-machine-arts" target="_blank">Slides</a>)</p>
-        <p>Presented similar talks on Machine generated Art at:<ul>
+        <p>Presented similar talk on machine generated art at:<ul>
           <!-- Global Big Data Conference, Aug 2018 -->
           <li><a class="talk-title" href="http://www.globalbigdataconference.com/santa-clara/6th-annual-global-big-data-conference/schedule-105.html" target="_blank">Global Big Data Conference, August 2018</a>: (<a href="https://speakerdeck.com/sb2nov/museum-of-machine-arts" target="_blank">Slides</a>)</li>
         </ul></p>
