@@ -6,6 +6,20 @@ layout: default
 
 <div class="hfeed">
 
+
+  <!-- 2020 -->
+  <div class="hentry post project-batch-title">
+    <h2>2020</h2>
+  </div>
+
+  <!-- Global AI Conference, October 2020 -->
+  <div class="hentry post project-batch-title">
+    <h4>Keynote Panel: State of AI in the Enterprise</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="http://www.globalbigdataconference.com/boston/global-artificial-intelligence-virtual-conference/schedule-123.html" target="_blank">Global AI Conference, October 2020</a>: Talk about challenges in building, deploying and productionizing models in an enterprise setting.</p>
+    </div>
+  </div>
+
   <!-- 2018 -->
   <div class="hentry post project-batch-title">
     <h2>2018</h2>

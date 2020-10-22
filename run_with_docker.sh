@@ -12,7 +12,7 @@ _runner() {
     --env="BUNDLE_CACHE=true" \
     --env="BUNDLE_PATH=/srv/jekyll/vendor/bundle" \
     jekyll/jekyll \
-    bash -c "bundle config build.nokogiri --use-system-libraries && bundle install && $@"
+    bash -c "bundle install && $@"
 }
 
 case "$1" in
