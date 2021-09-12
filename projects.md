@@ -33,7 +33,7 @@ layout: default
     <div class="entry-summary">
       <ul class="project-list">
 
-        <li><strong style="color:#333;">Recommendations</strong>: Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Created weekly and daily email jobs for sending recommendations to learners.</li>
+        <li><strong style="color:#333;">Recommendations</strong>: Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Created weekly and daily email jobs for sending recommendations to learners.</li>
 
         <li><a href="https://blog.coursera.org/find-right-course-faster-search-skill/" target="_blank">Content Discovery</a>: Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.</li>
 
