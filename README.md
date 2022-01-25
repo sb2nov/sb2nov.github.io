@@ -14,5 +14,5 @@ For building the site, use the command `./run_with_docker.sh server`.
 
 ### The end
 
-Like it? [Tell me](http://twitter.com/sb2nov).<br/>
+Like it? [Tell me](http://twitter.com/sourabhbajaj90).<br/>
 Question? [Use GitHub Issues](https://github.com/sb2nov/sb2nov.github.io/issues).
