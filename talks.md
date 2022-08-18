@@ -6,6 +6,18 @@ layout: default
 
 <div class="hfeed">
 
+  <!-- 2022 -->
+  <div class="hentry post project-batch-title">
+    <h2>2022</h2>
+  </div>
+
+  <!-- Summer Community Days -->
+  <div class="hentry post project-batch-title">
+    <h4>Technical and data training that feels like the real world</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="https://www.youtube.com/watch?v=V1bLXu1P388" target="_blank">Summer Community Days, July 2022</a>: Talk about designing engaging learning experiences for adults that feel high touch and closer to real jobs.</p>
+    </div>
+  </div>
 
   <!-- 2020 -->
   <div class="hentry post project-batch-title">

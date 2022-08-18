@@ -6,6 +6,22 @@ layout: default
 
 <div class="hfeed">
 
+  <!-- Neeva -->
+  <div class="hentry post project-batch-title">
+    <h2>Neeva</h2>
+  </div>
+
+  <div class="hentry post">
+    <div class="entry-summary">
+      <ul class="project-list">
+        <li><a href="https://www.neeva.com/" target="_blank">Personalization</a>: Leading the personalization team of 9+ to better understand user preferences around retailers, news providers, and various subscriptions in web search. Cross functional team across design, UI, backend and infrastructure.</li>
+
+        <li><strong style="color:#333;">Data Infrastructure</strong>: Leading the data team for setting up ML platform, data warehousing, business intelligence, and data processing framework on Kubernetes.</li>
+      </ul>
+    </div>
+
+  </div>
+
   <!-- Google -->
   <div class="hentry post project-batch-title">
     <h2>Google</h2>
@@ -21,8 +37,8 @@ layout: default
         <li><a href="https://beam.apache.org/" target="_blank">Apache Beam</a>: A unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and Runners for executing them on distributed processing backends like Apache Spark, Apache Flink, and Google Cloud Dataflow.</li>
       </ul>
     </div>
-  </div>
 
+  </div>
 
   <!-- Coursera -->
   <div class="hentry post project-batch-title">
@@ -52,6 +68,7 @@ layout: default
         <li><a href="https://building.coursera.org/blog/2014/11/19/bringing-data-to-teaching/" target="_blank">Course Dashboards</a>: Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.</li>
       </ul>
     </div>
+
   </div>
 
   <!-- Other Projects -->
@@ -77,6 +94,7 @@ layout: default
         <li><a href="https://github.com/sb2nov/resume" target="_blank">Latex Resume Template</a>: Open source resume template in Latex for Software Developers.</li>
       </ul>
     </div>
+
   </div>
 
 </div>
