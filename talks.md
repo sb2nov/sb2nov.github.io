@@ -11,11 +11,27 @@ layout: default
     <h2>2022</h2>
   </div>
 
+  <!-- Open Source Startup Podcast -->
+  <div class="hentry post project-batch-title">
+    <h4>Learn Open Source Tools & Frameworks on CoRise</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="https://anchor.fm/ossstartuppodcast/episodes/E54-Learn-Open-Source-Tools--Frameworks-on-CoRise-e1oig3g" target="_blank">Open Source Startup Podcast, Sept 2022</a>: Talk about building engaging learning experiences to grow open source adoption and creating true evangalists.</p>
+    </div>
+  </div>
+  
   <!-- Summer Community Days -->
   <div class="hentry post project-batch-title">
     <h4>Technical and data training that feels like the real world</h4>
     <div class="entry-summary">
       <p><a class="talk-title" href="https://www.youtube.com/watch?v=V1bLXu1P388" target="_blank">Summer Community Days, July 2022</a>: Talk about designing engaging learning experiences for adults that feel high touch and closer to real jobs.</p>
+    </div>
+  </div>
+
+  <!-- KD Nuggets -->
+  <div class="hentry post project-batch-title">
+    <h4>Every Engineer Should and Can Learn Machine Learning</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="https://www.kdnuggets.com/2022/06/corise-every-engineer-learn-machine-learning.html" target="_blank">KD Nuggets, June 2022</a>: Interview about learning ML, breaking into the field and how to move from a software engineer to a ML engineer.</p>
     </div>
   </div>
 

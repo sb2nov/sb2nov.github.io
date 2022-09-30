@@ -6,6 +6,20 @@ layout: default
 
 <div class="hfeed">
 
+  <!-- CoRise -->
+  <div class="hentry post project-batch-title">
+    <h2>CoRise</h2>
+  </div>
+
+  <div class="hentry post">
+    <div class="entry-summary">
+      <ul class="project-list">
+      <p><a href="https://www.corise.com/" target="_blank">CoRise</a> is a live online upskilling platform to help businesses and individuals acquire the cutting-edge technical skills necessary to remain competitive in today's market. The CoRise platform features live online courses from top industry experts, a rich community of peers, and leverages technology to deliver high-quality education with real career outcomes at scale. I founded along side Julia Stiglitz, Jacob Samuelson and we've some incredible investors from GSV Ventures, Greylock Partners, and Cowboy Ventures.</p>
+      </ul>
+    </div>
+
+  </div>
+
   <!-- Neeva -->
   <div class="hentry post project-batch-title">
     <h2>Neeva</h2>
