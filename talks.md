@@ -15,7 +15,7 @@ layout: default
   <div class="hentry post project-batch-title">
     <h4>Learn Open Source Tools & Frameworks on CoRise</h4>
     <div class="entry-summary">
-      <p><a class="talk-title" href="https://anchor.fm/ossstartuppodcast/episodes/E54-Learn-Open-Source-Tools--Frameworks-on-CoRise-e1oig3g" target="_blank">Open Source Startup Podcast, Sept 2022</a>: Talk about building engaging learning experiences to grow open source adoption and creating true evangalists.</p>
+      <p><a class="talk-title" href="https://anchor.fm/ossstartuppodcast/episodes/E54-Learn-Open-Source-Tools--Frameworks-on-CoRise-e1oig3g" target="_blank">Open Source Startup Podcast, Sept 2022</a>: Talk about building engaging learning experiences to grow open source adoption and creating true evangelists.</p>
     </div>
   </div>
   
