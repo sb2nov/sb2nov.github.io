@@ -13,9 +13,9 @@ layout: default
 
   <!-- Open Source Startup Podcast -->
   <div class="hentry post project-batch-title">
-    <h4>Learn Open Source Tools & Frameworks on CoRise</h4>
+    <h4>Learn Open Source Tools & Frameworks on Uplimit</h4>
     <div class="entry-summary">
-      <p><a class="talk-title" href="https://anchor.fm/ossstartuppodcast/episodes/E54-Learn-Open-Source-Tools--Frameworks-on-CoRise-e1oig3g" target="_blank">Open Source Startup Podcast, Sept 2022</a>: Talk about building engaging learning experiences to grow open source adoption and creating true evangelists.</p>
+      <p><a class="talk-title" href="https://anchor.fm/ossstartuppodcast/episodes/E54-Learn-Open-Source-Tools--Frameworks-on-Uplimit-e1oig3g" target="_blank">Open Source Startup Podcast, Sept 2022</a>: Talk about building engaging learning experiences to grow open source adoption and creating true evangelists.</p>
     </div>
   </div>
   
@@ -31,7 +31,7 @@ layout: default
   <div class="hentry post project-batch-title">
     <h4>Every Engineer Should and Can Learn Machine Learning</h4>
     <div class="entry-summary">
-      <p><a class="talk-title" href="https://www.kdnuggets.com/2022/06/corise-every-engineer-learn-machine-learning.html" target="_blank">KD Nuggets, June 2022</a>: Interview about learning ML, breaking into the field and how to move from a software engineer to a ML engineer.</p>
+      <p><a class="talk-title" href="https://www.kdnuggets.com/2022/06/uplimit-every-engineer-learn-machine-learning.html" target="_blank">KD Nuggets, June 2022</a>: Interview about learning ML, breaking into the field and how to move from a software engineer to a ML engineer.</p>
     </div>
   </div>
 
