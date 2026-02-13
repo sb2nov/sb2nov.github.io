@@ -9,16 +9,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      permalink: /blog/:year/:month/:day/:title/
+
 google_analytics: "UA-40495390-2"
 title: Sourabh
-description: Sourabh's portfolio and writings on machine learning, data science and distributed systems.
+description: Sourabh's portfolio.
 url: https://sourabhbajaj.com
 author: Sourabh Bajaj
 twitter:
