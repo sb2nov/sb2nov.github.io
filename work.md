@@ -57,19 +57,6 @@ redirect_from: /projects
       <p><strong>Staff Software Engineer, 2014 - 2016</strong></p>
       <ul class="project-list">
         <li><strong style="color:#333;">Data and Machine Learning</strong>: Led work spanning the ML platform, data warehouse, personalization, search, recommendations, transcription, and automated question generation.</li>
-        <li><a href="https://github.com/coursera/dataduct" target="_blank">Dataduct</a>: Helped build and open-source a workflow framework for reusable data pipelines.</li>
-        <li><a href="https://building.coursera.org/blog/2014/11/19/bringing-data-to-teaching/" target="_blank">Course Analytics</a>: Built dashboards and learner-surveying tools that helped instructors understand assignments and learner activity.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="hentry post project-batch-title">
-    <h2>Selected Projects</h2>
-    <div class="entry-summary">
-      <ul class="project-list">
-        <li><a href="https://sourabhbajaj.com/mac-setup" target="_blank">Mac Setup</a>: An open-source book for setting up a developer environment on macOS.</li>
-        <li><a href="https://sourabhbajaj.com/GithubVisualizer" target="_blank">GitViz</a>: A D3 visualization of commit activity across a GitHub organization.</li>
-        <li><a href="https://github.com/sb2nov/resume" target="_blank">LaTeX Resume Template</a>: An open-source resume template for software engineers.</li>
       </ul>
     </div>
   </div>
