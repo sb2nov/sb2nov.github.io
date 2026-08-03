@@ -519,7 +519,7 @@ iframe.video { border:0; }
 #menu-primary ul li a:hover { color: #222; }
 
 body.home             div.menu li.home            a,
-body.projects         div.menu li.projects        a,
+body.work             div.menu li.work            a,
 body.talks            div.menu li.talks           a,
 body.blog             div.menu li.blog            a {
   color: #aaa;
