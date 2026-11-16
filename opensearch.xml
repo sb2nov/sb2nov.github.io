@@ -11,5 +11,5 @@
   <Url rel="self" type="application/opensearchdescription+xml" href="https://sourabhbajaj.com/opensearch.xml" />
   <Url method="get" type="text/html" 
       template="https://www.google.com/search?q={searchTerms}&amp;sitesearch=sourabhbajaj.com" />
-  <Image width="16" height="16">https://sourabhbajaj.com/images/contents/fav.png</Image>
+  <Image width="16" height="16" type="image/x-icon">https://sourabhbajaj.com/favicon.ico</Image>
 </OpenSearchDescription>
