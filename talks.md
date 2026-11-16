@@ -6,6 +6,35 @@ layout: default
 
 <div class="hfeed">
 
+  <!-- 2023 -->
+  <div class="hentry post project-batch-title">
+    <h2>2023</h2>
+  </div>
+
+  <!-- CELab Podcast -->
+  <div class="hentry post project-batch-title">
+    <h4>AI and Customer Education</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="https://celab-the-customer-education-lab.castos.com/episodes/celab-ep-118-sourabh-bajaj-ai-and-customer-education" target="_blank">CELab: The Customer Education Lab Podcast, Nov 2023</a>: Conversation about how AI is changing customer education, from automating routine work to capturing knowledge, and the guardrails needed around privacy, data security and bias.</p>
+    </div>
+  </div>
+
+  <!-- ATD International Conference & EXPO -->
+  <div class="hentry post project-batch-title">
+    <h4>What Will Generative AI Do for You This Year?</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="https://www.td.org/videos/what-will-generative-ai-do-for-you-this-year" target="_blank">ATD International Conference & EXPO, May 2023</a>: Session with Julia Stiglitz and Karie Willyerd on how generative AI can help L&D teams reach more learners through personalized learning, virtual teaching assistants and intelligent tutoring, including a live ChatGPT demo. (<a href="https://www.td.org/videos/what-will-generative-ai-do-for-you-this-year" target="_blank">Video</a>)</p>
+    </div>
+  </div>
+
+  <!-- ASU+GSV Summit -->
+  <div class="hentry post project-batch-title">
+    <h4>A Primer on ChatGPT and the Generative AI Explosion</h4>
+    <div class="entry-summary">
+      <p><a class="talk-title" href="https://asugsvsummit.com/video/a-primer-on-chatgpt-and-the-generative-ai-explosion" target="_blank">ASU+GSV Summit, April 2023</a>: Session with Eran Megiddo (Maximal Learning) introducing generative AI and how it can personalize learning, automate administrative work and support collaboration across K-12, higher education and workforce training. (<a href="https://asugsvsummit.com/video/a-primer-on-chatgpt-and-the-generative-ai-explosion" target="_blank">Video</a>)</p>
+    </div>
+  </div>
+
   <!-- 2022 -->
   <div class="hentry post project-batch-title">
     <h2>2022</h2>
