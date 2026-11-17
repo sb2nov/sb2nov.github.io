@@ -7,16 +7,17 @@
     - title: Head of Engineering, Learn at Handshake
       years: Jun 2026 - Oct 2026
       highlights:
-        - Launched AI Skills Studio, bringing Uplimit's AI teaching to Handshake to help people get ready for jobs in the AI economy.
+        - Launched AI Skills Studio, bringing Uplimit's AI teaching to [Handshake](https://joinhandshake.com/) to help people get ready for jobs in the AI economy.
     - title: Co-founder and CTO
       years: Sep 2021 - Jun 2026
       highlights:
         - Co-founded Uplimit to make great teaching available to every learner, and built and led its engineering team.
         - Built an AI tutor that teaches one-on-one, talking with learners in real time, creating interactive lessons, and adapting practice and feedback to how each person learns.
         - Grew it into the platform Databricks, GE HealthCare, Kraft Heinz, Procore, and other enterprises use to teach their employees and customers, from onboarding to leadership and technical training.
-        - Raised over $19.5M from Conviction, Greylock, Cowboy Ventures, Salesforce Ventures, and others, and led the company's technical strategy through its acquisition by Handshake.
+        - Raised over $19.5M from [Conviction](https://www.conviction.com/), [Greylock](https://greylock.com/), Cowboy Ventures, Salesforce Ventures, and others, and led the company's technical strategy through its acquisition by Handshake.
 
 - company: Neeva
+  url: https://en.wikipedia.org/wiki/Neeva
   roles:
     - title: Engineering Manager
       years: Jul 2019 - Sep 2021
@@ -26,6 +27,7 @@
         - Led the data infrastructure behind search, including the ML platform, data warehouse, business intelligence, and data processing on Kubernetes.
 
 - company: Google Brain
+  url: https://en.wikipedia.org/wiki/Google_Brain
   roles:
     - title: Tech Lead
       years: Oct 2016 - Jul 2019
@@ -34,6 +36,7 @@
         - Designed multi-language support for [Apache Beam](https://beam.apache.org/), so data pipelines can be written in the language you know and run on whichever processing engine you choose.
 
 - company: Coursera
+  url: https://www.coursera.org/
   roles:
     - title: Staff Software Engineer
       years: Jan 2014 - Oct 2016

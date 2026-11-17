@@ -5,9 +5,9 @@ import { SafeHtml } from "@/components/safe-html";
 import { getFullName, getSiteConfig, getSocials } from "@/lib/content";
 
 const navItems = [
-	{ href: "/", label: "home" },
-	{ href: "/work", label: "work" },
-	{ href: "/talks", label: "talks" },
+	{ href: "/", label: "Home" },
+	{ href: "/work", label: "Work" },
+	{ href: "/talks", label: "Talks" },
 ];
 
 interface FooterLink {
@@ -24,13 +24,11 @@ function socialLinks(): FooterLink[] {
 	const linkedin = text(socials.linkedin_username);
 	const github = text(socials.github_username);
 	const twitter = text(socials.twitter_username);
-	const email = text(socials.email);
 
 	return [
 		linkedin ? { href: `https://www.linkedin.com/in/${linkedin}`, label: "LinkedIn" } : undefined,
 		github ? { href: `https://github.com/${github}`, label: "GitHub" } : undefined,
 		twitter ? { href: `https://twitter.com/${twitter}`, label: "Twitter" } : undefined,
-		email ? { href: `mailto:${email}`, label: "Email" } : undefined,
 	].filter((link): link is FooterLink => Boolean(link));
 }
 

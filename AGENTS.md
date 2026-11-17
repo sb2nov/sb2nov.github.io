@@ -32,4 +32,6 @@ SHOW_DRAFTS=1 pnpm run test:e2e
 - `published: false` marks a post as a draft: it renders in dev and tests but is excluded from production builds unless `SHOW_DRAFTS=1`.
 - Keep `/assets/...` URLs stable by placing files under `public/assets`.
 - `/mac-setup` gets heavy traffic. Keep `skipTrailingSlashRedirect` and the `/mac-setup` exclusion in `next.config.ts`, or GitHub's trailing-slash redirects will loop.
+- The `/mac-setup` proxy only works while the sb2nov.github.io repository has no GitHub Pages custom domain; otherwise GitHub redirects back to sourabhbajaj.com and the proxy returns a 502. `MAC_SETUP_ORIGIN` overrides the upstream for testing.
+- Vercel deploys every push to `master` to production; other branches get preview deployments.
 - Run `pnpm run lint`, `pnpm run typecheck`, `pnpm run test`, and `pnpm run build` before committing.
