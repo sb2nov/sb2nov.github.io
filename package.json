@@ -1,0 +1,77 @@
+{
+	"name": "sourabhbajaj.com",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@10.23.0",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"build:pages": "NEXT_OUTPUT=export next build",
+		"start": "next start",
+		"lint": "eslint . --max-warnings=0",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"test:e2e": "playwright test"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"sharp",
+			"unrs-resolver"
+		],
+		"overrides": {
+			"postcss": "^8.5.10"
+		}
+	},
+	"dependencies": {
+		"@mdx-js/mdx": "^3.1.1",
+		"@mdx-js/react": "^3.1.1",
+		"bibtex-parse-js": "^0.0.6",
+		"chart.js": "^4.5.1",
+		"diff2html": "^3.4.52",
+		"echarts": "^6.0.0",
+		"github-slugger": "^2.0.0",
+		"gray-matter": "^4.0.3",
+		"highlight.js": "^11.11.1",
+		"js-yaml": "^4.1.0",
+		"katex": "^0.16.25",
+		"leaflet": "^1.9.4",
+		"lucide-react": "^0.554.0",
+		"mermaid": "^11.12.0",
+		"next": "^16.0.4",
+		"plotly.js-dist-min": "^3.3.0",
+		"pseudocode": "^2.4.1",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0",
+		"reading-time": "^1.5.0",
+		"rehype-autolink-headings": "^7.1.0",
+		"rehype-katex": "^7.0.1",
+		"rehype-slug": "^6.0.0",
+		"remark-emoji": "^5.0.2",
+		"remark-gfm": "^4.0.1",
+		"remark-math": "^6.0.0",
+		"sanitize-html": "^2.17.4",
+		"sass": "^1.94.2",
+		"swiper": "^12.0.3",
+		"vega": "^6.2.0",
+		"vega-embed": "^7.1.0",
+		"vega-lite": "^6.4.1"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.57.0",
+		"@types/js-yaml": "^4.0.9",
+		"@types/leaflet": "^1.9.21",
+		"@types/node": "^24.10.1",
+		"@types/react": "^19.2.5",
+		"@types/react-dom": "^19.2.3",
+		"@types/sanitize-html": "^2.16.1",
+		"@typescript-eslint/eslint-plugin": "^8.47.0",
+		"@typescript-eslint/parser": "^8.47.0",
+		"eslint": "^9.39.1",
+		"eslint-config-next": "^16.0.4",
+		"prettier": "^3.6.2",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.13"
+	}
+}

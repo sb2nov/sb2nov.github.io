@@ -1,6 +1,12 @@
-_site
-_import
+node_modules
+.next
+tsconfig.tsbuildinfo
+out
+coverage
+test-results
+playwright-report
+.env*
+!.env.example
 .DS_Store
-.jekyll-metadata
-.bundle
-vendor
+.context
+pnpm-debug.log*

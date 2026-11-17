@@ -1,0 +1,32 @@
+title: Sourabh Bajaj
+first_name: Sourabh
+last_name: Bajaj
+description: Sourabh Bajaj is an engineer, entrepreneur, and investor.
+footer_text: ""
+keywords: Sourabh Bajaj, Uplimit, Handshake, machine learning, AI, education
+lang: en
+# Your deployed origin, used for canonical URLs, Open Graph tags, and the sitemap.
+# SITE_URL (set at build time) overrides url + baseurl.
+url: https://sourabhbajaj.com
+# Path prefix for GitHub Pages project sites. Empty for a user site or custom domain.
+baseurl: ""
+enable_darkmode: true
+giscus:
+  repo: null
+  repo_id: null
+  category: Comments
+  category_id: null
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  dark_theme: dark
+  light_theme: light
+  emit_metadata: 0
+  lang: en
+
+# Your name as it appears in BibTeX author lists; matching authors are emphasized in
+# distill post references.
+scholar:
+  last_name: [Bajaj]
+  first_name: [Sourabh, S.]

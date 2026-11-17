@@ -1,18 +1,52 @@
-## Sourabh Bajaj
+# sourabhbajaj.com
 
-This is the repository for my [blog](https://sourabhbajaj.com). I sometimes write about things I find interesting.
+Source for [sourabhbajaj.com](https://sourabhbajaj.com). It's built with Next.js, TypeScript, and MDX, using the [AI Portfolio](https://github.com/sb2nov/portfolio) theme (a Next.js port of [al-folio](https://github.com/alshedivat/al-folio)).
 
-### Usage
+## Quick start
 
-For building the site, use the command `./run_with_docker.sh server`.
+Requires Node.js 24 and [pnpm](https://pnpm.io) (`corepack enable pnpm`).
 
-### License
+```bash
+pnpm install
+pnpm run dev
+```
 
-- The HTML and CSS are copyrighted to [AlienWp](http://alienwp.com/) under [GPL license, version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+Open http://localhost:3000.
 
-- The written textual contents available in the blog is licensed under Apache 2.0.
+## Editing content
 
-### The end
+| Page | Source |
+| --- | --- |
+| Home (bio) | `content/pages/about.mdx` (`heading` front matter is the page title) |
+| Work | `content/data/work.yml` |
+| Talks | `content/data/talks.yml` |
+| Footer social links | `content/data/socials.yml` |
+| Site title, description, URL | `content/site.yml` |
 
-Like it? [Tell me](http://twitter.com/sourabhbajaj90).<br/>
-Question? [Use GitHub Issues](https://github.com/sb2nov/sb2nov.github.io/issues).
+## Blog posts (not linked yet)
+
+The site has no blog index or nav link yet, but the distill-style post layout is kept so posts can be written now. Posts are MDX files in `content/posts/` and are served at `/blog/<year>/<slug>`.
+
+- `content/posts/2021-distill.mdx` is a template that uses every distill feature: byline, table of contents, footnotes, citations, sidenotes, math, code, and interactive charts.
+- `published: false` in a post's front matter makes it a draft. Drafts show under `pnpm run dev` but are left out of production builds and the sitemap. `SHOW_DRAFTS=1` includes them in a build.
+- Posts use the distill layout by default. `layout: post` switches to the classic single-column layout.
+
+See the [theme README](https://github.com/sb2nov/portfolio#writing-blog-posts) for front matter options and the available MDX components.
+
+## Deployment
+
+`.github/workflows/pages.yml` runs `pnpm run build:pages` on every push to `master` and deploys `out/` to GitHub Pages. In the repository settings, **Pages > Build and deployment > Source** must be set to **GitHub Actions**. `public/CNAME` keeps the custom domain.
+
+## Development
+
+```bash
+pnpm run lint        # ESLint
+pnpm run typecheck   # TypeScript
+pnpm run test        # Vitest unit tests
+pnpm run build:pages # static export to out/ (what deploys)
+SHOW_DRAFTS=1 pnpm run build && SHOW_DRAFTS=1 pnpm run test:e2e  # Playwright smoke tests
+```
+
+## License
+
+The code is MIT licensed (see [LICENSE](LICENSE), which keeps the al-folio notice). The written content is licensed under Apache 2.0.

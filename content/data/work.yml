@@ -1,0 +1,42 @@
+# Rendered by /work, newest first. Each company lists its roles newest first.
+# Order each role's highlights as a story: the mission, what you built, who used it, the outcome.
+# Highlights are single sentences; inline markdown links like [TensorFlow](https://...) work.
+- company: Uplimit (acquired by Handshake)
+  url: https://uplimit.com/
+  roles:
+    - title: Head of Engineering, Learn at Handshake
+      years: Jun 2026 - Oct 2026
+      highlights:
+        - Launched AI Skills Studio, bringing Uplimit's AI teaching to Handshake to help people get ready for jobs in the AI economy.
+    - title: Co-founder and CTO
+      years: Sep 2021 - Jun 2026
+      highlights:
+        - Co-founded Uplimit to make great teaching available to every learner, and built and led its engineering team.
+        - Built an AI tutor that teaches one-on-one, talking with learners in real time, creating interactive lessons, and adapting practice and feedback to how each person learns.
+        - Grew it into the platform Databricks, GE HealthCare, Kraft Heinz, Procore, and other enterprises use to teach their employees and customers, from onboarding to leadership and technical training.
+        - Raised over $19.5M from Conviction, Greylock, Cowboy Ventures, Salesforce Ventures, and others, and led the company's technical strategy through its acquisition by Handshake.
+
+- company: Neeva
+  roles:
+    - title: Engineering Manager
+      years: Jul 2019 - Sep 2021
+      highlights:
+        - Led personalization for Neeva's ad-free search engine, so results reflected each person's favorite retailers, news sources, and subscriptions.
+        - Ran a team spanning design, frontend, backend, and infrastructure to ship personalized search end to end.
+        - Led the data infrastructure behind search, including the ML platform, data warehouse, business intelligence, and data processing on Kubernetes.
+
+- company: Google Brain
+  roles:
+    - title: Tech Lead
+      years: Oct 2016 - Jul 2019
+      highlights:
+        - Led the team that made Google's TPUs easy to use from [TensorFlow](https://www.tensorflow.org/), through APIs like Keras and Distribution Strategy, and sped up model training on them.
+        - Designed multi-language support for [Apache Beam](https://beam.apache.org/), so data pipelines can be written in the language you know and run on whichever processing engine you choose.
+
+- company: Coursera
+  roles:
+    - title: Staff Software Engineer
+      years: Jan 2014 - Oct 2016
+      highlights:
+        - Built the data infrastructure behind Coursera's online courses, including the ML platform and data warehouse.
+        - Built machine learning products on top of it for learners, including personalization, search, recommendations, transcription, and automatically generated quizzes.

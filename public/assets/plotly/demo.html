@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive earthquake density demo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --accent: #b50938;
+        --ink: #24313d;
+        --muted: #637083;
+        --surface: #f7f8fb;
+        --border: #d8dee8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: white;
+        color: var(--ink);
+        font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .demo {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 210px;
+        gap: 16px;
+        min-height: 470px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 18px;
+        background: linear-gradient(135deg, #f9fbff 0%, white 55%, #fff5f7 100%);
+      }
+
+      .map {
+        position: relative;
+        min-height: 430px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background:
+          radial-gradient(circle at 50% 50%, rgb(181 9 56 / 8%) 0 16%, transparent 17%),
+          linear-gradient(#dfe8f2 1px, transparent 1px),
+          linear-gradient(90deg, #dfe8f2 1px, transparent 1px),
+          #f8fbff;
+        background-size:
+          100% 100%,
+          48px 48px,
+          48px 48px,
+          auto;
+      }
+
+      .coast {
+        position: absolute;
+        inset: 32px 52px;
+        border: 2px solid #b8c5d6;
+        border-radius: 48% 42% 44% 50%;
+        transform: rotate(-8deg);
+      }
+
+      .coast:nth-child(2) {
+        inset: 130px 230px 70px 90px;
+        transform: rotate(18deg);
+      }
+
+      .point {
+        position: absolute;
+        width: calc(var(--magnitude) * 9px);
+        height: calc(var(--magnitude) * 9px);
+        border: 2px solid rgb(181 9 56 / 60%);
+        border-radius: 999px;
+        background: rgb(181 9 56 / 18%);
+        transform: translate(-50%, -50%);
+        transition:
+          transform 160ms ease,
+          background 160ms ease,
+          border-color 160ms ease;
+      }
+
+      .point:hover,
+      .point:focus-visible {
+        z-index: 4;
+        background: rgb(181 9 56 / 35%);
+        border-color: var(--accent);
+        outline: none;
+        transform: translate(-50%, -50%) scale(1.25);
+      }
+
+      .tooltip {
+        position: absolute;
+        left: 18px;
+        bottom: 18px;
+        max-width: 290px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 10px 12px;
+        background: rgb(255 255 255 / 92%);
+        box-shadow: 0 10px 24px rgb(31 41 55 / 10%);
+      }
+
+      .panel {
+        display: grid;
+        align-content: start;
+        gap: 12px;
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        color: var(--accent);
+        font: 400 23px/1.1 Georgia, "Times New Roman", serif;
+      }
+
+      .metric {
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 11px;
+        background: var(--surface);
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .legend {
+        display: grid;
+        gap: 7px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .legend span::before {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 7px;
+        border-radius: 50%;
+        background: rgb(181 9 56 / 24%);
+        content: "";
+      }
+
+      @media (max-width: 700px) {
+        .demo {
+          grid-template-columns: 1fr;
+        }
+
+        .map {
+          min-height: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="demo">
+      <section class="map" aria-label="Earthquake magnitude density map">
+        <div class="coast"></div>
+        <div class="coast"></div>
+        <button class="point" style="left: 24%; top: 38%; --magnitude: 2.3" data-label="Pacific ridge, M2.3"></button>
+        <button class="point" style="left: 42%; top: 54%; --magnitude: 3.1" data-label="Mid-ocean tremor, M3.1"></button>
+        <button class="point" style="left: 57%; top: 31%; --magnitude: 4.2" data-label="Northern fault, M4.2"></button>
+        <button class="point" style="left: 69%; top: 63%; --magnitude: 5.4" data-label="Subduction zone, M5.4"></button>
+        <button class="point" style="left: 78%; top: 42%; --magnitude: 3.8" data-label="Coastal quake, M3.8"></button>
+        <p class="tooltip" id="tooltip">Hover a circle to inspect the event magnitude.</p>
+      </section>
+      <aside class="panel">
+        <h1>Earthquake density</h1>
+        <p>Self-contained interactive demo for the Distill iframe example, with no remote tile dependencies.</p>
+        <div class="metric"><strong>23k</strong> sample events</div>
+        <div class="metric"><strong>5.4</strong> max magnitude</div>
+        <div class="legend">
+          <span>larger circles indicate stronger events</span>
+          <span>hover states mimic interactive Plotly exploration</span>
+        </div>
+      </aside>
+    </main>
+    <script>
+      const tooltip = document.querySelector("#tooltip");
+      for (const point of document.querySelectorAll(".point")) {
+        point.addEventListener("mouseenter", () => {
+          tooltip.textContent = point.dataset.label;
+        });
+        point.addEventListener("focus", () => {
+          tooltip.textContent = point.dataset.label;
+        });
+      }
+    </script>
+  </body>
+</html>
