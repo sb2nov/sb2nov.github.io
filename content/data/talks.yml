@@ -1,0 +1,147 @@
+# Rendered by /talks, grouped by year (newest first). `links` become (Slides | Video)
+# buttons; `also` lists other venues where a similar talk was given.
+- year: 2023
+  talks:
+    - title: AI and Customer Education
+      venue: "CELab: The Customer Education Lab Podcast, Nov 2023"
+      url: https://celab-the-customer-education-lab.castos.com/episodes/celab-ep-118-sourabh-bajaj-ai-and-customer-education
+      description: Conversation about how AI is changing customer education, from automating routine work to capturing knowledge, and the guardrails needed around privacy, data security and bias.
+    - title: What Will Generative AI Do for You This Year?
+      venue: ATD International Conference & EXPO, May 2023
+      url: https://www.td.org/videos/what-will-generative-ai-do-for-you-this-year
+      description: Session with Julia Stiglitz and Karie Willyerd on how generative AI can help L&D teams reach more learners through personalized learning, virtual teaching assistants and intelligent tutoring, including a live ChatGPT demo.
+      links:
+        - label: Video
+          url: https://www.td.org/videos/what-will-generative-ai-do-for-you-this-year
+    - title: A Primer on ChatGPT and the Generative AI Explosion
+      venue: ASU+GSV Summit, April 2023
+      url: https://asugsvsummit.com/video/a-primer-on-chatgpt-and-the-generative-ai-explosion
+      description: Session with Eran Megiddo (Maximal Learning) introducing generative AI and how it can personalize learning, automate administrative work and support collaboration across K-12, higher education and workforce training.
+      links:
+        - label: Video
+          url: https://asugsvsummit.com/video/a-primer-on-chatgpt-and-the-generative-ai-explosion
+
+- year: 2022
+  talks:
+    - title: Learn Open Source Tools & Frameworks on Uplimit
+      venue: Open Source Startup Podcast, Sept 2022
+      url: https://anchor.fm/ossstartuppodcast/episodes/E54-Learn-Open-Source-Tools--Frameworks-on-Uplimit-e1oig3g
+      description: Talk about building engaging learning experiences to grow open source adoption and creating true evangelists.
+    - title: Technical and data training that feels like the real world
+      venue: Summer Community Days, July 2022
+      url: https://www.youtube.com/watch?v=V1bLXu1P388
+      description: Talk about designing engaging learning experiences for adults that feel high touch and closer to real jobs.
+    - title: Every Engineer Should and Can Learn Machine Learning
+      venue: KD Nuggets, June 2022
+      url: https://www.kdnuggets.com/2022/06/uplimit-every-engineer-learn-machine-learning.html
+      description: Interview about learning ML, breaking into the field and how to move from a software engineer to a ML engineer.
+
+- year: 2020
+  talks:
+    - title: "Keynote Panel: State of AI in the Enterprise"
+      venue: Global AI Conference, October 2020
+      url: http://www.globalbigdataconference.com/boston/global-artificial-intelligence-virtual-conference/schedule-123.html
+      description: Panel discussion on challenges in building, deploying and productionizing models in an enterprise setting.
+
+- year: 2018
+  talks:
+    - title: High-Performance TensorFlow for Accelerators
+      venue: Tensorflow Roadshow, Bengaluru, October 2018
+      url: https://events.withgoogle.com/tfr-blr/
+      description: Talk about the Tensor Processing Units (TPUs). Covers the internals of the hardware design of TPUs, how to run your Tensorflow models on accelerators and performance tuning for your models when using Accelerators.
+    - title: Museum of Machine Arts
+      venue: PyBay, August 2018
+      url: https://pybay.com/
+      description: Talk about recent developments in Deep Learning generated/assisted art. Covering recent papers about GANs, Neural Style transfer, Pix2Pixel etc.
+      links:
+        - label: Slides
+          url: https://speakerdeck.com/sb2nov/museum-of-machine-arts
+      also_intro: Presented a similar talk on machine generated art at
+      also:
+        - venue: Global Big Data Conference, August 2018
+          url: http://www.globalbigdataconference.com/santa-clara/6th-annual-global-big-data-conference/schedule-105.html
+          links:
+            - label: Slides
+              url: https://speakerdeck.com/sb2nov/museum-of-machine-arts
+    - title: Jeju Deep Learning Camp
+      venue: Jeju Deep Learning Camp, July 2018
+      url: http://jeju.dlcamp.org/2018/
+      description: One of the mentors for the deep learning summer camp in Jeju, Korea. Mentored students on projects across variety of domains such as Reinforcement Learning, Recommendation Systems, Computer Vision and Natural Language Processing.
+    - title: New APIs in Tensorflow
+      venue: Global Artificial Intelligence Conference, April 2018
+      url: http://www.globalbigdataconference.com/seattle/global-artificial-intelligence-conference/event-103.html
+      description: Talk about the Tensorflow Eager execution and the Dataset APIs. Covers on how to change your code from using graph mode to eager execution and in the second half covered the datasets api to write performant input pipelines.
+      links:
+        - label: Slides
+          url: https://speakerdeck.com/sb2nov/new-apis-in-tensorflow
+
+- year: 2017
+  talks:
+    - title: Unified Batch and Stream processing with Apache Beam
+      venue: PyData, July 2017
+      url: https://pydata.org/seattle2017/
+      description: Apache Beam is a parallel programming model that allows one to implement batch and streaming data processing jobs that can run on a variety of execution engines like Apache Spark and Google Cloud Dataflow.
+      links:
+        - label: Slides
+          url: https://speakerdeck.com/sb2nov/big-data-processing-with-apache-beam
+        - label: Video
+          url: https://www.youtube.com/watch?v=-6xpDRiurmA
+      also_intro: Presented similar talks on Apache Beam at
+      also:
+        - venue: PyBay, August 2017
+          url: https://pybay.com/
+          links:
+            - label: Slides
+              url: https://speakerdeck.com/sb2nov/unified-batch-and-stream-processing-with-apache-beam
+            - label: Video
+              url: https://www.youtube.com/watch?v=z2nEOPz30so
+        - venue: Cloud+Data Nextcon, September 2017
+          url: http://cdsea17.xnextcon.com/
+          links:
+            - label: Slides
+              url: https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam
+        - venue: Florida Pycon, October 2017
+          url: http://flpy.org/
+          links:
+            - label: Slides
+              url: https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam
+        - venue: All things Python, October 2017
+          url: https://www.meetup.com/All-Things-Python/events/243725413/
+          links:
+            - label: Slides
+              url: https://speakerdeck.com/sb2nov/unified-processing-with-apache-beam
+    - title: Intro to Recommendation Systems
+      venue: Metis, August 2017
+      url: https://www.thisismetis.com/
+      description: Guest lecture on building real world recommendation systems. Talk goes over building multiple iterations of the system in increasing complexity.
+
+- year: 2016
+  talks:
+    - title: Cassandra batch loading for building Data Products
+      venue: Cassandra Meetup, July 2016
+      url: http://www.meetup.com/DataStax-Cassandra-South-Bay-Users/events/232405279/
+      description: Talk about Nostos (batch loading service at Coursera) and some of its use cases in data products such as recommendations, search and prediction models. Covers some of the design choice and tradeoffs made in building Nostos and explains how the system evolved over time.
+      links:
+        - label: Slides
+          url: https://speakerdeck.com/sb2nov/cassandra-batch-loading-for-data-products
+        - label: Video
+          url: https://www.youtube.com/watch?v=SQBGPX_eYZ0
+    - title: Extending our workflow service for use cases beyond ETL
+      venue: Big Data Meetup, May 2016
+      url: http://www.meetup.com/San-Francisco-AWS-Big-Data-Meetup/events/229638199/
+      description: Talk about Dataduct the workflow / ETL service at Coursera and how it is now being used for other use cases beyond just ETL such as machine learning, predictions and bulk loading into cassandra.
+      links:
+        - label: Slides
+          url: https://speakerdeck.com/sb2nov/to-and-fro-from-amazon-redshift
+
+- year: 2015
+  talks:
+    - title: Large-Scale ETL Data Flows with AWS Data Pipeline & Dataduct
+      venue: AWS Re:Invent, Oct 2015
+      url: https://reinvent.awsevents.com/
+      description: Dive deep into AWS Data Pipeline and Dataduct, an open source framework built at Coursera to manage pipelines and create reusable patterns to expedite developer productivity.
+      links:
+        - label: Slides
+          url: https://speakerdeck.com/sb2nov/large-scale-etl-data-flows-with-data-pipeline-and-dataduct
+        - label: Video
+          url: https://www.youtube.com/watch?v=NLCLoJnhDOM
