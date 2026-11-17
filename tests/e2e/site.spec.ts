@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 // Distill tests use the unpublished template post, so CI builds with SHOW_DRAFTS=1 before
-// running these. Production builds (`pnpm run build:pages`) leave drafts out.
+// running these. Production builds leave drafts out.
 
 test("home page renders the bio and primary navigation", async ({ page }) => {
 	await page.goto("/");
@@ -82,9 +82,24 @@ test("footer renders social links from socials data", async ({ page }) => {
 	await expect(footer).toContainText("Sourabh Bajaj");
 });
 
-test("old /projects link redirects to /work", async ({ page }) => {
-	await page.goto("/projects");
-	await expect(page).toHaveURL(/\/work\/?$/);
+test("old URLs redirect permanently to the new pages", async ({ request }) => {
+	for (const [from, to] of [
+		["/projects", "/work"],
+		["/work.html", "/work"],
+		["/talks.html", "/talks"],
+		["/index.html", "/"],
+		["/work/", "/work"],
+	]) {
+		const response = await request.get(from, { maxRedirects: 0 });
+		expect(response.status(), from).toBe(308);
+		expect(response.headers().location, from).toBe(to);
+	}
+});
+
+test("/mac-setup keeps its trailing slash instead of Next's slash stripping", async ({ request }) => {
+	// The upstream itself is covered by unit tests; here we only check Next doesn't redirect first.
+	const response = await request.get("/mac-setup/", { maxRedirects: 0 });
+	expect(response.status()).not.toBe(308);
 });
 
 test("removed pages are not served", async ({ request }) => {

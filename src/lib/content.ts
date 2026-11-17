@@ -185,11 +185,7 @@ export function getSiteUrl(config = getSiteConfig()): string {
 
 export function absoluteUrl(pathname: string, config = getSiteConfig()): string {
 	if (/^https?:\/\//.test(pathname)) return pathname;
-	let normalized = pathname.startsWith("/") ? pathname : `/${pathname}`;
-	// Static exports use trailing-slash URLs (blog/index.html), so page URLs get one to avoid redirects.
-	if (process.env.NEXT_OUTPUT === "export" && !normalized.endsWith("/") && !/\.[a-z0-9]+$/i.test(normalized)) {
-		normalized = `${normalized}/`;
-	}
+	const normalized = pathname.startsWith("/") ? pathname : `/${pathname}`;
 	return `${getSiteUrl(config)}${normalized}`;
 }
 

@@ -39,8 +39,8 @@ jobs:
       - name: Unit tests
         run: pnpm run test
 
-      - name: Build static export (what deploys)
-        run: pnpm run build:pages
+      - name: Build (what deploys)
+        run: pnpm run build
 
       # The e2e suite covers the distill layout through the unpublished template post.
       - name: Build with drafts for e2e

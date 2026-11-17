@@ -35,7 +35,13 @@ See the [theme README](https://github.com/sb2nov/portfolio#writing-blog-posts) f
 
 ## Deployment
 
-`.github/workflows/pages.yml` runs `pnpm run build:pages` on every push to `master` and deploys `out/` to GitHub Pages. In the repository settings, **Pages > Build and deployment > Source** must be set to **GitHub Actions**. `public/CNAME` keeps the custom domain.
+The site is hosted on [Vercel](https://vercel.com) as a standard Next.js app. Pushes to `master` deploy to production, and other branches get preview deployments.
+
+### /mac-setup
+
+[sourabhbajaj.com/mac-setup](https://sourabhbajaj.com/mac-setup/) is the [sb2nov/mac-setup](https://github.com/sb2nov/mac-setup) GitHub Pages site. `src/app/mac-setup/[[...path]]/route.ts` proxies every `/mac-setup/*` request to `https://sb2nov.github.io/mac-setup/*`, so its URLs and search ranking stay on this domain. GitHub's own behavior passes through unchanged (`/dir` → `/dir/` redirects, `page` → `page.html`, the custom 404 page), redirects are rewritten back onto this domain, and responses are cached at Vercel's CDN for an hour.
+
+This only works while the sb2nov.github.io repository has **no** GitHub Pages custom domain. If it does, GitHub redirects github.io back to sourabhbajaj.com and the proxy returns a 502 explaining that. `MAC_SETUP_ORIGIN` overrides the upstream, which is useful for testing.
 
 ## Development
 
@@ -43,7 +49,7 @@ See the [theme README](https://github.com/sb2nov/portfolio#writing-blog-posts) f
 pnpm run lint        # ESLint
 pnpm run typecheck   # TypeScript
 pnpm run test        # Vitest unit tests
-pnpm run build:pages # static export to out/ (what deploys)
+pnpm run build       # production build (what deploys)
 SHOW_DRAFTS=1 pnpm run build && SHOW_DRAFTS=1 pnpm run test:e2e  # Playwright smoke tests
 ```
 

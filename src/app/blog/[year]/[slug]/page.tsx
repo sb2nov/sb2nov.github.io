@@ -23,10 +23,7 @@ interface PageProps {
 
 // Posts are not linked from the site navigation yet; they are reachable only by URL.
 export function generateStaticParams() {
-	const params = getPosts().map((post) => ({ year: post.meta.year, slug: post.meta.slug }));
-	// `output: export` refuses dynamic routes with no params, which is the case while every
-	// post is still a draft. This placeholder renders the not-found page.
-	return params.length ? params : [{ year: "_", slug: "_" }];
+	return getPosts().map((post) => ({ year: post.meta.year, slug: post.meta.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
