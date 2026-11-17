@@ -10,6 +10,7 @@ const ignored = [
 	"lighthouse_results/**",
 	"_site/**",
 	"coverage/**",
+	".context/**",
 ];
 
 const config = [
