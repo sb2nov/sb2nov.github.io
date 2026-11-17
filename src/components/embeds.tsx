@@ -2,6 +2,7 @@
 
 import { withBasePath } from "@/lib/base-path";
 import { useEffect, useId, useRef, useState } from "react";
+import type { EChartsOption } from "echarts";
 import hljs from "highlight.js/lib/common";
 import "leaflet/dist/leaflet.css";
 import "katex/dist/katex.min.css";
@@ -122,7 +123,7 @@ function InteractiveBlock({ language, code }: { language: RichLanguage; code: st
 					const spec = tryJson(code);
 					if (!spec || typeof spec !== "object") throw new Error("ECharts block must be JSON.");
 					const chart = echarts.init(target);
-					chart.setOption(spec as echarts.EChartsOption);
+					chart.setOption(spec as EChartsOption);
 					setDispose(() => chart.dispose());
 					return;
 				}
