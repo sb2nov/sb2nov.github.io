@@ -4,7 +4,7 @@ Source for my personal site, [sourabhbajaj.com](https://sourabhbajaj.com). It's 
 
 ## Getting started
 
-Requires Node.js 24 and [pnpm](https://pnpm.io) (`corepack enable pnpm`).
+Requires Node.js 26 and [pnpm](https://pnpm.io) (`corepack enable pnpm`).
 
 ```bash
 pnpm install
