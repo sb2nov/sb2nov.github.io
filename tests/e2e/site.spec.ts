@@ -11,8 +11,8 @@ test("home page renders the bio and primary navigation", async ({ page }) => {
 	await expect(page.locator("main img")).toHaveCount(0);
 
 	const nav = page.getByRole("navigation", { name: "Primary navigation" });
-	await expect(nav.getByRole("link")).toHaveText(["home", "work", "talks"]);
-	await expect(nav.getByRole("link", { name: "home" })).toHaveAttribute("aria-current", "page");
+	await expect(nav.getByRole("link")).toHaveText(["Home", "Work", "Talks"]);
+	await expect(nav.getByRole("link", { name: "Home" })).toHaveAttribute("aria-current", "page");
 	await expect(nav).not.toContainText("blog");
 });
 
@@ -77,7 +77,7 @@ test("footer renders social links from socials data", async ({ page }) => {
 		"https://twitter.com/sourabhbajaj90"
 	);
 	await expect(footer.getByRole("link", { name: "Speaker Deck" })).toHaveCount(0);
-	await expect(footer.getByRole("link", { name: "Email" })).toHaveAttribute("href", "mailto:sourabh@sourabhbajaj.com");
+	await expect(footer.getByRole("link", { name: "Email" })).toHaveCount(0);
 	await expect(footer).toContainText("© 2012");
 	await expect(footer).toContainText("Sourabh Bajaj");
 });
