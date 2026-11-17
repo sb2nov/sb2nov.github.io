@@ -5,7 +5,7 @@
 	"type": "module",
 	"packageManager": "pnpm@10.23.0",
 	"engines": {
-		"node": "24.x"
+		"node": "26.x"
 	},
 	"scripts": {
 		"dev": "next dev",
@@ -64,7 +64,7 @@
 		"@playwright/test": "^1.57.0",
 		"@types/js-yaml": "^4.0.9",
 		"@types/leaflet": "^1.9.21",
-		"@types/node": "^24.10.1",
+		"@types/node": "^26.6.6",
 		"@types/react": "^19.2.5",
 		"@types/react-dom": "^19.2.3",
 		"@types/sanitize-html": "^2.16.1",
